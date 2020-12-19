@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* 여백 초기화 */
+body, 
+div, 
+ul, 
+li, 
+ol, 
+dl, 
+dt, 
+dd,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+input, 
+fieldset, 
+figure, 
+legend, 
+p, 
+select, 
+table, 
+th, 
+td, 
+tr, 
+textarea, 
+button, 
+form, 
+blockquote, 
+address, 
+thead, 
+tbody, 
+tfoot, 
+caption {
+    margin: 0; padding: 0;
+}
+
+/* a 링크 초기화 */
+a {
+    color: #222; 
+    text-decoration: none;
+}
+
+/* 폰트 초기화 */
+body, 
+input, 
+textarea, 
+select, 
+button, 
+table {
+    font-family:'Noto Sans KR', 'Nanum Gothic',  sans-serif, AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    /* color: #222;  */
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+    font-style: normal;
+}
+
+/* 블릿기호 초기화 */    
+dl, 
+ul, 
+li, 
+ol, 
+menu {
+    list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-size: 14px; 
+    /* color: #222;  */
+    font-weight: normal;
+}
+
+/* 테두리 초기화 */
+img,
+fieldset {
+    border: 0 none;
+}
+
+/* 플롯해제 */
+/* clearboth */
+.clearboth::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 웹 접근성 스크린리더기 */
+.hide {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

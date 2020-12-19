@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+/* 전체적인 구조 */
+.wrap {
+    overflow: hidden;
+}
+
+/* 헤더 */
+.section-page .header-center {
+    padding: 0 96px;
+}
+
+.section-page .header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .header-cont::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .header-cont .logo {
+    float: left;
+}
+
+.section-page .header-cont .logo::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .header-cont .logo .link {
+    display: block;
+    width: 222px;
+    height: 22px;
+    background-size: 222px 22px;
+    margin-top: 32px;
+    margin-right: 82px;
+    background-image: url('../image/logo.png');
+}
+
+.section-page .header-cont .gnb {
+    float: left;
+}
+
+.section-page .header-cont .gnb::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .header-cont .gnb .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .header-cont .gnb .menu .list {
+    float: left;
+    line-height: 89px;
+    font-size: 17px;
+    margin-right: 60px;
+}
+
+.section-page .header-cont .gnb .menu .list a {
+    display: block;
+    padding: 0 2px;
+    letter-spacing: -0.56px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.section-page .header-cont .all-menu {
+    float: right;
+    margin-top: 14px;
+    padding: 20px;
+}
+
+.section-page .header-cont .all-menu .link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px, 20px;
+    background-image: url('../image/all-menu.png');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/* 서브페이지 비주얼 */
+.sub-container .visual {
+    width: 100%;
+    height: 180px;
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    display: table;
+    position: relative;
+}
+
+.sub-container .visual .cont {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sub-container .visual .cont .copy {
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.68px;
+    padding-bottom: 12px;
+}
+
+.sub-container .visual .cont .desc {
+    display: block;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+    font-size: 17px;
+}
+
+/* 서브페이지 비주얼 이미지 */
+.ad-platform-page .visual .cont .bg-01 {
+    background-image: url('../image/ad-platform-visual-cont-bg-01.png');
+    background-repeat: no-repeat;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ad-platform-page .visual .cont .bg-02 {
+    background-image: url('../image/ad-platform-visual-cont-bg-02.png');
+    background-repeat: no-repeat;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ad-platform-page .ad-platform-tab {}
+.ad-platform-page .ad-platform-tab .tab-cont {
+    margin-top: 80px;
+}
+.ad-platform-page .ad-platform-tab .tab-cont ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.ad-platform-page .ad-platform-tab .tab-cont ul li {
+    width: 240px;
+    float: left;
+    text-align: center;
+
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu {
+    width: 720px;
+    margin: 0 auto;
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .cont-on {
+    border-bottom: 3px solid #03c75a;
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .cont-on::after {
+
+}
+
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .on {
+    color: #00ac4a;
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .item .link {}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .item .link .title {
+    font-size: 20px;
+
+}
+.ad-platform-page .ad-platform-tab .tab-cont .tab-menu .item .link .title span {
+    font-size: 15px;
+}
+
+.ad-platform-page .ad-platform-cont {
+    text-align: center;
+}
+.ad-platform-page .ad-platform-cont .title {
+    padding-top: 120px;
+    display: block;
+    font-size: 42px;
+    padding-bottom: 16px;
+}
+.ad-platform-page .ad-platform-cont .text {
+    padding-bottom: 40px;
+}
+.ad-platform-page .ad-platform-cont .text span {
+    color: #00ac4a;
+}
+.ad-platform-page .ad-platform-cont .link-cont {
+    padding-bottom: 64px;
+}
+.ad-platform-page .ad-platform-cont .link-cont .link {
+    padding: 0 8px;
+    border: 1px solid rgba(3, 199, 90, 0.7);
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    color: #fff;
+    display: block;
+    width: 312px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+}
+.ad-platform-page .ad-platform-cont .ad-info-img {
+    background-image: url('../image/ad-info-img.png');
+    background-repeat: no-repeat;
+    background-size: 1100px 644px;
+    width: 1100px;
+    height: 644px;
+    margin: 0 auto;
+}
+.ad-platform-page .operation {
+    background-color: #f5f7f8;
+    padding-top: 124px;
+    position: relative;
+}
+.ad-platform-page .operation::after {
+    content: '';
+    display: block;
+    background-color: #f5f7f8;
+    transform-origin: left bottom;
+    transform: rotate(5.2deg);
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: -370px;
+    left: -1000px;
+    z-index: -1;
+}
+.ad-platform-page .operation .operation-cont-desc {
+    text-align: center;
+}
+.ad-platform-page .operation .operation-cont-desc .title {
+    font-size: 32px;
+}
+.ad-platform-page .operation .operation-cont-desc .text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.ad-platform-page .operation .operation-cont-desc .text span {
+    color: #00ac4a;
+}
+.ad-platform-page .operation .operation-ad-cont {
+    width: 1118px;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 80px;
+}
+.ad-platform-page .operation .operation-ad-cont .list {
+    padding-top: 55px;
+    border-top: 1px solid #999999;
+}
+.ad-platform-page .operation .operation-ad-cont .list .item {
+    position: relative;
+    padding: 40px 0px;
+    border-top: 1px solid #eeeeee;
+}
+.ad-platform-page .operation .operation-ad-cont .list .item:first-child {
+    border: none;
+}
+
+.ad-platform-page .operation .operation-ad-cont .list .item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.ad-platform-page .operation .operation-ad-cont .list .item::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    background-color: #03c75a;
+}
+.ad-platform-page .operation .operation-ad-cont .num {
+    background-color: #03c75a;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+    border-radius: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    float: left;
+    position: relative;
+}
+.ad-platform-page .operation .operation-ad-cont .title {
+    font-size: 24px;
+    float: left;
+    margin-right: 58px;
+    width: 232px;
+    padding-left: 32px;
+}
+.ad-platform-page .operation .operation-ad-cont .cont {
+    float: left;
+}
+.ad-platform-page .operation .operation-ad-cont .cont .text {
+    font-size: 20px;
+}
+.ad-platform-page .operation .operation-ad-cont .cont .link-cont {
+    width: 732px;
+}
+.ad-platform-page .operation .operation-ad-cont .cont .link-cont::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ad-platform-page .operation .operation-ad-cont .cont .link-cont .link {
+    line-height: 40px;
+    color: #00ac4a;
+    border: 1px solid rgba(3, 199, 90, 0.4);
+    border-radius: 24px;
+    padding: 0 32px;
+    display: block;
+    width: 192px;
+    text-align: center;
+    float: left;
+    margin-right: 8px;
+    margin-top: 32px;
+}
+
+
+.ad-platform-page .product-info {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 245px;
+    padding-bottom: 152px;
+}
+.ad-platform-page .product-bg {
+    background-image: url('../image/92005e7200c42cca0716e8abc0d87b50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.ad-platform-page .product-info .title {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 32px;
+}
+.ad-platform-page .product-info .text {
+    margin-top: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.ad-platform-page .product-info .text span {
+    color: #00ac4a;
+}
+
+.ad-platform-page .product-info .link-cont .link {
+    width: 556px;
+    height: 93px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 60px;
+    border-radius: 52px;
+    border: 1px solid rgba(3, 199, 90, 0.7);
+    font-size: 25px;
+    text-align: center;
+    line-height: 96px;
+    letter-spacing: -0.6px;
+    color: #03c75a;
+}
+
+.ad-platform-page .product-info .link-cont .link:last-child {
+    margin-right: 0;
+}
+
+
+.ad-platform-page .product-info .rotate_bg {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: -47px;
+    top: -1428px;
+    background-color:#f5f7f8;
+    transform-origin: left bottom;
+    transform: rotate(5.2deg);
+    z-index: 1;
+}
+
+
+
+
+/* 푸터 */
+.section-page .common-footer {
+    padding: 0 96px;
+    background-color: #000000;
+}
+
+.section-page .fonter-cont {
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+
+.section-page .fonter-cont::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .fonter-cont .info {
+    float: left;
+}
+
+.section-page .fonter-cont .info ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-page .fonter-cont .info ul li {
+    float: left;
+    padding-right: 16px;
+    margin-right: 16px;
+}
+
+.section-page .fonter-cont .info .info-list {
+    margin-bottom: 24px;
+}
+
+.section-page .fonter-cont .info .info-list .item a {
+    color: #dbdbdb;
+}
+
+.section-page .fonter-cont .info .company-infor-list .item {
+    color: #767676;
+}
+
+.section-page .fonter-cont .info .address-list .item {
+    color: #767676;
+}
+
+.section-page .fonter-cont .info .address-list .item .mail {
+    color: #767676;
+}
+
+.section-page .fonter-cont .corp {
+    float: right;
+    position: relative;
+}
+
+.section-page .fonter-cont .corp .logo {
+    background-image: url('../image/black-and-white-logo.png');
+    background-repeat: no-repeat;
+    background-size: 103px, 20px;
+    width: 103px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section-page .fonter-cont .corp .addr {
+    display: block;
+    margin-top: 40px;
+    color: #767676;
+}
