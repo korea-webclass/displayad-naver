@@ -2,7 +2,9 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1400">
+    <!-- <meta name="viewport" content="width=1400"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -17,94 +19,91 @@
 
     <div class="wrap section-overview">
         <!-- 헤더 -->
-        <header class="common-header">
-            <div class="header-cont header-center">
-                <h1 class="logo">
-                    <a href="" class="link">
-                        <span class="hide">네이버 디스플레이 광고 로고</span>
-                    </a>
-                </h1>
-                <nav class="gnb">
-                    <span class="hide">전체메뉴</span>
-                    <ul class="menu">
-                        <li class="list">
-                            <a href="" class="link link-on">주요 특징</a>
-                        </li>
-                        <li class="list">
-                            <a href="" class="link">디스플레이 광고</a>
-                        </li>
-                        <li class="list">
-                            <a href="" class="link">광고 상품 소개</a>
-                            <ul class="sub-menu" style="display: none;">
-                                <li class="list">
-                                    <a href="">메인광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">서브광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">주제판광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">동영상광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">검색형광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">밴드광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">웹툰광고</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">인플루언서광고</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="list">
-                            <a href="" class="link">주요 소식</a>
-                            <ul class="sub-menu" style="display: none;">
-                                <li class="list">
-                                    <a href="">공지사항</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">광고 가이드</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">자주 묻는 질문</a>
-                                </li>
-                                <li class="list">
-                                    <a href="">기타 문의사항</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="list">
-                            <a href="" class="link">성공사례</a>
-                        </li>
-                        <li class="list">
-                            <a href="" class="link">애드시너지</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="all-menu">
-                    <span class="hide">네이버광고 리스트</span>
-                    <a href="" class="link">
-                        <ul class="menu" style="display: none;">
-                            <li class="list">
-                                <a href="">네이버 비즈니스</a>
+        <header class="com-header">
+            <section class="header">
+                <div class="inner">
+                    <h1 class="logo">
+                        <a href="" class="link">
+                            <span class="hide"></span>
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul class="menu">
+                            <span class="heid"></span>
+                            <li class="item">
+                                <a href="" class="on">주요 특징</a>
                             </li>
-                            <li class="list">
-                                <a href="">네이버 검색광고</a>
+                            <li class="item">
+                                <a href="">디스플레이 광고</a>
                             </li>
-                            <li class="list">
-                                <a href="">네이버 쇼핑광고</a>
+                            <li class="item">
+                                <a href="">광고 상품 소개</a>
+                                <div class="sub">
+                                    <ul class="menu">
+                                        <li class="item"><a href="">메인광고</a></li>
+                                        <li class="item"><a href="">서브광고</a></li>
+                                        <li class="item"><a href="">주제판광고</a></li>
+                                        <li class="item"><a href="">동영상광고</a></li>
+                                        <li class="item"><a href="">검색형광고</a></li>
+                                        <li class="item"><a href="">밴드광고</a></li>
+                                        <li class="item"><a href="">웹툰광고</a></li>
+                                        <li class="item"><a href="">인플루언서광고</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="">주요 소식</a>
+                            </li>
+                            <li class="item">
+                                <a href="">성공사례</a>
+                            </li>
+                            <li class="item">
+                                <a href="">애드시너지</a>
                             </li>
                         </ul>
-                    </a>
+                    </nav>
+                    <div class="all-menu">
+                        <a href="#" class="link"></a>
+                        <div class="ad">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="">네이버 비즈니스</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">네이버 검색광고</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">네이버 쇼핑광고</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </header>
+        <script>
+            let menu = document.querySelector('.all-menu > .link');
+            menu.addEventListener('click', function (e) {
+                if (e.target.className === 'link') {
+                    e.target.nextSibling.nextSibling.classList.toggle('ad-on');
+                }
+            })
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- 페이지 내용들 -->
         <main class="sub-container sub-overview">
