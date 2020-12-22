@@ -98,20 +98,26 @@
     background-color: #03c75a;
 }
 
-/* gnb 서브페이지 */
+/* snb 페이지 */
 .com-header .gnb .menu .item .sub {
     position: absolute;
     top: 89px;
     left: 0px;
     right: 0px;
     z-index: 1;
-    display: none;
 }
+
 .com-header .gnb .menu .item .sub > .menu {
     background-color: #ffffff;
-    padding-left: 230px;
     border-bottom: 1px solid #f0f0f0;
 }
+
+/* snb 페이지 링크 */
+.com-header .gnb .menu .item .ad {display: none;}
+.com-header .gnb .menu .item .ad > .sub-ad {padding-left: 230px;}
+.com-header .gnb .menu .item .new {display: none;}
+.com-header .gnb .menu .item .new > .sub-new {padding-left: 683px;}
+
 .com-header .gnb .menu .item .sub > .menu::after {
     content: '';
     display: block;
