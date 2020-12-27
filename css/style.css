@@ -2,12 +2,11 @@
 
 /* 구조 */
 .wrap {
-    min-width: 1400px;
+    width: 100%;
 }
 
 .com-header {
     width: 100%;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 .com-header .header {
@@ -15,8 +14,8 @@
 }
 
 .com-header .header .inner {
-    padding: 0 96px;
-    margin: 0 auto;
+    padding-left: 96px;
+    padding-right: 96px;
 }
 
 .com-header .header .inner::after {
@@ -28,7 +27,7 @@
 .com-header .header .logo {
     float: left;
     margin-top: 32px;
-    margin-right: 84px;
+    width: 260px;
 }
 
 .com-header .header .logo .link {
@@ -40,10 +39,12 @@
 }
 
 .com-header .gnb {
-    width: 846px;
+    width: 1408px;
     float: left;
 }
-
+.com-header .gnb .menu {
+    padding-left: 84px;
+}
 .com-header .gnb .menu::after {
     content: '';
     display: block;
@@ -53,9 +54,11 @@
 .com-header .gnb .menu .item {
     float: left;
     font-size: 17px;
-    height: 88px;
-    line-height: 88px;
+    line-height: 89px;
     margin-right: 60px;
+}
+.com-header .gnb .menu .item:last-child {
+    margin-right: 0px;
 }
 
 .com-header .gnb .menu .item a {
@@ -135,10 +138,12 @@
 .com-header .gnb .menu .item .sub > .menu .item a::after {
     content: none;
 }
+
+/* 광고 메뉴 */
 .com-header .all-menu {
-    margin: 34px 0px;
     float: right;
-    margin-right: 20px;
+    width: 60px;
+    height: 89px;
     position: relative;
 }
 .com-header .all-menu .link {
@@ -147,6 +152,9 @@
     height: 20px;
     background-size: 20px, 20px;
     display: block;
+    padding: 0px 20px;
+    background-position: 20px;
+    margin-top: 34px;
 }
 .com-header .all-menu .ad {
     background-color: #ffffff;
@@ -186,46 +194,22 @@
 .sub-container .visual {
     width: 100%;
     height: 180px;
-    background-image: linear-gradient(to right, #07d05a, #24beac);
-    display: table;
-    position: relative;
+    background-color: red;
 }
 .sub-container .visual .cont {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #ffffff;
+
 }
 .sub-container .visual .cont .copy {
-    display: block;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: -0.68px;
-    padding-bottom: 12px;
+
 }
 .sub-container .visual .cont .desc {
-    display: block;
-    line-height: 30px;
-    letter-spacing: -0.6px;
-    font-size: 17px;
+
 }
 .sub-container .visual .cont .bg-01 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url('../image/bg-segment-01-1.png') no-repeat;
-    background-size: 600px 180px;
-    width: 600px;
-    height: 180px;
+
 }
 .sub-container .visual .cont .bg-02 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: url('../image/bg-segment-02-1.png') no-repeat;
-    background-size: 600px 180px;
-    width: 600px;
-    height: 180px;
+
 }
 
 
@@ -1270,94 +1254,98 @@
 
 
 /* 푸터 */
-.common-footer {
-    padding: 0 96px;
+.com-footer {
     background-color: #000000;
+    padding: 55px 96px 55px;
 }
 
-.common-footer .fonter-cont {
-    padding-top: 60px;
-    padding-bottom: 55px;
-}
-
-.common-footer .fonter-cont::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-footer .fonter-cont .info {
-    float: left;
-}
-
-.common-footer .fonter-cont .info ul::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-footer .fonter-cont .info ul li {
-    float: left;
-    padding-right: 16px;
-    margin-right: 16px;
-}
-
-.common-footer .fonter-cont .info .info-list {
-    margin-bottom: 24px;
-}
-
-.common-footer .fonter-cont .info .info-list .item a {
-    color: #dbdbdb;
-}
-
-.common-footer .fonter-cont .info .company-infor-list .item {
-    color: #767676;
-    font-size: 14px;
-}
-
-.common-footer .fonter-cont .info .address-list .item {
-    color: #767676;
-    font-size: 14px;
-}
-
-.common-footer .fonter-cont .info .address-list .item .mail {
-    color: #767676;
-}
-
-.common-footer .fonter-cont .corp {
-    float: right;
+.com-footer .footer {
     position: relative;
-    top: 17px;
+}
+.com-footer .footer .cont {
+
+}
+.com-footer .footer .cont .info-list {
+    margin-bottom: 27px;
+}
+.com-footer .footer .cont .info-list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.com-footer .footer .cont .info-list .item {
+    float: left;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+.com-footer .footer .cont .info-list .item a {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-family: 'NanumSquare';
+}
+.com-footer .footer .cont .company-list {
+    padding-bottom: 8px;
+}
+.com-footer .footer .cont .company-list::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.common-footer .fonter-cont .corp .logo {
+.com-footer .footer .cont .company-list .item {
+    float: left;
+    font-size: 14px;
+    color: #767676;
+    padding-right: 15px;
+    margin-right: 15px;
+    line-height: 16px;
+    letter-spacing: -0.6px;
+    font-family: 'NanumSquare';
+}
+.com-footer .footer .cont .address-list {
+}
+.com-footer .footer .cont .address-list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.com-footer .footer .cont .address-list .item {
+    float: left;
+    font-size: 13px;
+    color: #767676;
+    padding-right: 15px;
+    margin-right: 15px;
+    font-family: 'NanumSquare';
+}
+.com-footer .footer .cont .address-list .item a {
+    color: #767676;
+    font-family: 'NanumSquare';
+}
+
+.com-footer .footer .corp {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.com-footer .footer .corp .logo {
     background-image: url('../image/black-and-white-logo.png');
     background-repeat: no-repeat;
-    background-size: 103px, 20px;
     width: 103px;
     height: 20px;
+    background-size: 103px 20px;
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-left: 171px;
+    margin-top: 2px;
+    display: block;
 }
-
-.common-footer .fonter-cont .corp .addr {
-    display: block;
-    margin-top: 40px;
+.com-footer .footer .corp .addr {
+    letter-spacing: -0.3px;
     color: #767676;
+    font-size: 14px;
+    margin-left: 59px;
+    margin-top: 16px;
+    display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
