@@ -1,1 +1,26 @@
 @charset "utf-8";
+
+/* 공통 css */
+/* -------- */
+
+/* 서브 페이지- 주요 특징 */
+.sub-container .sub-content .text-wrap {
+    text-align: center;
+}
+
+.sub-container .sub-content .text-wrap .title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    letter-spacing: -1.2px;
+}
+
+.sub-container .sub-content .text-wrap .point {
+    color: #00ac4a;
+    font-weight: 700;
+}
+
+.sub-container .sub-content .text-wrap .text {
+    font-size: 20px;
+    color: #767676;
+    letter-spacing: -0.6px;
+}
