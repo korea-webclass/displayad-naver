@@ -485,37 +485,72 @@
 
 /* 상품 상세정보 보기 */
 .advertisement-list-page .product-info {
-    background-color: #222222;
-    text-align: center;
-    padding: 211px 72px 120px;
-    position: relative;
-    overflow: hidden;
+    /* height: 502px; */
+    background-color: #22222a;
     margin-top: 132px;
+    position: relative;
 }
-
+.advertisement-list-page .product-info .layout {
+    width: 1298px;
+    margin: 0 auto;
+    padding: 127px 51px 120px;
+    overflow: hidden;
+}
+.advertisement-list-page .product-info .contents-wrap {
+    display: inline-block;
+}
 .advertisement-list-page .product-info .title {
     color: #ffffff;
-    margin-bottom: 40px;
-    display: inline-block;
-    font-size: 32px;
-}
-
-.advertisement-list-page .product-info .link-cont .link {
-    height: 93px;
-    display: inline-block;
-    padding: 0 160px;
-    margin-right: 20px;
-    border-radius: 52px;
-    border: 1px solid rgba(3, 199, 90, 0.7);
-    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 36px;
+    display: block;
+    font-size: 31px;
     text-align: center;
-    line-height: 96px;
-    letter-spacing: -0.6px;
-    color: #03c75a;
 }
-
+.advertisement-list-page .product-info .link-cont {
+    text-align: center;
+    margin: 0 auto;
+    /* display: inline-block; */
+}
+.advertisement-list-page .product-info .link-cont::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.advertisement-list-page .product-info .link-cont .link {
+    border: 1px solid #17ba5a;
+    border-radius: 52px;
+    margin-right: 22px;
+    width: 636px;
+    height: 93px;
+    display: block;
+    float: left;
+}
 .advertisement-list-page .product-info .link-cont .link:last-child {
     margin-right: 0;
+}
+.advertisement-list-page .product-info .link-cont .link span {
+    margin-top: 30px;
+    display: inline-block;
+    color: #17ba5a;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    word-spacing: -0.7px;
+    font-weight: 700;
+    padding-right: 33px;
+    position: relative;
+}
+.advertisement-list-page .product-info .link-cont .link span::after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #01ac4b;
+    border-right: 1px solid #01ac4b;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 11px;
+    right: 9px;
 }
 
 .advertisement-list-page .product-info .rotate_bg {
