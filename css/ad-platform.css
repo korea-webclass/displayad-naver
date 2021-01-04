@@ -1,118 +1,196 @@
 @charset "utf-8";
 
-/* 전체적인 구조 */
-body {
-    padding-top: 89px;
-}
 
-.wrap {
-    overflow: hidden;
-}
+.wrap {width: 100%; min-width: 1748px; padding-top: 89px; overflow: hidden;}
+.inner {width: 1748px; margin: 0 auto;}
+.row {padding: 0 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 헤더 */
-.common-header {
+.header {
+    position: relative;
+}
+
+.header-section {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 89px;
-    z-index: 10;
-    background-color: #fff;
-    border-bottom: 1px solid #f0f0f0;
-}
-.common-header .header-center {
-    padding: 0 96px;
+    left: 0;
+    right: 0;
+    z-index: 7;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f7f7f7;
+    /* overflow: hidden; */
+    /* height: 89px; */
 }
 
-.common-header .header::after {
+
+.header-contents::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.common-header .header-cont::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-header .header-cont .logo {
+/* 헤더 - 로고 */
+.header-contents .logo {
+    width: 222px;
     float: left;
+    margin-top: 32px;
 }
-
-.common-header .header-cont .logo::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-header .header-cont .logo .link {
-    display: block;
+.header-contents .logo .logo-link {
+    background: url('../image/logo.png') no-repeat;
     width: 222px;
     height: 22px;
-    background-size: 222px 22px;
-    margin-top: 32px;
-    margin-right: 82px;
-    background-image: url('../image/logo.png');
+    background-size: 222px, 22px;
+    display: block;
 }
 
-.common-header .header-cont .gnb {
+/* 헤더 - GNB */
+.header-contents .gnb {
+    width: 1446px;
     float: left;
 }
-
-.common-header .header-cont .gnb::after {
+.header-contents .gnb .menu {
+    padding-left: 82px;
+}
+.header-contents .gnb .menu::after {
     content: '';
     display: block;
     clear: both;
 }
-
-.common-header .header-cont .gnb .menu::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-header .header-cont .gnb .menu .list {
-    float: left;
-    line-height: 89px;
+.header-contents .gnb .menu .list {
     font-size: 17px;
+    color: #333333;
+    float: left;
     margin-right: 60px;
+    height: 89px;
+    line-height: 89px;
 }
 
-.common-header .header-cont .gnb .menu .list a {
+.header-contents .gnb .menu .list a {
     display: block;
+    font-family: 'NanumSquare';
+    font-weight: 400;
     padding: 0 2px;
     letter-spacing: -0.56px;
     color: #333333;
-    font-weight: 400;
-}
-
-.common-header .header-cont .gnb .menu .list .link-on {
-    font-weight: 700;
     position: relative;
 }
-.common-header .header-cont .gnb .menu .list .link-on::after {
+
+
+.header-contents .gnb .menu .list a::after {
     content: '';
     display: block;
+    width: 0%;
+    height: 2px;
     position: absolute;
+    left: 0;
     bottom: 24px;
-    left: 0px;
+    background-color: #03c75a;
+    transition: width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header-contents .gnb .menu .list a:hover::after {
     width: 100%;
-    border-bottom: 2px solid #03c75a;
 }
 
-.common-header .header-cont .all-menu {
-    float: right;
-    margin-top: 14px;
-    padding: 20px;
+/* 서브페이지 이동 */
+.header-contents .gnb .gnb-lnb {
+    height: 62px;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
 }
 
-.common-header .header-cont .all-menu .link {
+.header-contents .gnb .lnb-on {
     display: block;
+}
+
+.header-contents .gnb .gnb-lnb .menu {
+    padding-left: 0;
+}
+
+.header-contents .gnb .gnb-lnb .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.header-contents .gnb .gnb-lnb .menu-ad-product {padding-left: 227px;}
+.header-contents .gnb .gnb-lnb .menu-new {padding-left: 681px;}
+
+.header-contents .gnb .gnb-lnb .menu .item {
+    float: left;
+    line-height: 62px;
+    margin-right: 48px;
+}
+
+.header-contents .gnb .gnb-lnb .menu .item a {
+    font-size: 16px;
+    letter-spacing: -0.6px;
+}
+
+.header-contents .gnb .gnb-lnb .menu .item a::after {
+    content: none;
+}
+
+
+
+
+
+
+
+
+/* 현재 보고 있는 페이지 css 부분 */
+.header-contents .gnb .menu .list-view a {
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+}
+
+.header-contents .gnb .menu .list-view a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    background-color: #03c75a;
+}
+
+/* 헤더 - 광고리스트 메뉴 */
+.header-contents .all-menu {
+    width: 40px;
+    float: left;
+    margin-top: 34px;
+}
+.header-contents .all-menu a {
+    display: block;
+    padding: 0 10px;
+}
+.header-contents .all-menu a .ad-link {
+    background: url('../image/all-menu.png') no-repeat;
     width: 20px;
     height: 20px;
     background-size: 20px, 20px;
-    background-image: url('../image/all-menu.png');
-    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
 }
 
 
@@ -569,81 +647,294 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 푸터 */
-.common-footer {
-    padding: 0 96px;
+.footer {
     background-color: #000000;
+    height: 203px;
+}
+.footer .footer-layout {
+    width: 1728px;
+    margin: 0 auto;
 }
 
-.common-footer .fonter-cont {
-    padding-top: 60px;
-    padding-bottom: 55px;
+.footer .footer-content {
+
 }
 
-.common-footer .fonter-cont::after {
-    content: '';
+.footer .footer-content .info-wrap {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 9px;
+}
+    
+.footer .footer-content .info-wrap .list {
+    
+}
+
+.footer .footer-content .info-wrap .list::after {
+    content: '';    
     display: block;
     clear: both;
 }
 
-.common-footer .fonter-cont .info {
+.footer .footer-content .info-wrap .list .item {
     float: left;
-}
-
-.common-footer .fonter-cont .info ul::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.common-footer .fonter-cont .info ul li {
-    float: left;
-    padding-right: 16px;
-    margin-right: 16px;
-}
-
-.common-footer .fonter-cont .info .info-list {
-    margin-bottom: 24px;
-}
-
-.common-footer .fonter-cont .info .info-list .item a {
-    color: #dbdbdb;
-}
-
-.common-footer .fonter-cont .info .company-infor-list .item {
-    color: #767676;
-    font-size: 14px;
-}
-
-.common-footer .fonter-cont .info .address-list .item {
-    color: #767676;
-    font-size: 14px;
-}
-
-.common-footer .fonter-cont .info .address-list .item .mail {
-    color: #767676;
-}
-
-.common-footer .fonter-cont .corp {
-    float: right;
+    padding-right: 15px;
+    margin-right: 14px;
     position: relative;
-    top: 17px;
 }
 
-.common-footer .fonter-cont .corp .logo {
-    background-image: url('../image/black-and-white-logo.png');
-    background-repeat: no-repeat;
-    background-size: 103px, 20px;
-    width: 103px;
-    height: 20px;
+.footer .footer-content .info-wrap .list .item::after {
+    content: '';
     display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #dfe0e1;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -1px;
+    top: 6px;
+    opacity: 0.2;
 }
 
-.common-footer .fonter-cont .corp .addr {
-    display: block;
-    margin-top: 40px;
-    color: #767676;
+.footer .footer-content .info-wrap .list .item a {
+    color: #999999;
+    line-height: 24px;
+    letter-spacing: -1.6px;
+    font-size: 16px;
+    font-family: 'NanumSquare, sans-serif';
+    font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+.footer .footer-content .company-wrap {
+    display: block;
+    padding-left: 9px;
+    margin-top: 14px;
+}
+    
+.footer .footer-content .company-wrap .list {
+    
+}
+
+.footer .footer-content .company-wrap .list::after {
+    content: '';    
+    display: block;
+    clear: both;
+}
+
+.footer .footer-content .company-wrap .list .item {
+    float: left;
+    padding-right: 17px;
+    margin-right: 16px;
+    position: relative;
+}
+
+.footer .footer-content .company-wrap .list .item::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #dfe0e1;
+    position: absolute;
+    right: -1px;
+    top: 6px;
+    opacity: 0.2;
+}
+
+.footer .footer-content .company-wrap .list .item span {
+    color: #767676;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    line-height: 16px;
+    font-size: 13px;
+    font-family: 'NanumSquare, sans-serif';
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+.footer .footer-content .addr-wrap {
+    display: block;
+    padding-left: 9px;
+}
+    
+.footer .footer-content .addr-wrap .list {
+    
+}
+
+.footer .footer-content .addr-wrap .list::after {
+    content: '';    
+    display: block;
+    clear: both;
+}
+
+.footer .footer-content .addr-wrap .list .item {
+    float: left;
+    padding-right: 17px;
+    margin-right: 16px;
+    position: relative;
+}
+
+.footer .footer-content .addr-wrap .list .item::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #dfe0e1;
+    position: absolute;
+    right: -1px;
+    top: 6px;
+    opacity: 0.2;
+}
+
+.footer .footer-content .addr-wrap .list .item span {
+    color: #767676;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    line-height: 16px;
+    font-size: 13px;
+    font-family: 'NanumSquare, sans-serif';
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+.footer .footer-content .naver-copyright {
+    
+}
+
+.footer .footer-content .naver-copyright .copyright-wrap {
+    text-align: right;
+    margin-top: -76px;
+    margin-right: 12px;
+}
+
+.footer .footer-content .naver-copyright .copyright-wrap .logo {
+    background: url('../image/black-and-white-logo.png') no-repeat;
+    background-size: 102px 20px;
+    display: inline-block;
+    width: 102px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .naver-copyright .copyright-wrap .text {
+    font-size: 14px;
+    color: #767676;
+    letter-spacing: -0.3px;
+}
+    
