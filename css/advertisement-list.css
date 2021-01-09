@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 .wrap {width: 100%; min-width: 1748px; padding-top: 89px; overflow: hidden;}
 .inner {width: 1748px; margin: 0 auto;}
 .row {padding: 0 20px;}
@@ -30,8 +29,10 @@
     z-index: 7;
     background-color: #ffffff;
     border-bottom: 1px solid #f7f7f7;
-    /* overflow: hidden; */
-    /* height: 89px; */
+    overflow: hidden;
+    height: 89px;
+    left:0; right:0;
+	top:0;
 }
 
 
@@ -80,7 +81,6 @@
 .header-contents .gnb .menu .list a {
     display: block;
     font-family: 'NanumSquare';
-    font-weight: 400;
     padding: 0 2px;
     letter-spacing: -0.56px;
     color: #333333;
@@ -106,48 +106,16 @@
 
 /* 서브페이지 이동 */
 .header-contents .gnb .gnb-lnb {
-    height: 62px;
-    border-bottom: 1px solid #dcdcdc;
     background-color: #fff;
     width: 100%;
-    position: absolute;
-    bottom: -64px;
-    left: 0;
-    right: 0;
-    z-index: 100;
     display: none;
+    position: absolute;
 }
-
-.header-contents .gnb .lnb-on {
-    display: block;
-}
-
-.header-contents .gnb .gnb-lnb .menu {
-    padding-left: 0;
-}
-
-.header-contents .gnb .gnb-lnb .menu::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.header-contents .gnb .gnb-lnb .menu-ad-product {padding-left: 227px;}
-.header-contents .gnb .gnb-lnb .menu-new {padding-left: 681px;}
-
+.header-contents .gnb .gnb-lnb .menu {}
 .header-contents .gnb .gnb-lnb .menu .item {
     float: left;
-    line-height: 62px;
-    margin-right: 48px;
 }
-
-.header-contents .gnb .gnb-lnb .menu .item a {
-    font-size: 16px;
-    letter-spacing: -0.6px;
-}
-
-.header-contents .gnb .gnb-lnb .menu .item a::after {
-    content: none;
-}
+.header-contents .gnb .gnb-lnb .menu .item a {}
 
 
 
@@ -157,7 +125,7 @@
 
 
 /* 현재 보고 있는 페이지 css 부분 */
-.header-contents .gnb .menu .list-view a {
+.header-contents .gnb .menu .list-view > a {
     font-weight: 700;
     color: #000000;
     position: relative;
@@ -198,6 +166,7 @@
 
 
 
+
 /* 서브 페이지 - 주요 특징 */
 /* ----------------------- */
 
@@ -211,23 +180,23 @@
 
 .sub-overview .visual .bg01 {
     content: '';
-    background: url('../image/sub-overview-visual-bg01.png') no-repeat;
-    background-size: 600px 180px;
+    background: url('../image/advertisement-list-visual-bg-one.png') no-repeat;
+    background-size: 664px 240px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 180px;
+    top: -10px;
+    left: 18px;
+    width: 664px;
+    height: 240px;
 }
 
 .sub-overview .visual .bg02 {
     content: '';
-    background: url('../image/sub-overview-visual-bg02.png') no-repeat;
-    background-size: 600px 180px;
+    background: url('../image/advertisement-list-visual-bg-two.png') no-repeat;
+    background-size: 720px 180px;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 600px;
+    right: -2px;
+    width: 720px;
     height: 180px;
 }
 
@@ -422,11 +391,21 @@
 .advertisement-list-page .ad-product-cont li {
     float: left;
     margin-right: 24px;
-    margin-bottom: 24px;
 }
+.advertisement-list-page .ad-product-cont li + li {
+    margin-top: 24px;
+}
+.advertisement-list-page .ad-product-cont li:nth-child(1) {
+    margin-top: 0px;
+}
+.advertisement-list-page .ad-product-cont li:nth-child(2) {
+    margin-top: 0px;
+}
+
 .advertisement-list-page .ad-product-cont li:nth-child(2n) {
     margin-right: 0;
 }
+
 
 .advertisement-list-page .ad-product-cont .item a {
     position: relative;
@@ -436,7 +415,7 @@
 .advertisement-list-page .ad-product-cont .text-cont {
     position: absolute;
     left: 40px;
-    bottom: 56px;
+    bottom: 48px;
     color: #ffffff;
 }
 
@@ -445,13 +424,14 @@
     display: inline-block;
     vertical-align: middle;
     letter-spacing: -0.6px;
+    margin-top: 2px;
+    margin-right: 8px;
 }
 
 .advertisement-list-page .ad-product-cont .text-cont .text {
     font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 1px 12px;
-    margin: 6px 0 6px;
+    padding: 1px 11px;
     line-height: 24px;
     display: inline-block;
     border-radius: 16px;
@@ -459,7 +439,7 @@
 }
 
 .advertisement-list-page .ad-product-cont .text-cont .desc {
-    margin-top: 12px;
+    margin-top: 5px;
     line-height: 28px;
     letter-spacing: -0.6px;
 }
@@ -487,13 +467,14 @@
 .advertisement-list-page .product-info {
     /* height: 502px; */
     background-color: #22222a;
-    margin-top: 132px;
+    margin-top: 129px;
     position: relative;
+    overflow: hidden;
 }
 .advertisement-list-page .product-info .layout {
     width: 1298px;
     margin: 0 auto;
-    padding: 127px 51px 120px;
+    padding: 205px 51px 120px;
     overflow: hidden;
 }
 .advertisement-list-page .product-info .contents-wrap {
@@ -526,6 +507,18 @@
     display: block;
     float: left;
 }
+.advertisement-list-page .product-info .link-cont .link:hover {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    /* color: #fff; */
+}
+.advertisement-list-page .product-info .link-cont .link:hover > span {
+    color: #fff;
+}
+.advertisement-list-page .product-info .link-cont .link:hover > span::after {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
 .advertisement-list-page .product-info .link-cont .link:last-child {
     margin-right: 0;
 }
@@ -556,9 +549,9 @@
 .advertisement-list-page .product-info .rotate_bg {
     position: absolute;
     width: 200%;
-    height: 200%;
+    height: 100%;
     left: -47px;
-    top: -1032px;
+    top: -506px;
     background-color: #fff;
     transform-origin: left bottom;
     transform: rotate(5.2deg);

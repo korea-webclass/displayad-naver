@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/advertisement-list.css">
     <link rel="stylesheet" href="../css/font.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>광고상품소개-목록</title>
 </head>
 <body>
@@ -29,15 +30,15 @@
                             <nav class="gnb">
                                 <ul class="menu">
                                     <li class="list">
-                                        <a href="">주요 특징</a>
+                                        <a href="../html/overview.html">주요 특징</a>
                                     </li>
                                     <li class="list">
-                                        <a href="">디스플레이 광고</a>
+                                        <a href="../html/ad-platform.html">디스플레이 광고</a>
                                     </li>
                                     <li class="list list-view">
                                         <a href="../html/advertisement-list.html">광고 상품 소개</a>
                                         <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on" style="display: none;">
+                                        <nav class="gnb-lnb lnb-on">
                                             <ul class="menu menu-ad-product">
                                                 <li class="item"><a href="">메인광고</a></li>
                                                 <li class="item"><a href="">서브광고</a></li>
@@ -53,7 +54,7 @@
                                     <li class="list">
                                         <a href="">주요 소식</a>
                                         <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on" style="display: none;">
+                                        <nav class="gnb-lnb lnb-on">
                                             <ul class="menu menu-new">
                                                 <li class="item"><a href="">공지사항</a></li>
                                                 <li class="item"><a href="">광고 가이드</a></li>
@@ -82,20 +83,45 @@
         </header>
 
         <script>
-            let headerSection = document.querySelectorAll('.header-contents .gnb .menu .list');
-            let gnbLnb = document.querySelectorAll('.header-contents .gnb .gnb-lnb');
-            console.log(gnbLnb);
+            // $(function(){
+            //     var $firstMenu = $('.header-contents .gnb > .menu > .list > a'),
+            //         $header = $('.header-section');
 
+            //         $firstMenu.mousemove(function(){
+            //             $header.stop().animate({height: '300px'},300);
+            //         })
+            //         .mouseout(function(){
+            //             $header.stop().animate({height: '89px'},300);
+            //         });
+            // });
 
-            headerSection[2].addEventListener('mouseover', function (e) {
-                gnbLnb[0].classList.toggle('lnb-on');
-            });
+            // gnb 전체 호버
+            // $(function(){
+            //     var $firstMenu = $('nav > ul > li > a'),
+            //         $header = $('.header-section');
+                
+            //     $firstMenu.mouseenter(function(){
+            //         $header.stop().animate({height:'160px'});
+            //     })
+            //     .mouseleave(function(){
+            //         $header.stop().animate({height:'89px'});
+            //     });
+            // });
 
-            headerSection[3].addEventListener('mouseover', function (e) {
-                gnbLnb[1].classList.toggle('lnb-on');
-            });
+            $(function(){
+                var $firstMenu = $('nav > ul > li'),
+                    $header = $('header'),
+                    $headerHeight = $header.outerHeight();
 
+                $firstMenu.mouseenter(function(){
+                    var subHeight = $(this).find('ul').outerHeight();
+                    $header.animate({height: $headerHeight + subHeight + 'px'},300);
+                })
+                .mouseleave(function(){
+                    $header.animate({height: $headerHeight + 'px'},300);
 
+                });
+            })
 
         </script>
 
@@ -129,7 +155,7 @@
                         <a href="">
                             <div class="text-cont">
                                 <strong class="title">메인광고</strong>
-                                <span class="text">성과형&#183;보장형</span>
+                                <span class="text">성과형 &#183; 보장형</span>
                                 <p class="desc">가장 프리미엄하게!<br>강력한 주목도와 커버리지로 브랜딩 강화</p>
                             </div>
                             <div class="main-ad-img"></div>
@@ -139,7 +165,7 @@
                         <a href="">
                             <div class="text-cont">
                                 <strong class="title">서브광고</strong>
-                                <span class="text">성과형&#183;보장형</span>
+                                <span class="text">성과형 &#183; 보장형</span>
                                 <p class="desc">주요 서비스 곳곳에<br>브랜드 메시지를 명료하게 전달</p>
                             </div>
                             <div class="sub-ad-img"></div>
@@ -148,7 +174,7 @@
                     <li class="item">
                         <a href="">
                             <div class="text-cont">
-                                <strong class="title">주제판 광고</strong>
+                                <strong class="title">주제판광고</strong>
                                 <span class="text">보장형</span>
                                 <p class="desc">취향에 따라 방문한 이용자에게<br>자연스러운 맞춤 타깃팅 노출</p>
                             </div>
@@ -158,7 +184,7 @@
                     <li class="item">
                         <a href="">
                             <div class="text-cont">
-                                <strong class="title">동영상 광고</strong>
+                                <strong class="title">동영상광고</strong>
                                 <span class="text">보장형</span>
                                 <p class="desc">네이버 동영상 콘텐츠 내<br>주목도 높은 노출로 브랜드 파급력 강화</p>
                             </div>
@@ -170,7 +196,7 @@
                             <div class="text-cont">
                                 <strong class="title">검색형광고</strong>
                                 <span class="text">보장형</span>
-                                <p class="desc">검색단계에 진입한 고관여 사용자들을<br>브랜드 영역 내로 포섭</p>
+                                <p class="desc">검색 단계에 진입한 고관여 사용자들을<br>브랜드 영역 내로 포섭</p>
                             </div>
                             <div class="search-ad-img"></div>
                         </a>
@@ -179,8 +205,8 @@
                         <a href="">
                             <div class="text-cont">
                                 <strong class="title">밴드광고</strong>
-                                <span class="text">성과형&#183;보장형</span>
-                                <p class="desc">천만 Active 사용자들의 관심사 놀이터<br>강력한 주목도와 커버리지로 브랜딩 강화</p>
+                                <span class="text">성과형 &#183; 보장형</span>
+                                <p class="desc">천만 Active 사용자들의 관심사 놀이터,<br>퍼포먼스 중심의 목적 달성</p>
                             </div>
                             <div class="band-ad-img"></div>
                         </a>
@@ -198,7 +224,7 @@
                     <li class="item">
                         <a href="">
                             <div class="text-cont">
-                                <strong class="title">메인광고</strong>
+                                <strong class="title">인플루언서광고</strong>
                                 <span class="text">보장형</span>
                                 <p class="desc">네이버만의 강력한 콘텐츠 생태계 안에서<br>사용자의 탐색 여정을 효과적으로 연결</p>
                             </div>
