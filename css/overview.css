@@ -1100,8 +1100,9 @@
     height: 203px;
 }
 .footer .footer-layout {
-    width: 1728px;
-    margin: 0 auto;
+    /* width: 1728px; */
+    /* margin: 0 auto; */
+    padding: 0 96px;
 }
 
 .footer .footer-content {
