@@ -23,6 +23,7 @@
 }
 
 .header-section {
+    min-width: 1400px;
     position: fixed;
     top: 0;
     left: 0;
@@ -205,6 +206,7 @@
 /* 서브페이지 비주얼 */
 .section-display-ad .sub-container .visual {
     width: 100%;
+    min-width: 1400px;
     height: 180px;
     background-image: linear-gradient(to right, #07d05a, #24beac);
     display: table;
@@ -336,6 +338,7 @@
     transform: rotate(5.2deg);
 }
 .ad-formal-container .ad-formal-layout {
+    min-width: 1400px;
     width: 1118px;
     padding: 119px 141px 50px;
     margin: 0 auto;
@@ -875,10 +878,12 @@
 
 /* 푸터 */
 .footer {
+    min-width: 1400px;
     background-color: #000000;
     height: 203px;
 }
 .footer .footer-layout {
+    min-width: 1400px;
     width: 1728px;
     margin: 0 auto;
 }

@@ -22,6 +22,7 @@
 }
 
 .header-section {
+    min-width: 1400px;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +30,7 @@
     z-index: 7;
     background-color: #ffffff;
     border-bottom: 1px solid #f7f7f7;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 89px;
     left:0; right:0;
 	top:0;
@@ -107,15 +108,15 @@
 /* 서브페이지 이동 */
 .header-contents .gnb .gnb-lnb {
     background-color: #fff;
-    width: 100%;
-    display: none;
     position: absolute;
+    left: 0;
+    right: 0;
 }
 .header-contents .gnb .gnb-lnb .menu {}
 .header-contents .gnb .gnb-lnb .menu .item {
     float: left;
 }
-.header-contents .gnb .gnb-lnb .menu .item a {}
+.header-contents .gnb .gnb-lnb .menu .item a{}
 
 
 
@@ -172,6 +173,7 @@
 
 /* 주요 특징 - 비주얼 */
 .sub-overview .visual {
+    min-width: 1400px;
     background-image: linear-gradient(to right, #07d05a, #24beac);
     padding-top: 42px;
     padding-bottom: 52px;
@@ -237,6 +239,7 @@
 
 /* 백그라운드 배경 고정 콘텐츠 */
 .sub-overview .fixed-scroll-box {
+    min-width: 1400px;
     height: 1175px;
 }
 .sub-overview .fixed-scroll-bg {
@@ -353,6 +356,7 @@
 /* 서브페이지 광고상품소개 비주얼 */
 .advertisement-list-page .visual .cont {
     position: relative;
+    min-width: 1400px
 }
 .advertisement-list-page .visual .cont .bg-01 {
     background-image: url('../image/advertisement-list-page-visual-cont-bg-01.png');
@@ -378,6 +382,7 @@
 
 /* 목록 콘텐츠 */
 .advertisement-list-page .ad-product-cont {
+    min-width: 1400px;
     width: 1296px;
     margin: 0 auto;
     padding-top: 120px;
@@ -466,12 +471,14 @@
 /* 상품 상세정보 보기 */
 .advertisement-list-page .product-info {
     /* height: 502px; */
+    min-width: 1400px;
     background-color: #22222a;
     margin-top: 129px;
     position: relative;
     overflow: hidden;
 }
 .advertisement-list-page .product-info .layout {
+    min-width: 1400px;
     width: 1298px;
     margin: 0 auto;
     padding: 205px 51px 120px;
@@ -659,6 +666,7 @@
 
 /* 푸터 */
 .footer {
+    min-width: 1400px;
     background-color: #000000;
     height: 203px;
 }

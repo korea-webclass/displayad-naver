@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-.wrap {width: 100%; min-width: 1748px; padding-top: 89px; overflow: hidden;}
-.inner {width: 1748px; margin: 0 auto;}
-.row {padding: 0 20px;}
+.wrap {width: 100%; min-width: 1400px; /* min-width: 1748px; */ padding-top: 89px; overflow: hidden;}
+.inner {/* width: 1748px; */ margin: 0 auto;}
+.row {padding: 0 96px; margin: 0 auto;}
 
 
 
@@ -22,6 +22,7 @@
 }
 
 .header-section {
+    min-width: 1400px;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,6 +34,9 @@
     /* height: 89px; */
 }
 
+.header-contents {
+    position: relative;
+}
 
 .header-contents::after {
     content: '';
@@ -42,7 +46,7 @@
 
 /* 헤더 - 로고 */
 .header-contents .logo {
-    width: 222px;
+    /* width: 222px; */
     float: left;
     margin-top: 32px;
 }
@@ -56,7 +60,7 @@
 
 /* 헤더 - GNB */
 .header-contents .gnb {
-    width: 1446px;
+    /* width: 1446px; */
     float: left;
 }
 .header-contents .gnb .menu {
@@ -175,9 +179,12 @@
 
 /* 헤더 - 광고리스트 메뉴 */
 .header-contents .all-menu {
-    width: 40px;
+    /* width: 40px; */
     float: left;
     margin-top: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .header-contents .all-menu a {
     display: block;
@@ -205,6 +212,7 @@
 
 /* 주요 특징 - 비주얼 */
 .sub-overview .visual {
+    min-width: 1400px;
     background-image: linear-gradient(to right, #07d05a, #24beac);
     padding-top: 42px;
     padding-bottom: 52px;
@@ -263,6 +271,7 @@
 /* 주요 특징 콘텐츠 - 데이터 */
 .overview-page .data {
     background-color: #ffffff;
+    min-width: 1400px;
     /* height: 1060px; */
     height: 1051px;
     position: relative;
@@ -291,11 +300,12 @@
     z-index: 1;
 }
 .overview-page .data .data-img {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* bottom: 155px; */
+    /* right: 0; */
+    /* left: 0; */
+    padding-top: 270px;
 }
 
 
@@ -346,6 +356,7 @@
 
 /* 주요 특징 콘텐츠 - 구매 */
 .overview-page .purchase {
+    min-width: 1400px;
     height: 1236px;
 }
 .overview-page .purchase-layout {
@@ -660,6 +671,7 @@
 
 /* 주요 특징 콘텐츠 - 비율 */
 .overview-page .ratio-area {
+    min-width: 1400px;
     height: 868px;
 }
 
@@ -694,13 +706,25 @@
     float: left;
 }
 .overview-page .ratio .graph-content .result-list {
-
+    padding-top: 50px;
 }
 .overview-page .ratio .graph-content .result-list .item {
     width: 558px;
+    position: relative;
 }
+.overview-page .ratio .graph-content .result-list .item::after {
+    content: '';
+    display: block;
+    width: 540px;
+    height: 1px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
 .overview-page .ratio .graph-content .result-list .item dl {
-    padding: 66px 18px 47px 32px;
+    padding: 66px 14px 47px 47px;
 }
 .overview-page .ratio .graph-content .result-list .item dl::after {
     content: '';
@@ -734,6 +758,7 @@
 /* 주요 특징 콘텐츠 - 디바이스 */
 .overview-page .reach-area {
     background-color: red;
+    min-width: 1400px;
     /* height: 1177px; */
     position: relative;
     margin-top: 270px;
@@ -1071,6 +1096,7 @@
 /* 푸터 */
 .footer {
     background-color: #000000;
+    min-width: 1400px;
     height: 203px;
 }
 .footer .footer-layout {

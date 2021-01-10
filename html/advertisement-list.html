@@ -54,7 +54,7 @@
                                     <li class="list">
                                         <a href="">주요 소식</a>
                                         <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on">
+                                        <nav class="gnb-lnb lnb-on" style="display: none;">
                                             <ul class="menu menu-new">
                                                 <li class="item"><a href="">공지사항</a></li>
                                                 <li class="item"><a href="">광고 가이드</a></li>
@@ -83,6 +83,39 @@
         </header>
 
         <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             // $(function(){
             //     var $firstMenu = $('.header-contents .gnb > .menu > .list > a'),
             //         $header = $('.header-section');
@@ -108,20 +141,20 @@
             //     });
             // });
 
-            $(function(){
-                var $firstMenu = $('nav > ul > li'),
-                    $header = $('header'),
-                    $headerHeight = $header.outerHeight();
+            // $(function(){
+            //     var $firstMenu = $('nav > ul > li'),
+            //         $header = $('header'),
+            //         $headerHeight = $header.outerHeight();
 
-                $firstMenu.mouseenter(function(){
-                    var subHeight = $(this).find('ul').outerHeight();
-                    $header.animate({height: $headerHeight + subHeight + 'px'},300);
-                })
-                .mouseleave(function(){
-                    $header.animate({height: $headerHeight + 'px'},300);
+            //     $firstMenu.mouseenter(function(){
+            //         var subHeight = $(this).find('ul').outerHeight();
+            //         $header.animate({height: $headerHeight + subHeight + 'px'},300);
+            //     })
+            //     .mouseleave(function(){
+            //         $header.animate({height: $headerHeight + 'px'},300);
 
-                });
-            })
+            //     });
+            // })
 
         </script>
 
