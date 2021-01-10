@@ -661,18 +661,16 @@
 
 
 
-
-
-
 /* 푸터 */
 .footer {
-    min-width: 1400px;
     background-color: #000000;
+    min-width: 1400px;
     height: 203px;
 }
 .footer .footer-layout {
-    width: 1728px;
-    margin: 0 auto;
+    /* width: 1728px; */
+    /* margin: 0 auto; */
+    padding: 0 96px;
 }
 
 .footer .footer-content {
@@ -718,9 +716,9 @@
     color: #999999;
     line-height: 24px;
     letter-spacing: -1.6px;
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'NanumSquare, sans-serif';
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -772,9 +770,9 @@
     line-height: 24px;
     letter-spacing: -0.6px;
     line-height: 16px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'NanumSquare, sans-serif';
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -825,9 +823,9 @@
     line-height: 24px;
     letter-spacing: -0.6px;
     line-height: 16px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'NanumSquare, sans-serif';
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
