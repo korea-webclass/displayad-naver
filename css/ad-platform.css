@@ -2,8 +2,8 @@
 
 
 .wrap {width: 100%; min-width: 1748px; padding-top: 89px; overflow: hidden;}
-.inner {width: 1748px; margin: 0 auto;}
-.row {padding: 0 20px;}
+.inner {/* width: 1748px; */ margin: 0 auto;}
+.row {padding: 0 96px; margin: 0 auto;}
 
 
 
@@ -35,7 +35,7 @@
     /* height: 89px; */
 }
 
-
+.header-contents {position: relative;}
 .header-contents::after {
     content: '';
     display: block;
@@ -58,7 +58,7 @@
 
 /* 헤더 - GNB */
 .header-contents .gnb {
-    width: 1446px;
+    /* width: 1446px; */
     float: left;
 }
 .header-contents .gnb .menu {
@@ -177,9 +177,12 @@
 
 /* 헤더 - 광고리스트 메뉴 */
 .header-contents .all-menu {
-    width: 40px;
+    /* width: 40px; */
     float: left;
     margin-top: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .header-contents .all-menu a {
     display: block;
@@ -338,7 +341,7 @@
     transform: rotate(5.2deg);
 }
 .ad-formal-container .ad-formal-layout {
-    min-width: 1400px;
+    /* min-width: 1400px; */
     width: 1118px;
     padding: 119px 141px 50px;
     margin: 0 auto;
@@ -591,9 +594,9 @@
     content: '';
     position: absolute;
     width: 200%;
-    height: 200px;
+    height: 1340px;
     left: -200px;
-    top: -218px;
+    top: -1348px;
     z-index: 1;
     background-color: #f5f7f8;
     transform-origin: left bottom;
