@@ -38,7 +38,7 @@
                                     <li class="list">
                                         <a href="../html/advertisement-list.html">광고 상품 소개</a>
                                         <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on">
+                                        <nav class="gnb-lnb lnb-on" style="display: none;">
                                             <ul class="menu menu-ad-product">
                                                 <li class="item"><a href="">메인광고</a></li>
                                                 <li class="item"><a href="">서브광고</a></li>
@@ -54,7 +54,7 @@
                                     <li class="list">
                                         <a href="">주요 소식</a>
                                         <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on">
+                                        <nav class="gnb-lnb lnb-on" style="display: none;">
                                             <ul class="menu menu-new">
                                                 <li class="item"><a href="">공지사항</a></li>
                                                 <li class="item"><a href="">광고 가이드</a></li>
@@ -83,18 +83,18 @@
         </header>
 
         <script>
-            let headerSection = document.querySelectorAll('.header-contents .gnb .menu .list');
-            let gnbLnb = document.querySelectorAll('.header-contents .gnb .gnb-lnb');
-            console.log(gnbLnb);
+            // let headerSection = document.querySelectorAll('.header-contents .gnb .menu .list');
+            // let gnbLnb = document.querySelectorAll('.header-contents .gnb .gnb-lnb');
+            // console.log(gnbLnb);
 
 
-            headerSection[2].addEventListener('mouseover', function (e) {
-                gnbLnb[0].classList.toggle('lnb-on');
-            });
+            // headerSection[2].addEventListener('mouseover', function (e) {
+            //     gnbLnb[0].classList.toggle('lnb-on');
+            // });
 
-            headerSection[3].addEventListener('mouseover', function (e) {
-                gnbLnb[1].classList.toggle('lnb-on');
-            });
+            // headerSection[3].addEventListener('mouseover', function (e) {
+            //     gnbLnb[1].classList.toggle('lnb-on');
+            // });
 
 
 
