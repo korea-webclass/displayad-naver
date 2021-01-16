@@ -480,7 +480,85 @@
     vertical-align: top;
 }
 
-.overview-page .content .word-content {
+
+
+.overview-page .content .word-wrap {border-bottom: 1px solid #eee;}
+.overview-page .content .word-wrap::after {content: ''; display: block; clear: both;}
+.overview-page .content .word-contents {float: left;}
+.overview-page .content .word-layout {padding: 22px 18px;}
+.overview-page .content .word-layout .key {width: 396px;}
+.overview-page .content .word-layout .key::after {content: ''; display: block; clear: both;}
+.overview-page .content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
+.overview-page .content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
+.overview-page .content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
+.overview-page .content .word-layout .key .word-item a:hover .keyword {color: #fff}
+.overview-page .content .word-layout .key .word-item a:hover .arr::after {
+    border-top: 1px solid #ffffff; /* 선 두께 */
+    border-right: 1px solid #ffffff; /* 선 두께 */
+}
+.overview-page .content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
+.overview-page .content .word-layout .key .special {padding-right: 8px;}
+.overview-page .content .word-layout .key .video {padding-left: 8px;}
+.overview-page .content .word-layout .key .brand {width: 300px;}
+.overview-page .content .word-layout .key .time {padding-right: 8px;}
+.overview-page .content .word-layout .key .contents {padding-left: 8px;}
+.overview-page .content .word-layout .key .rolling {padding-right: 8px;}
+.overview-page .content .word-layout .key .rolling a {margin-bottom: 0px;}
+.overview-page .content .word-layout .key .sub {padding-left: 8px;}
+.overview-page .content .word-layout .key .sub a {margin-bottom: 0px;}
+.overview-page .content .word-layout .key .search {padding-right: 8px;}
+
+.overview-page .content .word-layout .key-cont02 .word-item a {border: 1px solid #9bd5ce;}
+.overview-page .content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
+.overview-page .content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
+.overview-page .content .word-layout .key .word-item .arr::after { 
+    content: '';
+    width: 7px; /* 사이즈 */
+    height: 7px; /* 사이즈 */
+    border-top: 1px solid #0cb053; /* 선 두께 */
+    border-right: 1px solid #0cb053; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(45deg); /* 각도 */
+    position: absolute;
+    top: 5px; /* 기본 0px 값으로 해주세요 */
+    right: 3px; /* 기본 0px 값으로 해주세요 */
+}
+.overview-page .content .word-layout .key-cont02 .word-item .arr::after {
+    border-top: 1px solid #079685;
+    border-right: 1px solid #079685;
+ }
+
+
+
+.overview-page .content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
+
+.overview-page .content .word-layout .key .brandsearch {padding-left: 8px;}
+.overview-page .content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
+.overview-page .content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
+.overview-page .content .word-layout .key .powerlink {width: 396px;}
+.overview-page .content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
+.overview-page .content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
+.overview-page .content .word-layout .key .pay {width: 190px; margin-left: 206px;}
+.overview-page .content .word-layout .key .catalog {padding-right: 8px;}
+.overview-page .content .word-layout .key .toktok {padding-left: 8px;}
+.overview-page .content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
+.overview-page .content .word-layout .key .smart {width: 190px; margin-left: 206px;}
+.overview-page .content .word-layout .key .smart .keyword {margin-bottom: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 키워드 */
+/* .overview-page .content .word-content {
     border-bottom: 1px solid #eeeeee;
 }
 .overview-page .content .word-content .word-list {
@@ -625,6 +703,39 @@
     padding-right: 16px;
     color: #01ac4b;
 }
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sub-container .sub-content .link {
     text-align: center;
