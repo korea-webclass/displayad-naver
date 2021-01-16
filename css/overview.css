@@ -902,9 +902,9 @@
     content: '';
     position: absolute;
     width: 120%;
-    height: 340px;
+    height: 540px;
     left: 0;
-    top: -336px;
+    top: -536px;
     z-index: 1;
     background-color: #fff;
     transform-origin: left bottom;
