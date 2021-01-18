@@ -24,3 +24,289 @@
     color: #767676;
     letter-spacing: -0.6px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 공통 헤더 */
+.header {
+    position: relative; 
+    min-width: 1400px;
+    height: 88px;
+    border-bottom: 1px solid #e7e8e9;
+}
+
+.header.fixed {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header-content {
+    margin: 0 96px;
+}
+
+.header-wrap {
+    position: relative;
+}
+
+.header-wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-wrap .logo {
+    float: left;
+    margin-top: 32px;
+}
+
+.header-wrap .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header-wrap .nav {
+    float: left;
+    margin-left: 52px;
+}
+
+.header-wrap .gnb::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-wrap .gnb .item {
+    float: left;
+}
+
+.header-wrap .gnb .item .link {
+    margin: 0 30px;
+    padding: 0 2px;
+    display: block;
+    height: 89px;
+    line-height: 89px;
+    font-size: 17px;
+    letter-spacing: -0.56px;
+    color: #333333;
+    position: relative;
+}
+
+.header-wrap .gnb .item .link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #03c75a;
+    transition: width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header-wrap .gnb .item .link:hover::after {
+    width: 100%;
+}
+
+/* gnb 현재 페이지 */
+.header-wrap .gnb .item .link.on {
+    /* position: relative; */
+    font-weight: 700;
+}
+
+.header-wrap .gnb .item .link.on::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #03c75a;
+}
+
+/* 메뉴 더보기 */
+.header-wrap .detail-util {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin-top: 14px;
+}
+
+.header-wrap .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 서브페이지 공통 */
+.sub-container {
+    padding-top: 89px;
+}
+.sub-container .visual {
+    height: 180px;
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+}
+.sub-container .visual .content-wrap {
+    position: relative;
+    height: 180px;
+}
+.sub-container .visual .content-wrap .text-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.sub-container .visual .content-wrap .text-area .copy {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    letter-spacing: -0.68px;
+    font-weight: 700;
+}
+.sub-container .visual .content-wrap .text-area .desc {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.68px;
+}
+
+
+
+
+
+/* 공통 푸터 */
+.footer {
+    background-color: #000000;
+}
+
+.footer-content {
+    margin: 0 96px;
+    padding: 60px 0 55px;
+}
+
+.footer-wrap {
+    position: relative;
+}
+
+.footer-wrap .item {
+    padding-right: 16px;
+    margin-right: 16px;
+}
+
+.footer-wrap .info-wrap {
+    margin-bottom: 24px;
+}
+
+.footer-wrap .info-wrap .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-wrap .info-wrap .menu .item {
+    float: left;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    padding-right: 17px;
+    margin-right: 16px;
+
+}
+
+.footer-wrap .info-wrap .menu .item .link {
+    display: block;
+    color: #b7b7b7;
+}
+
+.footer-wrap .info-wrap .menu .item .link.bold {
+    font-weight: 700;
+}
+
+.footer-wrap .company-info {
+    margin-bottom: 8px;
+}
+
+.footer-wrap .company-info .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-wrap .company-info .menu .item {
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.6px;
+    color: #767676;
+}
+
+.footer-wrap .company-address .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-wrap .company-address .menu .item {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.6px;
+    float: left;
+}
+
+.footer-wrap .company-address .menu .item .address, .company-mail {
+    color: #767676;
+}
+
+.footer-wrap .copyright-info {
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+
+.footer-wrap .copyright-info .logo {
+    background: url('../image/footer-logo.png') no-repeat;
+    background-size: 103px, 20px;
+    display: inline-block;
+    width: 103px;
+    height: 20px;
+    margin: 0 0 9px 151px;
+}
+
+.footer-wrap .copyright-info .copyright {
+    color: #767676;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    margin-left: 39px;
+}

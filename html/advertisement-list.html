@@ -17,164 +17,49 @@
     </div>
     <div class="wrap">
         <!-- 헤더 -->
-        <header class="header">
-            <div class="header-section">
-                <div class="inner">
-                    <div class="row">
-                        <section class="header-contents">
-                            <h1 class="logo">
-                                <a href="" class="logo-link">
-                                    <span class="hide"></span>
-                                </a>
-                            </h1>
-                            <nav class="gnb">
-                                <ul class="menu">
-                                    <li class="list">
-                                        <a href="../html/overview.html">주요 특징</a>
-                                    </li>
-                                    <li class="list">
-                                        <a href="../html/ad-platform.html">디스플레이 광고</a>
-                                    </li>
-                                    <li class="list list-view">
-                                        <a href="../html/advertisement-list.html">광고 상품 소개</a>
-                                        <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on" style="display: none;">
-                                            <ul class="menu menu-ad-product">
-                                                <li class="item"><a href="">메인광고</a></li>
-                                                <li class="item"><a href="">서브광고</a></li>
-                                                <li class="item"><a href="">주제판광고</a></li>
-                                                <li class="item"><a href="">동영상광고</a></li>
-                                                <li class="item"><a href="">검색형광고</a></li>
-                                                <li class="item"><a href="">밴드광고</a></li>
-                                                <li class="item"><a href="">웹툰광고</a></li>
-                                                <li class="item"><a href="">인플루언서광고</a></li>
-                                            </ul>
-                                        </nav>
-                                    </li>
-                                    <li class="list">
-                                        <a href="">주요 소식</a>
-                                        <!-- 서브페이지 이동 -->
-                                        <nav class="gnb-lnb lnb-on" style="display: none;">
-                                            <ul class="menu menu-new">
-                                                <li class="item"><a href="">공지사항</a></li>
-                                                <li class="item"><a href="">광고 가이드</a></li>
-                                                <li class="item"><a href="">자주 묻는 질문</a></li>
-                                                <li class="item"><a href="">기타 문의사항</a></li>
-                                            </ul>
-                                        </nav>
-                                    </li>
-                                    <li class="list">
-                                        <a href="">성공사례</a>
-                                    </li>
-                                    <li class="list">
-                                        <a href="">애드시너지</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="all-menu">
-                                <a href="">
-                                    <span class="ad-link"></span>
-                                </a>
-                            </div>
-                        </section>
+        <header class="header fixed">
+            <section class="header-content">
+                <article class="header-wrap">
+                    <h1 class="logo">
+                        <a href="#" class="logo-link">
+                            <span class="hide">네이버 디스플레이 광고</span>
+                        </a>
+                    </h1>
+                    <nav class="nav">
+                        <span class="hide">전체 메뉴</span>
+                        <ul class="gnb">
+                            <li class="item"><a href="#" class="link">주요 특징</a></li>
+                            <li class="item"><a href="#" class="link">디스플레이 광고</a></li>
+                            <li class="item"><a href="#" class="link on">광고 상품 소개</a></li>
+                            <li class="item"><a href="#" class="link">주요 소식</a></li>
+                            <li class="item"><a href="#" class="link">성공사례</a></li>
+                            <li class="item"><a href="#" class="link">애드시너지</a></li>
+                        </ul>
+                    </nav>
+                    <div class="detail-util">
+                        <a href="#" class="util-btn">
+                            <span class="hide">메뉴 더보기</span>
+                        </a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </header>
 
-        <script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // $(function(){
-            //     var $firstMenu = $('.header-contents .gnb > .menu > .list > a'),
-            //         $header = $('.header-section');
-
-            //         $firstMenu.mousemove(function(){
-            //             $header.stop().animate({height: '300px'},300);
-            //         })
-            //         .mouseout(function(){
-            //             $header.stop().animate({height: '89px'},300);
-            //         });
-            // });
-
-            // gnb 전체 호버
-            // $(function(){
-            //     var $firstMenu = $('nav > ul > li > a'),
-            //         $header = $('.header-section');
-                
-            //     $firstMenu.mouseenter(function(){
-            //         $header.stop().animate({height:'160px'});
-            //     })
-            //     .mouseleave(function(){
-            //         $header.stop().animate({height:'89px'});
-            //     });
-            // });
-
-            // $(function(){
-            //     var $firstMenu = $('nav > ul > li'),
-            //         $header = $('header'),
-            //         $headerHeight = $header.outerHeight();
-
-            //     $firstMenu.mouseenter(function(){
-            //         var subHeight = $(this).find('ul').outerHeight();
-            //         $header.animate({height: $headerHeight + subHeight + 'px'},300);
-            //     })
-            //     .mouseleave(function(){
-            //         $header.animate({height: $headerHeight + 'px'},300);
-
-            //     });
-            // })
-
-        </script>
+        
 
         <!-- 페이지 내용들 -->
         <main class="sub-container advertisement-list-page ">
-
-            <!-- 주요 특징 - 비주얼 -->
-            <section class="sub-overview">
-                <div class="visual">
-                    <div class="bg01"></div>
-                    <div class="bg02"></div>
-                    <div class="content-wrap">
-                        <h2 class="sub-title">광고 상품 소개</h2>
-                        <span class="sub-text">비즈니스 목적에 따라 다양하게 활용 가능한 광고 상품</span>
+            <!-- 비주얼 -->
+            <section class="visual sub-srories">
+                <article class="content-wrap">
+                    <div class="text-area">
+                        <h2 class="copy">광고 상품 소개</h2>
+                        <p class="desc">비즈니스 목적에 따라 다양하게 활용 가능한 광고 상품</p>
                     </div>
-                </div>
+                    <div class="bgi-one"></div>
+                    <div class="bgi-two"></div>
+                </article>
             </section>
-
-
-
 
 
 
@@ -286,61 +171,41 @@
 
         <!-- 푸터 -->
         <footer class="footer">
-            <div class="footer-layout">
-                <section class="footer-content">
+            <section class="footer-content">
+                <article class="footer-wrap">
                     <div class="info-wrap">
-                        <ul class="list">
+                        <ul class="menu">
+                            <li class="item"><a href="#" class="link">이용약관</a></li>
+                            <li class="item"><a href="#" class="link bold">개인정보 처리방침</a></li>
+                            <li class="item"><a href="#" class="link">청소년보호정책</a></li>
+                            <li class="item"><a href="#" class="link">정보보호 인증</a></li>
+                            <li class="item"><a href="#" class="link">네이버 맞춤형광고 안내</a></li>
+                            <li class="item"><a href="#" class="link">도움말</a></li>
+                        </ul>
+                    </div>
+                    <div class="company-info">
+                        <ul class="menu">
+                            <li class="item">사업자등록번호 : 220-81-62517</li>
+                            <li class="item">통신판매업신고번호 : 경기성남 제 2006-692호</li>
+                            <li class="item">대표이사 : 한성숙</li>
+                        </ul>
+                    </div>
+                    <div class="company-address">
+                        <ul class="menu">
                             <li class="item">
-                                <a href="">이용약관</a>
+                                <address class="address">주소 : 경기도 성남시 분당구 불정로 6 NAVER 그린팩토리</address>
                             </li>
                             <li class="item">
-                                <a href="">개인정보 처리방침</a>
-                            </li>
-                            <li class="item">
-                                <a href="">청소년보호정책</a>
-                            </li>
-                            <li class="item">
-                                <a href="">정보보호 인증</a>
-                            </li>
-                            <li class="item">
-                                <a href="">네이버 맞춤형광고 안내</a>
-                            </li>
-                            <li class="item">
-                                <a href="">도움말</a>
+                                <a href="mailto:naver_da@gwebscorp.com" class="company-mail"><span>문의 : </span>naver_da@gwebscorp.com</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="company-wrap">
-                        <ul class="list">
-                            <li class="item">
-                                <span>사업자등록번호 : 220-81-62517</span>
-                            </li>
-                            <li class="item">
-                                <span>통신판매업신고번호 : 경기성남 제 2006-692호</span>
-                            </li>
-                            <li class="item">
-                                <span>대표이사 : 한성숙</span>
-                            </li>
-                        </ul>
+                    <div class="copyright-info">
+                        <a href="" class="logo"></a>
+                        <address class="copyright">&copy NAVER Corp. All Rights Reserved.</address>
                     </div>
-                    <div class="addr-wrap">
-                        <ul class="list">
-                            <li class="item">
-                                <span>주소 : 경기도 성남시 분당구 불정로 6 NAVER 그린팩토리</span>
-                            </li>
-                            <li class="item">
-                                <span>문의 : naver_da@gwebscorp.com</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="naver-copyright">
-                        <div class="copyright-wrap">
-                            <span class="logo"></span>
-                            <p class="text">© NAVER Corp. All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                </article>
+            </section>
         </footer>
     </div>
 </body>
