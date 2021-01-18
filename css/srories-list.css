@@ -155,5 +155,24 @@
     left: 5px;
     top: 9px;
     transform: translateY(-50%);
-    background: #000;
+    background-color: #000;
+}
+
+.sub-container .srories-list .content-wrap .box-wrap .box-more .link:hover {
+    border: 1px solid transparent;
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    color: #fff;
+}
+
+.sub-container .srories-list .content-wrap .box-wrap .box-more .link:hover .text {
+    color: #fff;
+}
+
+.sub-container .srories-list .content-wrap .box-wrap .box-more .link:hover .text::before {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.sub-container .srories-list .content-wrap .box-wrap .box-more .link:hover .text::after {
+    background-color: #fff;
 }

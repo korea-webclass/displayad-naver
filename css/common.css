@@ -174,14 +174,17 @@
 .sub-container {
     padding-top: 89px;
 }
+
 .sub-container .visual {
     height: 180px;
     background-image: linear-gradient(to right, #07d05a, #24beac);
 }
+
 .sub-container .visual .content-wrap {
     position: relative;
     height: 180px;
 }
+
 .sub-container .visual .content-wrap .text-area {
     position: absolute;
     top: 50%;
@@ -190,6 +193,7 @@
     text-align: center;
     color: #ffffff;
 }
+
 .sub-container .visual .content-wrap .text-area .copy {
     font-size: 36px;
     line-height: 40px;
@@ -197,6 +201,7 @@
     letter-spacing: -0.68px;
     font-weight: 700;
 }
+
 .sub-container .visual .content-wrap .text-area .desc {
     font-size: 17px;
     line-height: 30px;
