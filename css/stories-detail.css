@@ -97,6 +97,7 @@
     line-height: 28px;
     letter-spacing: -0.6px;
 }
+
 .sub-container .srories-list .content-wrap .desc-wrap .desc-text {
     font-style: italic;
     line-height: 28px;
@@ -173,7 +174,13 @@
     content: '';
     display: block;
     position: absolute;
-    background: url('../image/all-menu.png');
+    top: 44px;
+    left: 36px;
+    width: 33px;
+    height: 28px;
+    background-image: url('../image/box-img.png');
+    background-size: 33px, 28px;
+    
 }
 
 .sub-container .srories-list .content-wrap .word {
