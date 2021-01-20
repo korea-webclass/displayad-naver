@@ -30,22 +30,22 @@
 
 
 .sub-container .sub-srories .content-wrap .bgi-one {
-    background: url('../image/advertisement-list-visual-bg-one.png') no-repeat;
+    background: url('../image/one.png') no-repeat;
     position: absolute;
-    top: -10px;
-    left: 18px;
-    background-size: 664px 240px;
-    width: 664px;
-    height: 240px;
+    left: 0;
+    top: 0;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
 }
 
 .sub-container .sub-srories .content-wrap .bgi-two {
-    background: url('../image/advertisement-list-visual-bg-two.png') no-repeat;
+    background: url('../image/two.png') no-repeat;
     position: absolute;
+    right: 0;
     top: 0;
-    right: -2px;
-    background-size: 720px 180px;
-    width: 720px;
+    background-size: 600px 180px;
+    width: 600px;
     height: 180px;
 }
 
