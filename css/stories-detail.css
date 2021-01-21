@@ -108,13 +108,18 @@
     width: 100%;
     height: 24px;
 }
+.sub-container .srories-list .content-wrap .blod {
+    font-weight: 700;
+    font-family: 'NanumSquare';
+}
+
 .sub-container .srories-list .content-wrap .desc .blod {
     font-weight: 700;
     font-family: 'NanumSquare';
 }
 
 .sub-container .srories-list .content-wrap .cont-img {
-    width: 100%;
+    width: 100%; 
     vertical-align: top;
 }
 
