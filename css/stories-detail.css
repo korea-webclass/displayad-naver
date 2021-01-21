@@ -243,6 +243,22 @@
 
 }
 
+.sub-container .srories-list .content-wrap .cont-more .more-wrap .icon-img {
+    display: inline-block;
+    background: url('../image/ad-icon.png');
+    width: 64px;
+    height: 64px;
+    background-size: 64px, 64px;
+}
+
+.sub-container .srories-list .content-wrap .cont-more .more-wrap .icon-img:hover {
+    display: inline-block;
+    background: url('../image/ad-icon-hover.png');
+    width: 64px;
+    height: 64px;
+    background-size: 64px, 64px;
+}
+
 .sub-container .different {
     background-color: #f5f7f8;
 }
@@ -272,6 +288,7 @@
     background-color: #fff;
     transition: all 0.3s ease-out;
 }
+
 .sub-container .different .box-wrap .list-box .item:last-child {
     margin-right: 0;
 }
