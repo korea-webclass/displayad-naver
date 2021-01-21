@@ -116,6 +116,9 @@
     letter-spacing: -0.6px;
     display: block;
     margin-bottom: 13px;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap;
 }
 
 .sub-container .srories-list .content-wrap .box-wrap .list-box .text-area .desc {
