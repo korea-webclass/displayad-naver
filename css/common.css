@@ -195,6 +195,7 @@
 }
 
 .sub-container .visual .content-wrap .text-area .copy {
+    display: inline-block;
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 12px;
