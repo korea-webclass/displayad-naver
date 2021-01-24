@@ -399,3 +399,75 @@
     right: 18px; /* 기본 0px 값으로 해주세요 */
 }
 
+.sub-content .box-info {
+    background-image: linear-gradient(282deg, #00c652, #00c5ae);
+}
+.sub-content .box-info .info {
+    padding: 115px 300px 120px;
+    margin: 0 auto;
+    width: 1298px;
+}
+.sub-content .box-info .info-wrap {
+    display: inline-block;
+}
+.sub-content .box-info .info-wrap .title {
+    color: #ffffff;
+    margin-top: 4px;
+    margin-bottom: 36px;
+    display: block;
+    font-size: 31px;
+    text-align: center;
+}
+
+.sub-content .box-info .info-wrap .link-cont {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-content .box-info .info-wrap .link {
+    border: 1px solid #ffffff;
+    border-radius: 52px;
+    margin-right: 22px;
+    width: 636px;
+    height: 93px;
+    display: block;
+    float: left;
+}
+.sub-content .box-info .info-wrap .link:last-child {
+    margin-right: 0;
+}
+
+.sub-content .box-info .info-wrap .link > span {
+    margin-top: 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    word-spacing: -0.7px;
+    font-weight: 700;
+    padding-right: 33px;
+    position: relative;
+
+}
+
+.sub-content .box-info .info-wrap .link > span::after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 11px;
+    right: 9px; 
+}
+
+
+
+
+
+
+
+
+
