@@ -433,7 +433,19 @@
     height: 93px;
     display: block;
     float: left;
+    transition: all ease 0.3s;
 }
+.sub-content .box-info .info-wrap .link:hover {
+    background-color: #fff;
+}
+.sub-content .box-info .info-wrap .link:hover > span {
+    color: #00ac4a;
+}
+.sub-content .box-info .info-wrap .link:hover > span::after {
+    border-top: 1px solid #00ac4a;
+    border-right: 1px solid #00ac4a;
+}
+
 .sub-content .box-info .info-wrap .link:last-child {
     margin-right: 0;
 }
