@@ -285,6 +285,8 @@
 
 
 .sub-content .cont-ad {
+    position: relative;
+    height: 440px;
     background-color: #f5f7f8;
 }
 .sub-content .cont-ad .ad-box {
@@ -313,7 +315,9 @@
     margin-right: 20px;
     width: 320px;
     height: 203px;
+    position: relative;
 }
+
 
 .sub-content .cont-ad .box-link {
     display: block;
@@ -322,6 +326,17 @@
     background-size: 100%, 203px;
     background-size: cover;
 
+}
+.sub-content .cont-ad .box-link.on {
+    border: 8px solid #03c75a;
+    box-sizing: border-box;
+}
+.sub-content .cont-ad .box-point {
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
 }
 
 .sub-content .cont-ad .link-img01 {background: url('../image/box-cont-imgs01.jpg') no-repeat; background-size: cover;}
@@ -332,3 +347,55 @@
 .sub-content .cont-ad .link-img06 {background: url('../image/box-cont-imgs06.jpg') no-repeat; background-size: cover;}
 .sub-content .cont-ad .link-img07 {background: url('../image/box-cont-imgs07.png') no-repeat; background-size: cover;}
 .sub-content .cont-ad .link-img08 {background: url('../image/box-cont-imgs08.png') no-repeat; background-size: cover;}
+
+.sub-content .cont-ad .slide-control {
+
+}
+
+.sub-content .cont-ad .slide-control .prev {
+    display: inline-block;
+    width: 48px;
+    height: 64px;
+    background-color: #d0d2d3;
+    opacity: 0.7;
+    position: absolute;
+    top: 186px;
+    left: 0;
+}
+.sub-content .cont-ad .slide-control .prev::after {
+    content: '';
+    width: 16px; /* 사이즈 */
+    height: 16px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(225deg); /* 각도 */
+    position: absolute;
+    top: 20px; /* 기본 0px 값으로 해주세요 */
+    left: 18px; /* 기본 0px 값으로 해주세요 */
+}
+
+.sub-content .cont-ad .slide-control .next {
+    display: inline-block;
+    width: 48px;
+    height: 64px;
+    background-color: #d0d2d3;
+    opacity: 0.7;
+    position: absolute;
+    top: 186px;
+    right: 0;
+}
+
+.sub-content .cont-ad .slide-control .next::after {
+    content: '';
+    width: 16px; /* 사이즈 */
+    height: 16px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(45deg); /* 각도 */
+    position: absolute;
+    top: 20px; /* 기본 0px 값으로 해주세요 */
+    right: 18px; /* 기본 0px 값으로 해주세요 */
+}
+
