@@ -295,6 +295,7 @@
 }
 .sub-content .cont-ad .box-wrap {
     position: relative;
+    width: 200%;
     height: 203px;
 }
 
