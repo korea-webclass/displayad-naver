@@ -1,18 +1,11 @@
 @charset "UTF-8";
 
-.header.on {
-
-}
-.main-container {
-
-}
-
-.main-content .visual {
+.main-container .visual {
     position: relative;
     height: 900px;
 }
 
-.main-content .visual .slide .prev {
+.main-container .visual-slide .prev {
     display: block;
     background: url('../image/main/main-visual-arr-prev.png') no-repeat;
     background-size: cover;
@@ -22,7 +15,8 @@
     top: 440px;
     left: 56px;
 }
-.main-content .visual .slide .next {
+
+.main-container .visual-slide .next {
     display: block;
     background: url('../image/main/main-visual-arr-next.png') no-repeat;
     background-size: cover;
@@ -32,28 +26,30 @@
     top: 440px;
     right: 56px;
 }
-.main-content .visual .control {
+
+.main-container .visual-slide .slide-control {
     position: absolute;
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
 }
-.main-content .visual .control .control-item::after {
+
+.main-container .visual-slide .control-item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main-content .visual .control .item {
+.main-container .visual-slide .slide-control .item {
     float: left;
     margin-right: 16px;
 }
 
-.main-content .visual .control .item:last-child {
+.main-container .visual-slide .slide-control .item:last-child {
     margin-right: 0;
 }
 
-.main-content .visual .control .circle {
+.main-container .visual-slide .slide-control .circle {
     width: 10px;
     height: 10px;
     background-color: #aaa;
@@ -61,12 +57,12 @@
     display: block;
 }
 
-.main-content .visual .control .item.on .circle{
+.main-container .visual-slide .slide-control .item.on .circle {
     width: 36px;
     background-color: #fff;
 }
 
-.main-content .visual .slide-bg {
+.main-container .visual-slide .slide-bg {
     background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
     width: 100%;
     height: 900px;
@@ -75,34 +71,35 @@
     z-index: -1;
 }
 
-.main-content .visual .slide-text {
-
-}
-.main-content .visual .slide-text .content {
+.main-container .visual-slide .slide-text .content {
     position: absolute;
     top: 380px;
     left: 260px;
 }
-.main-content .visual .slide-text .content .title {
+
+.main-container .visual-slide .slide-text .title {
     font-size: 56px;
     line-height: 100%;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 60px;
 }
-.main-content .visual .slide-text .content .desc {
+
+.main-container .visual-slide .slide-text .desc {
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
     margin-bottom: 24px;
 }
-.main-content .visual .slide-text .content .link-wrap {
+
+.main-container .visual-slide .slide-text .link-wrap {
     width: 137px;
     height: 46px;
     border-radius: 32px;
     background-image: linear-gradient(100deg, #00c652, #00c5ae);
 }
-.main-content .visual .slide-text .content .link-wrap .more {
+
+.main-container .visual-slide .slide-text .more {
     display: block;
     font-size: 15px;
     color: #ffffff;
