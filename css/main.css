@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.header.on {
+
+}
+.main-container {
+
+}
+
+.main-content .visual {
+    position: relative;
+    height: 900px;
+}
+
+.main-content .visual .slide .prev {
+    display: block;
+    background: url('../image/main/main-visual-arr-prev.png') no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 440px;
+    left: 56px;
+}
+.main-content .visual .slide .next {
+    display: block;
+    background: url('../image/main/main-visual-arr-next.png') no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 440px;
+    right: 56px;
+}
+.main-content .visual .control {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-content .visual .control .control-item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-content .visual .control .item {
+    float: left;
+    margin-right: 16px;
+}
+
+.main-content .visual .control .item:last-child {
+    margin-right: 0;
+}
+
+.main-content .visual .control .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 32px;
+    display: block;
+}
+
+.main-content .visual .control .item.on .circle{
+    width: 36px;
+    background-color: #fff;
+}
+
+.main-content .visual .slide-bg {
+    background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.main-content .visual .slide-text {
+
+}
+.main-content .visual .slide-text .content {
+    position: absolute;
+    top: 380px;
+    left: 260px;
+}
+.main-content .visual .slide-text .content .title {
+    font-size: 56px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+.main-content .visual .slide-text .content .desc {
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.main-content .visual .slide-text .content .link-wrap {
+    width: 137px;
+    height: 46px;
+    border-radius: 32px;
+    background-image: linear-gradient(100deg, #00c652, #00c5ae);
+}
+.main-content .visual .slide-text .content .link-wrap .more {
+    display: block;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 46px;
+    text-align: center;
+}
