@@ -106,3 +106,110 @@
     line-height: 46px;
     text-align: center;
 }
+
+.main-content .latest-news {
+    background-color: #f5f7f8;
+}
+.main-content .latest-news .content {
+    width: 1296px;
+    padding: 130px 52px 120px;
+    margin: 0 auto;
+}
+
+.main-content .latest-news .new-wrap {
+    position: relative;
+}
+.main-content .latest-news .new-wrap .text {
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.main-content .latest-news .new-wrap .box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-content .latest-news .new-wrap .box-item {
+    float: left;
+    margin-right: 24px;
+    transition: all 0.3s ease;
+}
+
+.main-content .latest-news .new-wrap .box-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.07);
+}
+
+.main-content .latest-news .new-wrap .box-item:last-child {
+    margin-right: 0;
+}
+
+.main-content .latest-news .new-wrap .item-link {
+    display: inline-block;
+    width: 416px;
+    height: 240px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 30px 32px 32px;
+    position: relative;
+}
+
+.main-content .latest-news .new-wrap .pnint {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #04c75b;
+}
+
+.main-content .latest-news .new-wrap .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main-content .latest-news .new-wrap .more {
+    position: absolute;
+    bottom: 32px;
+    font-size: 18px;
+    color: #777777;
+}
+
+.main-content .latest-news .new-wrap .new-more {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    line-height: 100%;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.main-content .latest-news .new-wrap .new-more::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+
+.main-content .latest-news .new-wrap .new-more::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    transform: translateY(-50%);
+    background: #000;
+}
+
+
