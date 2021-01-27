@@ -27,29 +27,29 @@
     right: 56px;
 }
 
-.main-container .visual-slide .slide-control {
+.main-container .slide-control {
     position: absolute;
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.main-container .visual-slide .control-item::after {
+.main-container .control-item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main-container .visual-slide .slide-control .item {
+.main-container .slide-control .item {
     float: left;
     margin-right: 16px;
 }
 
-.main-container .visual-slide .slide-control .item:last-child {
+.main-container .slide-control .item:last-child {
     margin-right: 0;
 }
 
-.main-container .visual-slide .slide-control .circle {
+.main-container .slide-control .circle {
     width: 10px;
     height: 10px;
     background-color: #aaa;
@@ -57,7 +57,7 @@
     display: block;
 }
 
-.main-container .visual-slide .slide-control .item.on .circle {
+.main-container .slide-control .item.on .circle {
     width: 36px;
     background-color: #fff;
 }
@@ -107,23 +107,30 @@
     text-align: center;
 }
 
-.main-content .latest-news {
-    background-color: #f5f7f8;
-}
-.main-content .latest-news .content {
+.main-container .content {
     width: 1296px;
     padding: 130px 52px 120px;
     margin: 0 auto;
 }
 
-.main-content .latest-news .new-wrap {
-    position: relative;
-}
-.main-content .latest-news .new-wrap .text {
+.main-container .content .text {
     font-size: 40px;
     line-height: 100%;
     margin-bottom: 48px;
     text-align: center;
+}
+
+.main-container .content .point {
+    font-weight: 700;
+}
+
+.main-content .latest-news {
+    background-color: #f5f7f8;
+}
+
+
+.main-content .latest-news .new-wrap {
+    position: relative;
 }
 
 .main-content .latest-news .new-wrap .box::after {
@@ -212,4 +219,86 @@
     background: #000;
 }
 
+.main-content .success .content {
+    width: 1080px;
+    padding: 130px 160px 132px;
+}
+
+.main-content .success .success-wrap {
+    position: relative;
+    height: 646px;
+}
+
+.main-content .success .success-control {
+    bottom: 0;
+}
+.main-content .success .item.on .circle {
+    background-color: #03c75a;
+    width: 8px;
+}
+
+.main-content .success .success-control .circle {
+    width: 8px;
+    height: 8px;
+}
+
+.main-content .success .item {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-content .success .item-link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-content .success .item-link::after {
+    contain: '';
+    display: block;
+    clear: both;
+}
+.main-content .success .item-link .success-img {
+    float: left;
+}
+
+.main-content .success .item-link img {
+    width: 540px;
+    height: 496px;
+    vertical-align: top;
+}
+.main-content .success .item-link .text-area {
+    width: 540px;
+    height: 496px;
+    color: #ffffff;
+    box-sizing: border-box;
+    float: left;
+    background-image: linear-gradient(133deg, #00c652, #00c5ae);
+    position: relative;
+}
+
+.main-content .success .item-link .area-wrap {
+    padding: 0 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-content .success .item-link .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-content .success .item-link .success-text {
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.main-content .success .item-link .desc {
+    margin-bottom: 50px;
+}
+
+.main-content .success .item-link .text-more {
+
+}
 
