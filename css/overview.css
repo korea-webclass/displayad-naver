@@ -30,8 +30,8 @@
 
 
 
-/* 주요 특징 콘텐츠 - 데이터 */
-.overview .data {
+/* 사용자 데이터 */
+.overview .user-data {
     background-color: #ffffff;
     min-width: 1400px;
     position: relative;
@@ -39,7 +39,7 @@
     padding-top: 270px;
 }
 
-.overview .data .diagonal {
+.overview .user-data .diagonal {
     position: absolute;
     width: 200%;
     height: 480px;
@@ -52,41 +52,35 @@
     -webkit-transform: rotate(8deg);
     transform: rotate(8deg);
 }
-.overview .data .text-wrap {
-    text-align: center;
-    /* padding-top: 116px; */
+
+.overview .user-data .text-wrap {
     position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-.overview .data .data-img {
-    /* position: absolute; */
-    /* bottom: 0px; */
-    /* bottom: 155px; */
-    /* right: 0; */
-    /* left: 0; */
-    /* padding-top: 270px; */
+    top: 116px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-
-.overview .data .text-wrap .data-title {
+.overview .user-data .text {
     font-size: 42px;
     margin-bottom: 16px;
+    color: #000000;
 }
-.overview .data .text-wrap .data-title > span {
+
+.overview .user-data .text > span {
+    display: inline-block;
     line-height: 65px;
     letter-spacing: -0.7px;
 }
-.overview .data .text-wrap .data-text {
+
+.overview .user-data .desc {
     font-size: 20px;
     letter-spacing: -0.6px;
     margin-top: 24px;
     display: block;
     color: #333333;
 }
-.overview .data .text-wrap .point {
+
+.overview .user-data .point {
     font-size: 60px;
     margin-top: -5px;
     margin-left: 7px;
@@ -97,11 +91,12 @@
     vertical-align: top;
     color: #000000;
 }
-.overview .data .text-wrap .point-text {
+
+.overview .user-data .bold {
     font-weight: 700;
 }
 
-.overview .data .data-img img {
+.overview .user-data .img-content img {
     vertical-align: top;
     width: 100%;
 }
