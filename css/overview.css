@@ -5,8 +5,8 @@
 .row {padding: 0 96px; margin: 0 auto;}
 
 
-/* 주요 특징 - 비주얼 */
-.sub-container .visual .bg-one {
+/* 비주얼 */
+.overview .visual .bg-one {
     background: url('../image/sub-overview-visual-bg01.png') no-repeat;
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@
     height: 180px;
 }
 
-.sub-container .visual .bg-two {
+.overview .visual .bg-two {
     background: url('../image/sub-overview-visual-bg02.png') no-repeat;
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@
 
 
 /* 주요 특징 콘텐츠 - 데이터 */
-.overview-page .data {
+.overview .data {
     background-color: #ffffff;
     min-width: 1400px;
     position: relative;
@@ -39,7 +39,7 @@
     padding-top: 270px;
 }
 
-.overview-page .data .diagonal {
+.overview .data .diagonal {
     position: absolute;
     width: 200%;
     height: 480px;
@@ -52,7 +52,7 @@
     -webkit-transform: rotate(8deg);
     transform: rotate(8deg);
 }
-.overview-page .data .text-wrap {
+.overview .data .text-wrap {
     text-align: center;
     /* padding-top: 116px; */
     position: absolute;
@@ -61,7 +61,7 @@
     right: 0;
     z-index: 1;
 }
-.overview-page .data .data-img {
+.overview .data .data-img {
     /* position: absolute; */
     /* bottom: 0px; */
     /* bottom: 155px; */
@@ -71,22 +71,22 @@
 }
 
 
-.overview-page .data .text-wrap .data-title {
+.overview .data .text-wrap .data-title {
     font-size: 42px;
     margin-bottom: 16px;
 }
-.overview-page .data .text-wrap .data-title > span {
+.overview .data .text-wrap .data-title > span {
     line-height: 65px;
     letter-spacing: -0.7px;
 }
-.overview-page .data .text-wrap .data-text {
+.overview .data .text-wrap .data-text {
     font-size: 20px;
     letter-spacing: -0.6px;
     margin-top: 24px;
     display: block;
     color: #333333;
 }
-.overview-page .data .text-wrap .point {
+.overview .data .text-wrap .point {
     font-size: 60px;
     margin-top: -5px;
     margin-left: 7px;
@@ -97,11 +97,11 @@
     vertical-align: top;
     color: #000000;
 }
-.overview-page .data .text-wrap .point-text {
+.overview .data .text-wrap .point-text {
     font-weight: 700;
 }
 
-.overview-page .data .data-img img {
+.overview .data .data-img img {
     vertical-align: top;
     width: 100%;
 }
@@ -117,11 +117,11 @@
 
 
 /* 주요 특징 콘텐츠 - 구매 */
-.overview-page .purchase {
+.overview .purchase {
     min-width: 1400px;
     height: 1236px;
 }
-.overview-page .purchase-layout {
+.overview .purchase-layout {
     width: 1296px;
     padding: 118px 52px 107px;
     margin: 0 auto;
@@ -139,14 +139,14 @@
 
 
 
-.overview-page .content .purchase-wrap {
+.overview .content .purchase-wrap {
     margin-top: 53px;
 }
 
-.overview-page .content .purchase-wrap .purchase-content {
+.overview .content .purchase-wrap .purchase-content {
     position: relative;
 }
-.overview-page .content .purchase-wrap .purchase-content::after {
+.overview .content .purchase-wrap .purchase-content::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -157,16 +157,16 @@
     background-image: linear-gradient(to right, #07d05a, #24beac);
 }
 
-.overview-page .content .purchase-wrap .purchase-list {
+.overview .content .purchase-wrap .purchase-list {
 
 }
-.overview-page .content .purchase-wrap .purchase-list::after {
+.overview .content .purchase-wrap .purchase-list::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview-page .content .purchase-wrap .purchase-list .item {
+.overview .content .purchase-wrap .purchase-list .item {
     width: 432px;
     height: 506px;
     background-color: #f5f7f8;
@@ -174,37 +174,37 @@
     float: left;
 }
 
-.overview-page .content .purchase-wrap .purchase-text-wrap {
+.overview .content .purchase-wrap .purchase-text-wrap {
     text-align: center;
     padding-top: 50px;
 }
 
-.overview-page .content .purchase-wrap .text-wrap {
+.overview .content .purchase-wrap .text-wrap {
     font-size: 25px;
 }
 
-.overview-page .content .purchase-wrap .point {
+.overview .content .purchase-wrap .point {
     color: #00ac4a;
     font-size: 28px;
     vertical-align: middle;
 }
 
-.overview-page .content .purchase-wrap .title {
+.overview .content .purchase-wrap .title {
     font-size: 25px;
     font-weight: 700;
 }
 
-.overview-page .content .purchase-wrap .cont > span {
+.overview .content .purchase-wrap .cont > span {
     padding-right: 16px;
     font-size: 15px;
     position: relative;
 }
 
-.overview-page .content .purchase-wrap .cont > span:last-child {
+.overview .content .purchase-wrap .cont > span:last-child {
     padding-right: 0;
 }
 
-.overview-page .content .purchase-wrap .cont > span::after {
+.overview .content .purchase-wrap .cont > span::after {
     content: '';
     width: 1px;
     height: 16px;
@@ -214,51 +214,51 @@
     right: 5px;
 }
 
-.overview-page .content .purchase-wrap .cont > span:last-child::after {
+.overview .content .purchase-wrap .cont > span:last-child::after {
     content: none;
 }
-.overview-page .content .purchase-img {
+.overview .content .purchase-img {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
-.overview-page .content .purchase-img img {
+.overview .content .purchase-img img {
     width: 100%;
     vertical-align: top;
 }
 
 
 
-.overview-page .content .word-wrap {border-bottom: 1px solid #eee;}
-.overview-page .content .word-wrap::after {content: ''; display: block; clear: both;}
-.overview-page .content .word-contents {float: left;}
-.overview-page .content .word-layout {padding: 22px 18px;}
-.overview-page .content .word-layout .key {width: 396px;}
-.overview-page .content .word-layout .key::after {content: ''; display: block; clear: both;}
-.overview-page .content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
-.overview-page .content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
-.overview-page .content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
-.overview-page .content .word-layout .key .word-item a:hover .keyword {color: #fff}
-.overview-page .content .word-layout .key .word-item a:hover .arr::after {
+.overview .content .word-wrap {border-bottom: 1px solid #eee;}
+.overview .content .word-wrap::after {content: ''; display: block; clear: both;}
+.overview .content .word-contents {float: left;}
+.overview .content .word-layout {padding: 22px 18px;}
+.overview .content .word-layout .key {width: 396px;}
+.overview .content .word-layout .key::after {content: ''; display: block; clear: both;}
+.overview .content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
+.overview .content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
+.overview .content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
+.overview .content .word-layout .key .word-item a:hover .keyword {color: #fff}
+.overview .content .word-layout .key .word-item a:hover .arr::after {
     border-top: 1px solid #ffffff; /* 선 두께 */
     border-right: 1px solid #ffffff; /* 선 두께 */
 }
-.overview-page .content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
-.overview-page .content .word-layout .key .special {padding-right: 8px;}
-.overview-page .content .word-layout .key .video {padding-left: 8px;}
-.overview-page .content .word-layout .key .brand {width: 300px;}
-.overview-page .content .word-layout .key .time {padding-right: 8px;}
-.overview-page .content .word-layout .key .contents {padding-left: 8px;}
-.overview-page .content .word-layout .key .rolling {padding-right: 8px;}
-.overview-page .content .word-layout .key .rolling a {margin-bottom: 0px;}
-.overview-page .content .word-layout .key .sub {padding-left: 8px;}
-.overview-page .content .word-layout .key .sub a {margin-bottom: 0px;}
-.overview-page .content .word-layout .key .search {padding-right: 8px;}
+.overview .content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
+.overview .content .word-layout .key .special {padding-right: 8px;}
+.overview .content .word-layout .key .video {padding-left: 8px;}
+.overview .content .word-layout .key .brand {width: 300px;}
+.overview .content .word-layout .key .time {padding-right: 8px;}
+.overview .content .word-layout .key .contents {padding-left: 8px;}
+.overview .content .word-layout .key .rolling {padding-right: 8px;}
+.overview .content .word-layout .key .rolling a {margin-bottom: 0px;}
+.overview .content .word-layout .key .sub {padding-left: 8px;}
+.overview .content .word-layout .key .sub a {margin-bottom: 0px;}
+.overview .content .word-layout .key .search {padding-right: 8px;}
 
-.overview-page .content .word-layout .key-cont02 .word-item a {border: 1px solid #9bd5ce;}
-.overview-page .content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
-.overview-page .content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
-.overview-page .content .word-layout .key .word-item .arr::after { 
+.overview .content .word-layout .key-cont02 .word-item a {border: 1px solid #9bd5ce;}
+.overview .content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
+.overview .content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
+.overview .content .word-layout .key .word-item .arr::after { 
     content: '';
     width: 7px; /* 사이즈 */
     height: 7px; /* 사이즈 */
@@ -270,27 +270,27 @@
     top: 5px; /* 기본 0px 값으로 해주세요 */
     right: 3px; /* 기본 0px 값으로 해주세요 */
 }
-.overview-page .content .word-layout .key-cont02 .word-item .arr::after {
+.overview .content .word-layout .key-cont02 .word-item .arr::after {
     border-top: 1px solid #079685;
     border-right: 1px solid #079685;
  }
 
 
 
-.overview-page .content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
+.overview .content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
 
-.overview-page .content .word-layout .key .brandsearch {padding-left: 8px;}
-.overview-page .content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
-.overview-page .content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
-.overview-page .content .word-layout .key .powerlink {width: 396px;}
-.overview-page .content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
-.overview-page .content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
-.overview-page .content .word-layout .key .pay {width: 190px; margin-left: 206px;}
-.overview-page .content .word-layout .key .catalog {padding-right: 8px;}
-.overview-page .content .word-layout .key .toktok {padding-left: 8px;}
-.overview-page .content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
-.overview-page .content .word-layout .key .smart {width: 190px; margin-left: 206px;}
-.overview-page .content .word-layout .key .smart .keyword {margin-bottom: 0;}
+.overview .content .word-layout .key .brandsearch {padding-left: 8px;}
+.overview .content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
+.overview .content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
+.overview .content .word-layout .key .powerlink {width: 396px;}
+.overview .content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
+.overview .content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
+.overview .content .word-layout .key .pay {width: 190px; margin-left: 206px;}
+.overview .content .word-layout .key .catalog {padding-right: 8px;}
+.overview .content .word-layout .key .toktok {padding-left: 8px;}
+.overview .content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
+.overview .content .word-layout .key .smart {width: 190px; margin-left: 206px;}
+.overview .content .word-layout .key .smart .keyword {margin-bottom: 0;}
 
 
 
@@ -305,28 +305,28 @@
 
 
 /* 키워드 */
-/* .overview-page .content .word-content {
+/* .overview .content .word-content {
     border-bottom: 1px solid #eeeeee;
 }
-.overview-page .content .word-content .word-list {
+.overview .content .word-content .word-list {
 }
-.overview-page .content .word-content .word-list::after {
+.overview .content .word-content .word-list::after {
     content: '';
     display: block;
     clear: both;
 }
-.overview-page .content .word-content .word-list .item {
+.overview .content .word-content .word-list .item {
     width: 395px;
     height: 206px;
     padding: 18px 18px 11px 19px;
     float: left;
     position: relative;
 }
-.overview-page .content .word-content .word-list .item span {
+.overview .content .word-content .word-list .item span {
     letter-spacing: -0.6px;
 }
 
-.overview-page .content .word-content .word-list .item::after {
+.overview .content .word-content .word-list .item::after {
     content: '';
     width: 1px;
     border-left: 1px dashed #eee;
@@ -336,14 +336,14 @@
     right: 0px;
 }
 
-.overview-page .content .word-content .word-list .word {}
-.overview-page .content .word-content .word-list .word::after {
+.overview .content .word-content .word-list .word {}
+.overview .content .word-content .word-list .word::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview-page .content .word-content .word-list .word a {
+.overview .content .word-content .word-list .word a {
     border: 1px solid #9ae9bd;
     border-radius: 24px;
     display: block;
@@ -356,27 +356,27 @@
     margin-top: 4px;
     margin-bottom: 4px;
 }
-.overview-page .content .word-content .word-list .word a:hover {
+.overview .content .word-content .word-list .word a:hover {
     background-color: transparent;
     background-image: linear-gradient(to right, #07d05a, #24beac);
     color: #fff;
 }
-.overview-page .content .word-content .word-list .word a:hover span {
+.overview .content .word-content .word-list .word a:hover span {
     color: #fff;
 }
-.overview-page .content .word-content .word-list .word a:hover .text::after {
+.overview .content .word-content .word-list .word a:hover .text::after {
     border-top: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
 }
 
-.overview-page .content .word-content .word-list .word .border:hover .text {
+.overview .content .word-content .word-list .word .border:hover .text {
     color: #fff;
 }
 
-.overview-page .content .word-content .word-list .word .border {
+.overview .content .word-content .word-list .word .border {
     border: 1px solid #9bd5ce;
 }
-.overview-page .content .word-content .word-list .word .border .text {
+.overview .content .word-content .word-list .word .border .text {
     color: #079685;
 }
 
@@ -388,10 +388,10 @@
 
 
 
-.overview-page .content .word-content .word-list .word a > .text {
+.overview .content .word-content .word-list .word a > .text {
     position: relative;
 }
-.overview-page .content .word-content .word-list .word a > .text::after {
+.overview .content .word-content .word-list .word a > .text::after {
     content: '';
     width: 7px;
     height: 7px;
@@ -404,7 +404,7 @@
     right: 5px;
 }
 
-.overview-page .content .word-content .word-list .word > span {
+.overview .content .word-content .word-list .word > span {
     display: block;
     float: left;
     height: 42px;
@@ -416,37 +416,37 @@
     border-radius: 4px;
     background-color: #f5fcfb;
 }
-.overview-page .content .word-content .word-list .word .branding {width: 308px;}
+.overview .content .word-content .word-list .word .branding {width: 308px;}
 
-.overview-page .content .word-content .word-list .word .power-content {width: 135px;}
-.overview-page .content .word-content .word-list .word .power-content > .text {padding-right: 0px; color: #079685;}
+.overview .content .word-content .word-list .word .power-content {width: 135px;}
+.overview .content .word-content .word-list .word .power-content > .text {padding-right: 0px; color: #079685;}
 
-.overview-page .content .word-content .word-list .word .new {width: 240px; margin-right: 0px;}
+.overview .content .word-content .word-list .word .new {width: 240px; margin-right: 0px;}
 
-.overview-page .content .word-content .word-list .word .power-link {width: 393px;}
-.overview-page .content .word-content .word-list .word .power-link .text {padding-right: 0px; color: #079685;}
+.overview .content .word-content .word-list .word .power-link {width: 393px;}
+.overview .content .word-content .word-list .word .power-link .text {padding-right: 0px; color: #079685;}
 
-.overview-page .content .word-content .word-list .word .shop-ad {width: 393px; margin-left: 205px;}
-.overview-page .content .word-content .word-list .word .shop-ad .text {padding-right: 0px; color: #079685;}
+.overview .content .word-content .word-list .word .shop-ad {width: 393px; margin-left: 205px;}
+.overview .content .word-content .word-list .word .shop-ad .text {padding-right: 0px; color: #079685;}
 
-.overview-page .content .word-content .word-list .word .naver-pay {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview-page .content .word-content .word-list .word .naver-pay > .text {padding-right: 0px; color: #0581a9;}
+.overview .content .word-content .word-list .word .naver-pay {width: 190px; margin-left: 204px; background-color: #f5fafc;}
+.overview .content .word-content .word-list .word .naver-pay > .text {padding-right: 0px; color: #0581a9;}
 
-.overview-page .content .word-content .word-list .word .catalog-ad {width: 188px;}
-.overview-page .content .word-content .word-list .word .catalog-ad > .text {padding-right: 0px; color: #079685;}
+.overview .content .word-content .word-list .word .catalog-ad {width: 188px;}
+.overview .content .word-content .word-list .word .catalog-ad > .text {padding-right: 0px; color: #079685;}
 
-.overview-page .content .word-content .word-list .word .naver-toktok {width: 190px; background-color: #f5fafc;}
-.overview-page .content .word-content .word-list .word .naver-toktok > .text {padding-right: 0px; color: #0581a9;}
+.overview .content .word-content .word-list .word .naver-toktok {width: 190px; background-color: #f5fafc;}
+.overview .content .word-content .word-list .word .naver-toktok > .text {padding-right: 0px; color: #0581a9;}
 
-.overview-page .content .word-content .word-list .word .naver-login {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview-page .content .word-content .word-list .word .naver-login > .text {padding-right: 0px; color: #0581a9;}
+.overview .content .word-content .word-list .word .naver-login {width: 190px; margin-left: 204px; background-color: #f5fafc;}
+.overview .content .word-content .word-list .word .naver-login > .text {padding-right: 0px; color: #0581a9;}
 
-.overview-page .content .word-content .word-list .word .smart-store {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview-page .content .word-content .word-list .word .smart-store > .text {padding-right: 0px; color: #0581a9;}
+.overview .content .word-content .word-list .word .smart-store {width: 190px; margin-left: 204px; background-color: #f5fafc;}
+.overview .content .word-content .word-list .word .smart-store > .text {padding-right: 0px; color: #0581a9;}
 
-.overview-page .content .word-content .word-list .word .margin-del {margin-right: 0px;}
+.overview .content .word-content .word-list .word .margin-del {margin-right: 0px;}
 
-.overview-page .content .word-content .word-list .word .text {
+.overview .content .word-content .word-list .word .text {
     padding-right: 16px;
     color: #01ac4b;
 }
@@ -521,17 +521,17 @@
 
 
 /* 주요 특징 콘텐츠 - 키워드 */
-.overview-page .keyword {}
-.overview-page .keyword-layout {}
-.overview-page .keyword-content {
+.overview .keyword {}
+.overview .keyword-layout {}
+.overview .keyword-content {
     margin-top: 128px;  
     margin-bottom: 120px;
 }
-.overview-page .keyword-content .keyword-img {
+.overview .keyword-content .keyword-img {
     width: 976px;
     margin: 0 auto;
 }
-.overview-page .keyword-content .keyword-img img {
+.overview .keyword-content .keyword-img img {
     width: 100%;
     vertical-align: top;
 }
@@ -543,49 +543,49 @@
 
 
 /* 주요 특징 콘텐츠 - 비율 */
-.overview-page .ratio-area {
+.overview .ratio-area {
     min-width: 1400px;
     height: 868px;
 }
 
-.overview-page .ratio-layout {
+.overview .ratio-layout {
     width: 1116px;
     margin: 0 auto;
     padding: 83px 142px 45px;
 }
-.overview-page .ratio-content {
+.overview .ratio-content {
 
 }
 
-.overview-page .ratio {}
-.overview-page .ratio .graph-content {
+.overview .ratio {}
+.overview .ratio .graph-content {
     padding-top: 82px;
     margin: 0 auto;
 }
-.overview-page .ratio .graph-content::after {
+.overview .ratio .graph-content::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview-page .ratio .graph-content .graph {
+.overview .ratio .graph-content .graph {
     float: left;
 }
 
-.overview-page .ratio .graph-content .graph img {
+.overview .ratio .graph-content .graph img {
     vertical-align: top;
 }
-.overview-page .ratio .graph-content .result {
+.overview .ratio .graph-content .result {
     float: left;
 }
-.overview-page .ratio .graph-content .result-list {
+.overview .ratio .graph-content .result-list {
     padding-top: 50px;
 }
-.overview-page .ratio .graph-content .result-list .item {
+.overview .ratio .graph-content .result-list .item {
     width: 558px;
     position: relative;
 }
-.overview-page .ratio .graph-content .result-list .item::after {
+.overview .ratio .graph-content .result-list .item::after {
     content: '';
     display: block;
     width: 540px;
@@ -596,21 +596,21 @@
     bottom: 0px;
 }
 
-.overview-page .ratio .graph-content .result-list .item dl {
+.overview .ratio .graph-content .result-list .item dl {
     padding: 66px 14px 47px 47px;
 }
-.overview-page .ratio .graph-content .result-list .item dl::after {
+.overview .ratio .graph-content .result-list .item dl::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview-page .ratio .graph-content .result-list .item dt {
+.overview .ratio .graph-content .result-list .item dt {
     font-size: 32px;
     margin-right: 64px;
     float: left;
 }
-.overview-page .ratio .graph-content .result-list .item dd {
+.overview .ratio .graph-content .result-list .item dd {
     text-align: right;
     font-size: 64px;
     line-height: 64px;
@@ -629,7 +629,7 @@
 
 
 /* 주요 특징 콘텐츠 - 디바이스 */
-.overview-page .reach-area {
+.overview .reach-area {
     background-color: red;
     min-width: 1400px;
     /* height: 1177px; */
@@ -637,7 +637,7 @@
     margin-top: 270px;
 }
 
-.overview-page .reach-bg {
+.overview .reach-bg {
     background: url('../image/fixed-scroll-img.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -645,7 +645,7 @@
 }
 
 
-.overview-page .reach-area::after {
+.overview .reach-area::after {
     content: '';
     position: absolute;
     width: 120%;
@@ -667,7 +667,7 @@
 
 
 
-.overview-page .reach-ad-layout {
+.overview .reach-ad-layout {
     width: 790px;
     /* padding: 766px 305px 138px; */
     /* padding: 456px 305px 138px; */
@@ -692,24 +692,24 @@
 
 
 
-.overview-page .device-contnet {
+.overview .device-contnet {
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
 }
-.overview-page .device-list {
+.overview .device-list {
     width: 1400px;
     margin: 0 auto;
 }
-.overview-page .device-list .item img {
+.overview .device-list .item img {
     width: 100%;
     vertical-align: top;
 }
-.overview-page .device-list {
+.overview .device-list {
     position: relative;
 }
-.overview-page .device-list .tablet {
+.overview .device-list .tablet {
     width: 487px;
     height: 350px;
     position: absolute;
@@ -717,7 +717,7 @@
     left: 68px;
     z-index: 2;
 }
-.overview-page .device-list .pc {
+.overview .device-list .pc {
     width: 845px;
     height: 458px;
     position: absolute;
@@ -725,7 +725,7 @@
     left: 278px;
     z-index: 5;
 }
-.overview-page .device-list .mobile {
+.overview .device-list .mobile {
     width: 148px;
     height: 278px;
     position: absolute;
@@ -733,7 +733,7 @@
     right: 288px;
     z-index: 6;
 }
-.overview-page .device-list .mobile-page-01 {
+.overview .device-list .mobile-page-01 {
     width: 136px;
     height: 248px;
     position: absolute;
@@ -741,7 +741,7 @@
     right: 155px;
     z-index: 3;
 }
-.overview-page .device-list .mobile-page-02 {
+.overview .device-list .mobile-page-02 {
     width: 136px;
     height: 248px;
     position: absolute;
@@ -752,55 +752,55 @@
 
 
 
-.overview-page .reach-ad-contnet {}
-.overview-page .reach-ad-contnet .text-wrap {
+.overview .reach-ad-contnet {}
+.overview .reach-ad-contnet .text-wrap {
     color: #f5f7f8;
 }
-.overview-page .reach-ad-contnet .text-wrap .point {
+.overview .reach-ad-contnet .text-wrap .point {
     color: #f5f7f8;
     font-weight: 800;
 }
 
-.overview-page .reach-ad-contnet .text-wrap .text {
+.overview .reach-ad-contnet .text-wrap .text {
     color: #d3d4d5;
     font-size: 18px;
 }
 
 
-.overview-page .reach-ad-contnet .ad-link {
+.overview .reach-ad-contnet .ad-link {
     text-align: center;
     margin-top: 60px;
 }
-.overview-page .reach-ad-contnet .ad-link-list {
+.overview .reach-ad-contnet .ad-link-list {
     display: inline-block;
 }
-.overview-page .reach-ad-contnet .ad-link-list::after {
+.overview .reach-ad-contnet .ad-link-list::after {
     content: '';
     display: block;
     clear: both;
 }
-.overview-page .reach-ad-contnet .ad-link-list .item {
+.overview .reach-ad-contnet .ad-link-list .item {
     float: left;
 }
-.overview-page .reach-ad-contnet .ad-link-list .item:hover {
+.overview .reach-ad-contnet .ad-link-list .item:hover {
     background-image: linear-gradient(to right, #07d05a, #24beac);
     color: #fff;
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 32px;
 }
-.overview-page .reach-ad-contnet .ad-link-list .item:hover a span {
+.overview .reach-ad-contnet .ad-link-list .item:hover a span {
     color: #fff;
 }
-.overview-page .reach-ad-contnet .ad-link-list .item:hover a span::after {
+.overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
     border-top: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
 }
 
-.overview-page .reach-ad-contnet .ad-link-list .item:nth-child(2) {
+.overview .reach-ad-contnet .ad-link-list .item:nth-child(2) {
     margin: 0 20px;
 }
 
-.overview-page .reach-ad-contnet .ad-link-list .item a {
+.overview .reach-ad-contnet .ad-link-list .item a {
     border: 1px solid #0c8644;
     color: #00ac4a;
     border-radius: 32px;
@@ -812,12 +812,12 @@
     float: left;
 }
 
-.overview-page .reach-ad-contnet .ad-link-list .item a span {
+.overview .reach-ad-contnet .ad-link-list .item a span {
     padding-right: 16px;
     position: relative;
 }
 
-.overview-page .reach-ad-contnet .ad-link-list .item a span::after {
+.overview .reach-ad-contnet .ad-link-list .item a span::after {
     content: '';
     width: 7px;
     height: 7px;
@@ -831,42 +831,42 @@
 }
 
 
-.overview-page .environment-area {
+.overview .environment-area {
     background-color: #f5f7f8;
 }
-.overview-page .environment-layout {
+.overview .environment-layout {
     padding: 157px 52px 160px;
     width: 1296px;
     margin: 0 auto;
 }
-.overview-page .environment-content {
+.overview .environment-content {
 
 }
-.overview-page .environment-content .text-wrap .point {
+.overview .environment-content .text-wrap .point {
     color: #000000;
 }
 
-.overview-page .environment-content .content-wrap {
+.overview .environment-content .content-wrap {
     background-color: #fff;
     margin-top: 54px;
 }
 
-.overview-page .environment-content .content-wrap .list {
+.overview .environment-content .content-wrap .list {
 
 }
-.overview-page .environment-content .content-wrap .list::after {
+.overview .environment-content .content-wrap .list::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview-page .environment-content .content-wrap .list .item {
+.overview .environment-content .content-wrap .list .item {
     width: 432px;
     padding: 95px 0 86px;
     float: left;
     position: relative;
 }
-.overview-page .environment-content .content-wrap .list .item::after {
+.overview .environment-content .content-wrap .list .item::after {
     content: '';
     display: block;
     width: 1px;
@@ -876,44 +876,44 @@
     top: 54px;
     right: 0;
 }
-.overview-page .environment-content .content-wrap .list .item:last-child:after {
+.overview .environment-content .content-wrap .list .item:last-child:after {
     content: none;
 }
 
-.overview-page .environment-content .content-wrap .icon-content {
+.overview .environment-content .content-wrap .icon-content {
     height: 108px;
     text-align: center;
 }
-.overview-page .environment-content .content-wrap .icon-content .icon {
+.overview .environment-content .content-wrap .icon-content .icon {
     display: inline-block;
 }
-.overview-page .environment-content .content-wrap .icon-content .icon-1 {
+.overview .environment-content .content-wrap .icon-content .icon-1 {
     background-image: url('../image/icon-1.png');
     width: 64px;
     height: 80px;
     background-size: 64px 80px;
 }
-.overview-page .environment-content .content-wrap .icon-content .icon-2 {
+.overview .environment-content .content-wrap .icon-content .icon-2 {
     background-image: url('../image/icon-2.png');
     width: 87px;
     height: 59px;
     background-size: 87px 59px;
 }
-.overview-page .environment-content .content-wrap .icon-content .icon-3 {
+.overview .environment-content .content-wrap .icon-content .icon-3 {
     background-image: url('../image/icon-3.png');
     width: 89px;
     height: 89px;
     background-size: 89px 89px;
 }
-.overview-page .environment-content .content-wrap .environment-text-content {
+.overview .environment-content .content-wrap .environment-text-content {
     text-align: center;
     margin-top: 20px;
 }
-.overview-page .environment-content .content-wrap .environment-text-content .title {
+.overview .environment-content .content-wrap .environment-text-content .title {
     color: #01ac4b;
     font-size: 32px;
 }
-.overview-page .environment-content .content-wrap .environment-text-content .text {
+.overview .environment-content .content-wrap .environment-text-content .text {
     color: #343434;
     font-size: 18px;
     margin-top: 16px;
