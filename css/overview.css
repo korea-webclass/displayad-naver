@@ -5,31 +5,8 @@
 .row {padding: 0 96px; margin: 0 auto;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 서브 페이지 - 주요 특징 */
-/* ----------------------- */
-
 /* 주요 특징 - 비주얼 */
-.sub-container .sub-srories .content-wrap .bgi-one {
+.sub-container .visual .bg-one {
     background: url('../image/sub-overview-visual-bg01.png') no-repeat;
     position: absolute;
     top: 0;
@@ -39,7 +16,7 @@
     height: 180px;
 }
 
-.sub-container .sub-srories .content-wrap .bgi-two {
+.sub-container .visual .bg-two {
     background: url('../image/sub-overview-visual-bg02.png') no-repeat;
     position: absolute;
     top: 0;
@@ -53,35 +30,14 @@
 
 
 
-
-
-
-/* 주요 특징 콘텐츠 */
-/* ----------------------- */
-
 /* 주요 특징 콘텐츠 - 데이터 */
 .overview-page .data {
     background-color: #ffffff;
     min-width: 1400px;
-    /* height: 1060px; */
-    /* height: 1051px; */
     position: relative;
     overflow: hidden;
     padding-top: 270px;
 }
-
-/* .overview-page .data::after {
-    content: '';
-    position: absolute;
-    width: 120%;
-    height: 340px;
-    left: -94px;
-    top: 774px;
-    z-index: 1;
-    background-color: #fff;
-    transform-origin: left bottom;
-    transform: rotate(8deg);
-} */
 
 .overview-page .data .diagonal {
     position: absolute;
