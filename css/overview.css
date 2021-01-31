@@ -96,7 +96,7 @@
     width: 100%;
 }
 
-/* 주요 특징 콘텐츠 - 구매 */
+/* 구매 결정 단계 */
 .overview .purchase {
     min-width: 1400px;
     height: 1236px;
@@ -143,7 +143,6 @@
     padding-top: 50px;
     font-size: 25px;
     font-weight: 700;
-
 }
 
 .overview .order-content .point {
@@ -184,48 +183,44 @@
 .overview .order-content .order-desc > li:last-child::after {
     content: none;
 }
+
 .overview .order-content .img-wrap {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
+
 .overview .order-content .img-wrap img {
     width: 100%;
     vertical-align: top;
 }
 
-
-
-.overview .purchase-content .word-wrap {border-bottom: 1px solid #eee;}
-.overview .purchase-content .word-wrap::after {content: ''; display: block; clear: both;}
-.overview .purchase-content .word-contents {float: left;}
-.overview .purchase-content .word-layout {padding: 22px 18px;}
-.overview .purchase-content .word-layout .key {width: 396px;}
-.overview .purchase-content .word-layout .key::after {content: ''; display: block; clear: both;}
-.overview .purchase-content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
-.overview .purchase-content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
-.overview .purchase-content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
-.overview .purchase-content .word-layout .key .word-item a:hover .keyword {color: #fff}
-.overview .purchase-content .word-layout .key .word-item a:hover .arr::after {
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-}
-.overview .purchase-content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
-.overview .purchase-content .word-layout .key .special {padding-right: 8px;}
-.overview .purchase-content .word-layout .key .video {padding-left: 8px;}
-.overview .purchase-content .word-layout .key .brand {width: 300px;}
-.overview .purchase-content .word-layout .key .time {padding-right: 8px;}
-.overview .purchase-content .word-layout .key .contents {padding-left: 8px;}
-.overview .purchase-content .word-layout .key .rolling {padding-right: 8px;}
-.overview .purchase-content .word-layout .key .rolling a {margin-bottom: 0px;}
-.overview .purchase-content .word-layout .key .sub {padding-left: 8px;}
-.overview .purchase-content .word-layout .key .sub a {margin-bottom: 0px;}
-.overview .purchase-content .word-layout .key .search {padding-right: 8px;}
-
-.overview .purchase-content .word-layout .key-cont02 .word-item a {border-content: 1px solid #9bd5ce;}
-.overview .purchase-content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
-.overview .purchase-content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
-.overview .purchase-content .word-layout .key .word-item .arr::after { 
+/* 구매 결정 단계 단어 */
+.overview .word {border-bottom: 1px solid #eee;}
+.overview .word::after {content: ''; display: block; clear: both;}
+.overview .word .word-item {float: left; padding: 22px 18px;}
+.overview .word .key {width: 396px;}
+.overview .word .key::after {content: ''; display: block; clear: both;}
+.overview .word .key-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
+.overview .word a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
+.overview .word a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
+.overview .word a:hover .keyword {color: #fff}
+.overview .word a:hover .arr::after {border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;}
+.overview .key .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
+.overview .key .special {padding-right: 8px;}
+.overview .key .video {padding-left: 8px;}
+.overview .key .brand {width: 300px;}
+.overview .key .time {padding-right: 8px;}
+.overview .key .contents {padding-left: 8px;}
+.overview .key .rolling {padding-right: 8px;}
+.overview .key .rolling a {margin-bottom: 0px;}
+.overview .key .sub {padding-left: 8px;}
+.overview .key .sub a {margin-bottom: 0px;}
+.overview .key .search {padding-right: 8px;}
+.overview .key-content-two a {border: 1px solid #9bd5ce;}
+.overview .key-content-two .keyword {color: #079685;}
+.overview .key .arr {position: relative; padding-right: 14px;}
+.overview .key .arr::after { 
     content: '';
     width: 7px;
     height: 7px;
@@ -238,240 +233,24 @@
     right: 3px;
 }
 
-.overview .purchase-content .word-layout .key-cont02 .word-item .arr::after {
+.overview .key-content-two .arr::after {
     border-top: 1px solid #079685;
     border-right: 1px solid #079685;
- }
-
-.overview .purchase-content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
-.overview .purchase-content .word-layout .key .brandsearch {padding-left: 8px;}
-.overview .purchase-content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
-.overview .purchase-content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
-.overview .purchase-content .word-layout .key .powerlink {width: 396px;}
-.overview .purchase-content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
-.overview .purchase-content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
-.overview .purchase-content .word-layout .key .pay {width: 190px; margin-left: 206px;}
-.overview .purchase-content .word-layout .key .catalog {padding-right: 8px;}
-.overview .purchase-content .word-layout .key .toktok {padding-left: 8px;}
-.overview .purchase-content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
-.overview .purchase-content .word-layout .key .smart {width: 190px; margin-left: 206px;}
-.overview .purchase-content .word-layout .key .smart .keyword {margin-bottom: 0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 키워드 */
-/* .overview .content .word-content {
-    border-content-bottom: 1px solid #eeeeee;
-}
-.overview .content .word-content .word-list {
-}
-.overview .content .word-content .word-list::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.overview .content .word-content .word-list .item {
-    width: 395px;
-    height: 206px;
-    padding: 18px 18px 11px 19px;
-    float: left;
-    position: relative;
-}
-.overview .content .word-content .word-list .item span {
-    letter-spacing: -0.6px;
 }
 
-.overview .content .word-content .word-list .item::after {
-    content: '';
-    width: 1px;
-    border-content-left: 1px dashed #eee;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-}
-
-.overview .content .word-content .word-list .word {}
-.overview .content .word-content .word-list .word::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.overview .content .word-content .word-list .word a {
-    border-content: 1px solid #9ae9bd;
-    border-content-radius: 24px;
-    display: block;
-    float: left;
-    width: 188px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin-right: 15px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-.overview .content .word-content .word-list .word a:hover {
-    background-color: transparent;
-    background-image: linear-gradient(to right, #07d05a, #24beac);
-    color: #fff;
-}
-.overview .content .word-content .word-list .word a:hover span {
-    color: #fff;
-}
-.overview .content .word-content .word-list .word a:hover .text::after {
-    border-content-top: 1px solid #ffffff;
-    border-content-right: 1px solid #ffffff;
-}
-
-.overview .content .word-content .word-list .word .border-content:hover .text {
-    color: #fff;
-}
-
-.overview .content .word-content .word-list .word .border-content {
-    border-content: 1px solid #9bd5ce;
-}
-.overview .content .word-content .word-list .word .border-content .text {
-    color: #079685;
-}
-
-
-
-
-
-
-
-
-
-.overview .content .word-content .word-list .word a > .text {
-    position: relative;
-}
-.overview .content .word-content .word-list .word a > .text::after {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-content-top: 1px solid #01ac4b;
-    border-content-right: 1px solid #01ac4b;
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
-
-.overview .content .word-content .word-list .word > span {
-    display: block;
-    float: left;
-    height: 42px;
-    line-height: 42px;
-    text-align: center;
-    margin-right: 17px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border-content-radius: 4px;
-    background-color: #f5fcfb;
-}
-.overview .content .word-content .word-list .word .branding {width: 308px;}
-
-.overview .content .word-content .word-list .word .power-content {width: 135px;}
-.overview .content .word-content .word-list .word .power-content > .text {padding-right: 0px; color: #079685;}
-
-.overview .content .word-content .word-list .word .new {width: 240px; margin-right: 0px;}
-
-.overview .content .word-content .word-list .word .power-link {width: 393px;}
-.overview .content .word-content .word-list .word .power-link .text {padding-right: 0px; color: #079685;}
-
-.overview .content .word-content .word-list .word .shop-ad {width: 393px; margin-left: 205px;}
-.overview .content .word-content .word-list .word .shop-ad .text {padding-right: 0px; color: #079685;}
-
-.overview .content .word-content .word-list .word .naver-pay {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview .content .word-content .word-list .word .naver-pay > .text {padding-right: 0px; color: #0581a9;}
-
-.overview .content .word-content .word-list .word .catalog-ad {width: 188px;}
-.overview .content .word-content .word-list .word .catalog-ad > .text {padding-right: 0px; color: #079685;}
-
-.overview .content .word-content .word-list .word .naver-toktok {width: 190px; background-color: #f5fafc;}
-.overview .content .word-content .word-list .word .naver-toktok > .text {padding-right: 0px; color: #0581a9;}
-
-.overview .content .word-content .word-list .word .naver-login {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview .content .word-content .word-list .word .naver-login > .text {padding-right: 0px; color: #0581a9;}
-
-.overview .content .word-content .word-list .word .smart-store {width: 190px; margin-left: 204px; background-color: #f5fafc;}
-.overview .content .word-content .word-list .word .smart-store > .text {padding-right: 0px; color: #0581a9;}
-
-.overview .content .word-content .word-list .word .margin-del {margin-right: 0px;}
-
-.overview .content .word-content .word-list .word .text {
-    padding-right: 16px;
-    color: #01ac4b;
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sub-container .sub-content .link {
-    text-align: center;
-    /* margin-top: 40px; */
-    margin-top: 53px;
-}
-.sub-container .sub-content .link a {
-    font-size: 20px;
-    border-right: 24px;
-    border-radius: 40px;
-    background-image: linear-gradient(105deg, #07d05a, #24beac);
-    display: inline-block;
-    height: 64px;
-    padding: 0 40px;
-    line-height: 64px;
-    letter-spacing: -0.6px;
-    color: #fff;
-    transition: all ease 0.3s;
-}
-.sub-container .sub-content .link a:hover {
-    transform: translateY(-2px);
-    border-radius: 40px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.07);
-}
+.overview .key-content-three .bgc {color: #0581a9; background-color: #f5fafc;}
+.overview .key .brandsearch {padding-left: 8px;}
+.overview .key .powercontent {width: 142px; padding-right: 8px;}
+.overview .key .newproduct {width: 254px; padding-left: 8px;}
+.overview .key .powerlink {width: 396px;}
+.overview .key .shopping {width: 396px; margin-left: 210px;}
+.overview .key .shopping .keyword {margin-bottom: 0px;}
+.overview .key .pay {width: 190px; margin-left: 206px;}
+.overview .key .catalog {padding-right: 8px;}
+.overview .key .toktok {padding-left: 8px;}
+.overview .key .naverid {width: 190px; margin-left: 206px;}
+.overview .key .smart {width: 190px; margin-left: 206px;}
+.overview .key .smart .keyword {margin-bottom: 0;}
 
 
 
