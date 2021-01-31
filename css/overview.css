@@ -4,7 +4,6 @@
 .inner {/* width: 1748px; */ margin: 0 auto;}
 .row {padding: 0 96px; margin: 0 auto;}
 
-
 /* 비주얼 */
 .overview .visual .bg-one {
     background: url('../image/sub-overview-visual-bg01.png') no-repeat;
@@ -25,10 +24,6 @@
     width: 600px;
     height: 180px;
 }
-
-
-
-
 
 /* 사용자 데이터 */
 .overview .user-data {
@@ -100,48 +95,25 @@
     vertical-align: top;
     width: 100%;
 }
-    
-
-
-
-
-
-
-
-
-
 
 /* 주요 특징 콘텐츠 - 구매 */
 .overview .purchase {
     min-width: 1400px;
     height: 1236px;
 }
-.overview .purchase-layout {
+
+.overview .purchase-inner {
     width: 1296px;
     padding: 118px 52px 107px;
     margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.overview .content .purchase-wrap {
-    margin-top: 53px;
-}
-
-.overview .content .purchase-wrap .purchase-content {
+.overview .purchase-content .order-content {
     position: relative;
+    margin-top: 56px;
 }
-.overview .content .purchase-wrap .purchase-content::after {
+
+.overview .purchase-content .order-content .purchase-content::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -152,16 +124,13 @@
     background-image: linear-gradient(to right, #07d05a, #24beac);
 }
 
-.overview .content .purchase-wrap .purchase-list {
-
-}
-.overview .content .purchase-wrap .purchase-list::after {
+.overview .order-content .order-box::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview .content .purchase-wrap .purchase-list .item {
+.overview .order-content .order-box .item {
     width: 432px;
     height: 506px;
     background-color: #f5f7f8;
@@ -169,37 +138,40 @@
     float: left;
 }
 
-.overview .content .purchase-wrap .purchase-text-wrap {
+.overview .order-content .order-text {
     text-align: center;
     padding-top: 50px;
-}
-
-.overview .content .purchase-wrap .text-wrap {
     font-size: 25px;
+    font-weight: 700;
+
 }
 
-.overview .content .purchase-wrap .point {
+.overview .order-content .point {
     color: #00ac4a;
     font-size: 28px;
     vertical-align: middle;
 }
 
-.overview .content .purchase-wrap .title {
+.overview .order-content .title {
     font-size: 25px;
-    font-weight: 700;
 }
 
-.overview .content .purchase-wrap .cont > span {
+.overview .order-content .order-desc {
+    text-align: center;
+}
+
+.overview .order-content .order-desc > li {
     padding-right: 16px;
     font-size: 15px;
+    display: inline-block;
     position: relative;
 }
 
-.overview .content .purchase-wrap .cont > span:last-child {
+.overview .order-content .order-desc > li:last-child {
     padding-right: 0;
 }
 
-.overview .content .purchase-wrap .cont > span::after {
+.overview .order-content .order-desc > li::after {
     content: '';
     width: 1px;
     height: 16px;
@@ -209,83 +181,81 @@
     right: 5px;
 }
 
-.overview .content .purchase-wrap .cont > span:last-child::after {
+.overview .order-content .order-desc > li:last-child::after {
     content: none;
 }
-.overview .content .purchase-img {
+.overview .order-content .img-wrap {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
-.overview .content .purchase-img img {
+.overview .order-content .img-wrap img {
     width: 100%;
     vertical-align: top;
 }
 
 
 
-.overview .content .word-wrap {border-bottom: 1px solid #eee;}
-.overview .content .word-wrap::after {content: ''; display: block; clear: both;}
-.overview .content .word-contents {float: left;}
-.overview .content .word-layout {padding: 22px 18px;}
-.overview .content .word-layout .key {width: 396px;}
-.overview .content .word-layout .key::after {content: ''; display: block; clear: both;}
-.overview .content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
-.overview .content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
-.overview .content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
-.overview .content .word-layout .key .word-item a:hover .keyword {color: #fff}
-.overview .content .word-layout .key .word-item a:hover .arr::after {
-    border-top: 1px solid #ffffff; /* 선 두께 */
-    border-right: 1px solid #ffffff; /* 선 두께 */
+.overview .purchase-content .word-wrap {border-bottom: 1px solid #eee;}
+.overview .purchase-content .word-wrap::after {content: ''; display: block; clear: both;}
+.overview .purchase-content .word-contents {float: left;}
+.overview .purchase-content .word-layout {padding: 22px 18px;}
+.overview .purchase-content .word-layout .key {width: 396px;}
+.overview .purchase-content .word-layout .key::after {content: ''; display: block; clear: both;}
+.overview .purchase-content .word-layout .key .word-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
+.overview .purchase-content .word-layout .key .word-item a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
+.overview .purchase-content .word-layout .key .word-item a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
+.overview .purchase-content .word-layout .key .word-item a:hover .keyword {color: #fff}
+.overview .purchase-content .word-layout .key .word-item a:hover .arr::after {
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
-.overview .content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
-.overview .content .word-layout .key .special {padding-right: 8px;}
-.overview .content .word-layout .key .video {padding-left: 8px;}
-.overview .content .word-layout .key .brand {width: 300px;}
-.overview .content .word-layout .key .time {padding-right: 8px;}
-.overview .content .word-layout .key .contents {padding-left: 8px;}
-.overview .content .word-layout .key .rolling {padding-right: 8px;}
-.overview .content .word-layout .key .rolling a {margin-bottom: 0px;}
-.overview .content .word-layout .key .sub {padding-left: 8px;}
-.overview .content .word-layout .key .sub a {margin-bottom: 0px;}
-.overview .content .word-layout .key .search {padding-right: 8px;}
+.overview .purchase-content .word-layout .key .word-item .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
+.overview .purchase-content .word-layout .key .special {padding-right: 8px;}
+.overview .purchase-content .word-layout .key .video {padding-left: 8px;}
+.overview .purchase-content .word-layout .key .brand {width: 300px;}
+.overview .purchase-content .word-layout .key .time {padding-right: 8px;}
+.overview .purchase-content .word-layout .key .contents {padding-left: 8px;}
+.overview .purchase-content .word-layout .key .rolling {padding-right: 8px;}
+.overview .purchase-content .word-layout .key .rolling a {margin-bottom: 0px;}
+.overview .purchase-content .word-layout .key .sub {padding-left: 8px;}
+.overview .purchase-content .word-layout .key .sub a {margin-bottom: 0px;}
+.overview .purchase-content .word-layout .key .search {padding-right: 8px;}
 
-.overview .content .word-layout .key-cont02 .word-item a {border: 1px solid #9bd5ce;}
-.overview .content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
-.overview .content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
-.overview .content .word-layout .key .word-item .arr::after { 
+.overview .purchase-content .word-layout .key-cont02 .word-item a {border-content: 1px solid #9bd5ce;}
+.overview .purchase-content .word-layout .key-cont02 .word-item .keyword {color: #079685;}
+.overview .purchase-content .word-layout .key .word-item .arr {position: relative; padding-right: 14px;}
+.overview .purchase-content .word-layout .key .word-item .arr::after { 
     content: '';
-    width: 7px; /* 사이즈 */
-    height: 7px; /* 사이즈 */
-    border-top: 1px solid #0cb053; /* 선 두께 */
-    border-right: 1px solid #0cb053; /* 선 두께 */
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #0cb053;
+    border-right: 1px solid #0cb053;
     display: inline-block;
-    transform: rotate(45deg); /* 각도 */
+    transform: rotate(45deg);
     position: absolute;
-    top: 5px; /* 기본 0px 값으로 해주세요 */
-    right: 3px; /* 기본 0px 값으로 해주세요 */
+    top: 5px;
+    right: 3px;
 }
-.overview .content .word-layout .key-cont02 .word-item .arr::after {
+
+.overview .purchase-content .word-layout .key-cont02 .word-item .arr::after {
     border-top: 1px solid #079685;
     border-right: 1px solid #079685;
  }
 
-
-
-.overview .content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
-
-.overview .content .word-layout .key .brandsearch {padding-left: 8px;}
-.overview .content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
-.overview .content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
-.overview .content .word-layout .key .powerlink {width: 396px;}
-.overview .content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
-.overview .content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
-.overview .content .word-layout .key .pay {width: 190px; margin-left: 206px;}
-.overview .content .word-layout .key .catalog {padding-right: 8px;}
-.overview .content .word-layout .key .toktok {padding-left: 8px;}
-.overview .content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
-.overview .content .word-layout .key .smart {width: 190px; margin-left: 206px;}
-.overview .content .word-layout .key .smart .keyword {margin-bottom: 0;}
+.overview .purchase-content .word-layout .key-cont03 .word-item .bgc {color: #0581a9; background-color: #f5fafc;}
+.overview .purchase-content .word-layout .key .brandsearch {padding-left: 8px;}
+.overview .purchase-content .word-layout .key .powercontent {width: 142px; padding-right: 8px;}
+.overview .purchase-content .word-layout .key .newproduct {width: 254px; padding-left: 8px;}
+.overview .purchase-content .word-layout .key .powerlink {width: 396px;}
+.overview .purchase-content .word-layout .key .shopping {width: 396px; margin-left: 210px;}
+.overview .purchase-content .word-layout .key .shopping .keyword {margin-bottom: 0px;}
+.overview .purchase-content .word-layout .key .pay {width: 190px; margin-left: 206px;}
+.overview .purchase-content .word-layout .key .catalog {padding-right: 8px;}
+.overview .purchase-content .word-layout .key .toktok {padding-left: 8px;}
+.overview .purchase-content .word-layout .key .naverid {width: 190px; margin-left: 206px;}
+.overview .purchase-content .word-layout .key .smart {width: 190px; margin-left: 206px;}
+.overview .purchase-content .word-layout .key .smart .keyword {margin-bottom: 0;}
 
 
 
@@ -301,7 +271,7 @@
 
 /* 키워드 */
 /* .overview .content .word-content {
-    border-bottom: 1px solid #eeeeee;
+    border-content-bottom: 1px solid #eeeeee;
 }
 .overview .content .word-content .word-list {
 }
@@ -324,7 +294,7 @@
 .overview .content .word-content .word-list .item::after {
     content: '';
     width: 1px;
-    border-left: 1px dashed #eee;
+    border-content-left: 1px dashed #eee;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -339,8 +309,8 @@
 }
 
 .overview .content .word-content .word-list .word a {
-    border: 1px solid #9ae9bd;
-    border-radius: 24px;
+    border-content: 1px solid #9ae9bd;
+    border-content-radius: 24px;
     display: block;
     float: left;
     width: 188px;
@@ -360,18 +330,18 @@
     color: #fff;
 }
 .overview .content .word-content .word-list .word a:hover .text::after {
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
+    border-content-top: 1px solid #ffffff;
+    border-content-right: 1px solid #ffffff;
 }
 
-.overview .content .word-content .word-list .word .border:hover .text {
+.overview .content .word-content .word-list .word .border-content:hover .text {
     color: #fff;
 }
 
-.overview .content .word-content .word-list .word .border {
-    border: 1px solid #9bd5ce;
+.overview .content .word-content .word-list .word .border-content {
+    border-content: 1px solid #9bd5ce;
 }
-.overview .content .word-content .word-list .word .border .text {
+.overview .content .word-content .word-list .word .border-content .text {
     color: #079685;
 }
 
@@ -390,8 +360,8 @@
     content: '';
     width: 7px;
     height: 7px;
-    border-top: 1px solid #01ac4b;
-    border-right: 1px solid #01ac4b;
+    border-content-top: 1px solid #01ac4b;
+    border-content-right: 1px solid #01ac4b;
     display: inline-block;
     transform: rotate(45deg);
     position: absolute;
@@ -408,7 +378,7 @@
     margin-right: 17px;
     margin-top: 4px;
     margin-bottom: 4px;
-    border-radius: 4px;
+    border-content-radius: 4px;
     background-color: #f5fcfb;
 }
 .overview .content .word-content .word-list .word .branding {width: 308px;}
@@ -780,15 +750,15 @@
 .overview .reach-ad-contnet .ad-link-list .item:hover {
     background-image: linear-gradient(to right, #07d05a, #24beac);
     color: #fff;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
+    border-content-color: rgba(0, 0, 0, 0.1);
+    border-content-radius: 32px;
 }
 .overview .reach-ad-contnet .ad-link-list .item:hover a span {
     color: #fff;
 }
 .overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
+    border-content-top: 1px solid #ffffff;
+    border-content-right: 1px solid #ffffff;
 }
 
 .overview .reach-ad-contnet .ad-link-list .item:nth-child(2) {
@@ -796,9 +766,9 @@
 }
 
 .overview .reach-ad-contnet .ad-link-list .item a {
-    border: 1px solid #0c8644;
+    border-content: 1px solid #0c8644;
     color: #00ac4a;
-    border-radius: 32px;
+    border-content-radius: 32px;
     font-size: 18px;
     height: 54px;
     line-height: 54px;
@@ -816,8 +786,8 @@
     content: '';
     width: 7px;
     height: 7px;
-    border-top: 1px solid #01ac4b;
-    border-right: 1px solid #01ac4b;
+    border-content-top: 1px solid #01ac4b;
+    border-content-right: 1px solid #01ac4b;
     display: inline-block;
     transform: rotate(45deg);
     position: absolute;
@@ -913,50 +883,3 @@
     font-size: 18px;
     margin-top: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* 스크롤 top 버튼 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
