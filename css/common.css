@@ -10,7 +10,7 @@
 
 .sub-container .sub-content .title {
     font-size: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     letter-spacing: -1.2px;
 }
 
@@ -217,7 +217,7 @@
 /* 주요 특징 - 링크 */
 .overview .sub-content .link {
     text-align: center;
-    margin-top: 53px;
+    /* margin-top: 53px; */
 }
 
 .overview .sub-content .link a {
