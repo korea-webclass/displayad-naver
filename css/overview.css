@@ -272,55 +272,51 @@
     display: block;
 }
 
-
-
-
-
-
-/* 주요 특징 콘텐츠 - 비율 */
-.overview .ratio-area {
+/* 성장 그래프 현황 */
+.overview .ratio {
     min-width: 1400px;
     height: 868px;
 }
 
-.overview .ratio-layout {
+.overview .ratio-inner {
     width: 1116px;
     margin: 0 auto;
     padding: 83px 142px 45px;
 }
-.overview .ratio-content {
 
-}
-
-.overview .ratio {}
-.overview .ratio .graph-content {
+.overview .graph-content {
     padding-top: 82px;
     margin: 0 auto;
 }
-.overview .ratio .graph-content::after {
+
+.overview .graph-content::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview .ratio .graph-content .graph {
+.overview .graph-content .graph-img {
     float: left;
 }
 
-.overview .ratio .graph-content .graph img {
+.overview .graph-content .graph-img img {
     vertical-align: top;
 }
-.overview .ratio .graph-content .result {
+
+.overview .graph-content .result {
     float: left;
 }
-.overview .ratio .graph-content .result-list {
+
+.overview .graph-content .result-list {
     padding-top: 50px;
 }
-.overview .ratio .graph-content .result-list .item {
+
+.overview .graph-content .result-list .item {
     width: 558px;
     position: relative;
 }
-.overview .ratio .graph-content .result-list .item::after {
+
+.overview .graph-content .result-list .item::after {
     content: '';
     display: block;
     width: 540px;
@@ -331,21 +327,23 @@
     bottom: 0px;
 }
 
-.overview .ratio .graph-content .result-list .item dl {
+.overview .graph-content .result-list .item dl {
     padding: 66px 14px 47px 47px;
 }
-.overview .ratio .graph-content .result-list .item dl::after {
+
+.overview .graph-content .result-list .item dl::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview .ratio .graph-content .result-list .item dt {
+.overview .graph-content .result-list .item dt {
     font-size: 32px;
     margin-right: 64px;
     float: left;
 }
-.overview .ratio .graph-content .result-list .item dd {
+
+.overview .graph-content .result-list .item dd {
     text-align: right;
     font-size: 64px;
     line-height: 64px;
