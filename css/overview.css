@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-.wrap {width: 100%; min-width: 1400px; /* min-width: 1748px; */ overflow: hidden;}
-.inner {/* width: 1748px; */ margin: 0 auto;}
-.row {padding: 0 96px; margin: 0 auto;}
+.wrap {width: 100%; min-width: 1400px; overflow: hidden;}
 
 /* 비주얼 */
 .overview .visual .bg-one {
@@ -200,12 +198,7 @@
 }
 
 /* 구매 결정 단계 단어 */
-.overview .word {
-    border-bottom: 1px solid #eee;
-    border-image-slice: 1;
-    border-image-width: 1px 0 0 0;
-    border-image-source: linear-gradient(to right, #07d05a, #24beac);
-}
+.overview .word {border-bottom: 1px solid #eee; border-image-slice: 1; border-image-width: 1px 0 0 0; border-image-source: linear-gradient(to right, #07d05a, #24beac)}
 .overview .word::after {content: ''; display: block; clear: both;}
 .overview .word .word-item {float: left; padding: 22px 18px;}
 .overview .word .key {width: 396px;}
@@ -229,24 +222,8 @@
 .overview .key-content-two a {border: 1px solid #9bd5ce;}
 .overview .key-content-two .keyword {color: #079685;}
 .overview .key .arr {position: relative; padding-right: 14px;}
-.overview .key .arr::after { 
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-top: 1px solid #0cb053;
-    border-right: 1px solid #0cb053;
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 5px;
-    right: 3px;
-}
-
-.overview .key-content-two .arr::after {
-    border-top: 1px solid #079685;
-    border-right: 1px solid #079685;
-}
-
+.overview .key .arr::after {content: ''; width: 7px;height: 7px; border-top: 1px solid #0cb053; border-right: 1px solid #0cb053; display: inline-block; transform: rotate(45deg); position: absolute; top: 5px; right: 3px;}
+.overview .key-content-two .arr::after { border-top: 1px solid #079685; border-right: 1px solid #079685;}
 .overview .key-content-three .bgc {color: #0581a9; background-color: #f5fafc;}
 .overview .key .brandsearch {padding-left: 8px;}
 .overview .key .powercontent {width: 142px; padding-right: 8px;}
@@ -379,8 +356,6 @@
     transform: rotate(8deg);
 }
 
-
-
 .overview .device-contnet .device-list {
     position: relative;
     width: 1400px;
@@ -436,8 +411,6 @@
     right: 22px;
     z-index: 2;
 }
-
-
 
 .overview .reach-ad {
     width: 790px;
@@ -528,53 +501,40 @@
     margin: 0 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.overview .environment-area {
+/* 광고 환경 */
+.overview .envi {
     background-color: #f5f7f8;
 }
 
-.overview .environment-layout {
+.overview .envi-inner {
     padding: 157px 52px 160px;
     width: 1296px;
     margin: 0 auto;
 }
 
-.overview .environment-content .text-wrap .point {
+.overview .envi-content .point {
     color: #000000;
 }
 
-.overview .environment-content .content-wrap {
+.overview .envi-list-content {
     background-color: #fff;
     margin-top: 54px;
 }
 
-.overview .environment-content .content-wrap .list {
-
-}
-
-.overview .environment-content .content-wrap .list::after {
+.overview .envi-list-content .list::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.overview .environment-content .content-wrap .list .item {
+.overview .envi-list-content .list .item {
     width: 432px;
     padding: 95px 0 86px;
     float: left;
     position: relative;
 }
 
-.overview .environment-content .content-wrap .list .item::after {
+.overview .envi-list-content .list .item::after {
     content: '';
     display: block;
     width: 1px;
@@ -585,51 +545,51 @@
     right: 0;
 }
 
-.overview .environment-content .content-wrap .list .item:last-child:after {
+.overview .envi-list-content .list .item:last-child:after {
     content: none;
 }
 
-.overview .environment-content .content-wrap .icon-content {
+.overview .envi-list-content .icon {
     height: 108px;
     text-align: center;
 }
 
-.overview .environment-content .content-wrap .icon-content .icon {
+.overview .envi-list-content .icon i {
     display: inline-block;
 }
 
-.overview .environment-content .content-wrap .icon-content .icon-1 {
-    background-image: url('../image/icon-1.png');
+.overview .envi-list-content .icon .icon-one {
+    background-image: url('../image/overview-icon-one.png');
     width: 64px;
     height: 80px;
     background-size: 64px 80px;
 }
 
-.overview .environment-content .content-wrap .icon-content .icon-2 {
-    background-image: url('../image/icon-2.png');
+.overview .envi-list-content .icon .icon-two {
+    background-image: url('../image/overview-icon-two.png');
     width: 87px;
     height: 59px;
     background-size: 87px 59px;
 }
 
-.overview .environment-content .content-wrap .icon-content .icon-3 {
-    background-image: url('../image/icon-3.png');
+.overview .envi-list-content .icon .icon-three {
+    background-image: url('../image/overview-icon-three.png');
     width: 89px;
     height: 89px;
     background-size: 89px 89px;
 }
 
-.overview .environment-content .content-wrap .environment-text-content {
+.overview .envi-list-content .envi-text {
     text-align: center;
     margin-top: 20px;
 }
 
-.overview .environment-content .content-wrap .environment-text-content .title {
+.overview .envi-list-content .title {
     color: #01ac4b;
     font-size: 32px;
 }
 
-.overview .environment-content .content-wrap .environment-text-content .text {
+.overview .envi-list-content .text {
     color: #343434;
     font-size: 18px;
     margin-top: 16px;
