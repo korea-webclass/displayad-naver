@@ -353,7 +353,7 @@
 }
 
 /* 디바이스 영역 */
-.overview .reach-area {
+.overview .reach {
     min-width: 1400px;
     position: relative;
     margin-top: 270px;
@@ -366,7 +366,7 @@
     background-position: 50% 50%;
 }
 
-.overview .reach-area::after {
+.overview .reach::after {
     content: '';
     position: absolute;
     width: 120%;
@@ -379,34 +379,20 @@
     transform: rotate(8deg);
 }
 
-.overview .reach-ad-layout {
-    width: 790px;
-    padding: 446px 305px 138px;
-    margin: 0 auto;
-}
 
-.overview .device-contnet {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-}
 
-.overview .device-list {
+.overview .device-contnet .device-list {
+    position: relative;
     width: 1400px;
     margin: 0 auto;
 }
 
-.overview .device-list .item img {
+.overview .device-contnet img {
     width: 100%;
     vertical-align: top;
 }
 
-.overview .device-list {
-    position: relative;
-}
-
-.overview .device-list .tablet {
+.overview .device-contnet .tablet {
     width: 487px;
     height: 350px;
     position: absolute;
@@ -415,7 +401,7 @@
     z-index: 2;
 }
 
-.overview .device-list .pc {
+.overview .device-contnet .pc {
     width: 845px;
     height: 458px;
     position: absolute;
@@ -424,7 +410,7 @@
     z-index: 5;
 }
 
-.overview .device-list .mobile {
+.overview .device-contnet .mobile {
     width: 148px;
     height: 278px;
     position: absolute;
@@ -433,7 +419,7 @@
     z-index: 6;
 }
 
-.overview .device-list .mobile-page-01 {
+.overview .device-contnet .mobile-page-one {
     width: 136px;
     height: 248px;
     position: absolute;
@@ -442,7 +428,7 @@
     z-index: 3;
 }
 
-.overview .device-list .mobile-page-02 {
+.overview .device-contnet .mobile-page-two {
     width: 136px;
     height: 248px;
     position: absolute;
@@ -451,16 +437,24 @@
     z-index: 2;
 }
 
+
+
+.overview .reach-ad {
+    width: 790px;
+    padding: 446px 305px 138px;
+    margin: 0 auto;
+}
+
 .overview .reach-ad-contnet .text-wrap {
     color: #f5f7f8;
 }
 
-.overview .reach-ad-contnet .text-wrap .point {
+.overview .reach-ad-contnet .point {
     color: #f5f7f8;
     font-weight: 800;
 }
 
-.overview .reach-ad-contnet .text-wrap .text {
+.overview .reach-ad-contnet .text {
     color: #d3d4d5;
     font-size: 18px;
 }
@@ -482,26 +476,6 @@
 
 .overview .reach-ad-contnet .ad-link-list .item {
     float: left;
-}
-
-.overview .reach-ad-contnet .ad-link-list .item:hover {
-    background-image: linear-gradient(to right, #07d05a, #24beac);
-    color: #fff;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
-}
-
-.overview .reach-ad-contnet .ad-link-list .item:hover a span {
-    color: #fff;
-}
-
-.overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-}
-
-.overview .reach-ad-contnet .ad-link-list .item:nth-child(2) {
-    margin: 0 20px;
 }
 
 .overview .reach-ad-contnet .ad-link-list .item a {
@@ -533,6 +507,36 @@
     top: 5px;
     right: 5px;
 }
+
+.overview .reach-ad-contnet .ad-link-list .item:hover {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:hover a span {
+    color: #fff;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:nth-child(2) {
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .overview .environment-area {
     background-color: #f5f7f8;
