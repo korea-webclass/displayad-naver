@@ -352,20 +352,9 @@
     float: right;
 }
 
-
-
-
-
-
-
-
-
-
-/* 주요 특징 콘텐츠 - 디바이스 */
+/* 디바이스 영역 */
 .overview .reach-area {
-    background-color: red;
     min-width: 1400px;
-    /* height: 1177px; */
     position: relative;
     margin-top: 270px;
 }
@@ -376,7 +365,6 @@
     background-attachment: fixed;
     background-position: 50% 50%;
 }
-
 
 .overview .reach-area::after {
     content: '';
@@ -391,39 +379,11 @@
     transform: rotate(8deg);
 }
 
-
-
-
-
-
-
-
-
-
 .overview .reach-ad-layout {
     width: 790px;
-    /* padding: 766px 305px 138px; */
-    /* padding: 456px 305px 138px; */
     padding: 446px 305px 138px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .overview .device-contnet {
     position: absolute;
@@ -431,17 +391,21 @@
     left: 0px;
     right: 0px;
 }
+
 .overview .device-list {
     width: 1400px;
     margin: 0 auto;
 }
+
 .overview .device-list .item img {
     width: 100%;
     vertical-align: top;
 }
+
 .overview .device-list {
     position: relative;
 }
+
 .overview .device-list .tablet {
     width: 487px;
     height: 350px;
@@ -450,6 +414,7 @@
     left: 68px;
     z-index: 2;
 }
+
 .overview .device-list .pc {
     width: 845px;
     height: 458px;
@@ -458,6 +423,7 @@
     left: 278px;
     z-index: 5;
 }
+
 .overview .device-list .mobile {
     width: 148px;
     height: 278px;
@@ -466,6 +432,7 @@
     right: 288px;
     z-index: 6;
 }
+
 .overview .device-list .mobile-page-01 {
     width: 136px;
     height: 248px;
@@ -474,6 +441,7 @@
     right: 155px;
     z-index: 3;
 }
+
 .overview .device-list .mobile-page-02 {
     width: 136px;
     height: 248px;
@@ -483,12 +451,10 @@
     z-index: 2;
 }
 
-
-
-.overview .reach-ad-contnet {}
 .overview .reach-ad-contnet .text-wrap {
     color: #f5f7f8;
 }
+
 .overview .reach-ad-contnet .text-wrap .point {
     color: #f5f7f8;
     font-weight: 800;
@@ -499,31 +465,36 @@
     font-size: 18px;
 }
 
-
 .overview .reach-ad-contnet .ad-link {
     text-align: center;
     margin-top: 60px;
 }
+
 .overview .reach-ad-contnet .ad-link-list {
     display: inline-block;
 }
+
 .overview .reach-ad-contnet .ad-link-list::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .overview .reach-ad-contnet .ad-link-list .item {
     float: left;
 }
+
 .overview .reach-ad-contnet .ad-link-list .item:hover {
     background-image: linear-gradient(to right, #07d05a, #24beac);
     color: #fff;
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 32px;
 }
+
 .overview .reach-ad-contnet .ad-link-list .item:hover a span {
     color: #fff;
 }
+
 .overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
     border-top: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
@@ -563,18 +534,16 @@
     right: 5px;
 }
 
-
 .overview .environment-area {
     background-color: #f5f7f8;
 }
+
 .overview .environment-layout {
     padding: 157px 52px 160px;
     width: 1296px;
     margin: 0 auto;
 }
-.overview .environment-content {
 
-}
 .overview .environment-content .text-wrap .point {
     color: #000000;
 }
@@ -587,6 +556,7 @@
 .overview .environment-content .content-wrap .list {
 
 }
+
 .overview .environment-content .content-wrap .list::after {
     content: '';
     display: block;
@@ -599,6 +569,7 @@
     float: left;
     position: relative;
 }
+
 .overview .environment-content .content-wrap .list .item::after {
     content: '';
     display: block;
@@ -609,6 +580,7 @@
     top: 54px;
     right: 0;
 }
+
 .overview .environment-content .content-wrap .list .item:last-child:after {
     content: none;
 }
@@ -617,35 +589,42 @@
     height: 108px;
     text-align: center;
 }
+
 .overview .environment-content .content-wrap .icon-content .icon {
     display: inline-block;
 }
+
 .overview .environment-content .content-wrap .icon-content .icon-1 {
     background-image: url('../image/icon-1.png');
     width: 64px;
     height: 80px;
     background-size: 64px 80px;
 }
+
 .overview .environment-content .content-wrap .icon-content .icon-2 {
     background-image: url('../image/icon-2.png');
     width: 87px;
     height: 59px;
     background-size: 87px 59px;
 }
+
 .overview .environment-content .content-wrap .icon-content .icon-3 {
     background-image: url('../image/icon-3.png');
     width: 89px;
     height: 89px;
     background-size: 89px 89px;
 }
+
 .overview .environment-content .content-wrap .environment-text-content {
     text-align: center;
     margin-top: 20px;
 }
+
 .overview .environment-content .content-wrap .environment-text-content .title {
     color: #01ac4b;
     font-size: 32px;
 }
+
 .overview .environment-content .content-wrap .environment-text-content .text {
     color: #343434;
     font-size: 18px;
