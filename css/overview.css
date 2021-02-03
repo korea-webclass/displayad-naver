@@ -337,7 +337,7 @@
 }
 
 .overview .reach-bg {
-    background: url('../image/fixed-scroll-img.jpg') no-repeat;
+    background: url('../image/overview-reach-bg.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
