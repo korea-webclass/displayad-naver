@@ -1,2 +1,596 @@
-@charset "utf-8";
+@charset "UTF-8";
 
+.wrap {width: 100%; min-width: 1400px; overflow: hidden;}
+
+/* 비주얼 */
+.overview .visual .bg-one {
+    background: url('../image/sub-overview-visual-bg01.png') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+}
+
+.overview .visual .bg-two {
+    background: url('../image/sub-overview-visual-bg02.png') no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+}
+
+/* 사용자 데이터 */
+.overview .user-data {
+    background-color: #ffffff;
+    min-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 270px;
+}
+
+.overview .user-data .diagonal {
+    position: absolute;
+    width: 200%;
+    height: 480px;
+    right: 0;
+    bottom: -484px;
+    z-index: 1;
+    background-color: #fff;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+
+.overview .user-data .text-wrap {
+    position: absolute;
+    top: 116px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overview .user-data .text {
+    font-size: 42px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.overview .user-data .text > span {
+    display: inline-block;
+    line-height: 65px;
+    letter-spacing: -0.7px;
+}
+
+.overview .user-data .desc {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    margin-top: 24px;
+    display: block;
+    color: #333333;
+}
+
+.overview .user-data .point {
+    font-size: 60px;
+    margin-top: -5px;
+    margin-left: 7px;
+    font-family: 'SpoqaHanSansBold, Arial, NanumSquareR, sans-serif';
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0;
+    vertical-align: top;
+    color: #000000;
+}
+
+.overview .user-data .bold {
+    font-weight: 700;
+}
+
+.overview .user-data .img-content img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* 구매 결정 단계 */
+.overview .purchase {
+    min-width: 1400px;
+    height: 1236px;
+}
+
+.overview .purchase-inner {
+    width: 1296px;
+    padding: 118px 52px 107px;
+    margin: 0 auto;
+}
+
+.overview .purchase-content .order-content {
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 42px;
+}
+
+.overview .purchase-content .order-content .purchase-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+}
+
+.overview .order-content .order-box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.overview .order-content .order-box .item {
+    width: 432px;
+    height: 506px;
+    background-color: #f5f7f8;
+    position: relative;
+    float: left;
+}
+
+.overview .order-content .order-text {
+    text-align: center;
+    padding-top: 54px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 13px;
+}
+
+.overview .order-content .point {
+    color: #00ac4a;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.overview .order-content .title {
+    font-size: 25px;
+    letter-spacing: -0.5px;
+}
+
+.overview .order-content .order-desc {
+    text-align: center;
+}
+
+.overview .order-content .order-desc > li {
+    padding-right: 16px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.overview .order-content .order-desc > li:last-child {
+    padding-right: 0;
+}
+
+.overview .order-content .order-desc > li::after {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.overview .order-content .order-desc > li:last-child::after {
+    content: none;
+}
+
+.overview .order-content .img-wrap {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.overview .order-content .img-wrap img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 구매 결정 단계 단어 */
+.overview .word {border-bottom: 1px solid #eee; border-image-slice: 1; border-image-width: 1px 0 0 0; border-image-source: linear-gradient(to right, #07d05a, #24beac)}
+.overview .word::after {content: ''; display: block; clear: both;}
+.overview .word .word-item {float: left; padding: 22px 18px;}
+.overview .word .key {width: 396px;}
+.overview .word .key::after {content: ''; display: block; clear: both;}
+.overview .word .key-item {float: left; width: 198px; text-align: center; box-sizing: border-box; }
+.overview .word a {line-height: 38px; margin-bottom: 10px; border-radius: 32px; border: 1px solid #9ae9bd; color: #01ac4b; display: block;}
+.overview .word a:hover { background-image: linear-gradient(to right, #07d05a, #24beac);}
+.overview .word a:hover .keyword {color: #fff}
+.overview .word a:hover .arr::after {border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;}
+.overview .key .h40px {display: block; height: 40px; line-height: 40px; margin-bottom: 10px; background-color: #f5fcfb; color: #079685;}
+.overview .key .special {padding-right: 8px;}
+.overview .key .video {padding-left: 8px;}
+.overview .key .brand {width: 300px;}
+.overview .key .time {padding-right: 8px;}
+.overview .key .contents {padding-left: 8px;}
+.overview .key .rolling {padding-right: 8px;}
+.overview .key .rolling a {margin-bottom: 0px;}
+.overview .key .sub {padding-left: 8px;}
+.overview .key .sub a {margin-bottom: 0px;}
+.overview .key .search {padding-right: 8px;}
+.overview .key-content-two a {border: 1px solid #9bd5ce;}
+.overview .key-content-two .keyword {color: #079685;}
+.overview .key .arr {position: relative; padding-right: 14px;}
+.overview .key .arr::after {content: ''; width: 7px;height: 7px; border-top: 1px solid #0cb053; border-right: 1px solid #0cb053; display: inline-block; transform: rotate(45deg); position: absolute; top: 5px; right: 3px;}
+.overview .key-content-two .arr::after { border-top: 1px solid #079685; border-right: 1px solid #079685;}
+.overview .key-content-three .bgc {color: #0581a9; background-color: #f5fafc;}
+.overview .key .brandsearch {padding-left: 8px;}
+.overview .key .powercontent {width: 142px; padding-right: 8px;}
+.overview .key .newproduct {width: 254px; padding-left: 8px;}
+.overview .key .powerlink {width: 396px;}
+.overview .key .shopping {width: 396px; margin-left: 210px;}
+.overview .key .shopping .keyword {margin-bottom: 0px;}
+.overview .key .pay {width: 190px; margin-left: 206px;}
+.overview .key .catalog {padding-right: 8px;}
+.overview .key .toktok {padding-left: 8px;}
+.overview .key .naverid {width: 190px; margin-left: 206px;}
+.overview .key .smart {width: 190px; margin-left: 206px;}
+.overview .key .smart .keyword {margin-bottom: 0;}
+
+/* 애드시너지 확장 */
+.overview .expand-inner {
+    width: 1296px;
+    padding: 130px 52px 107px;
+    margin: 0 auto;
+}
+.overview .expand-content video {
+    margin: 0 auto;
+    display: block;
+}
+
+/* 성장 그래프 현황 */
+.overview .ratio {
+    min-width: 1400px;
+    height: 868px;
+}
+
+.overview .ratio-inner {
+    width: 1116px;
+    margin: 0 auto;
+    padding: 83px 142px 45px;
+}
+
+.overview .graph-content {
+    padding-top: 82px;
+    margin: 0 auto;
+}
+
+.overview .graph-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.overview .graph-content .graph-img {
+    float: left;
+}
+
+.overview .graph-content .graph-img img {
+    vertical-align: top;
+}
+
+.overview .graph-content .result {
+    float: left;
+}
+
+.overview .graph-content .result-list {
+    padding-top: 50px;
+}
+
+.overview .graph-content .result-list .item {
+    width: 558px;
+    position: relative;
+}
+
+.overview .graph-content .result-list .item::after {
+    content: '';
+    display: block;
+    width: 540px;
+    height: 1px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
+.overview .graph-content .result-list .item dl {
+    padding: 66px 14px 47px 47px;
+}
+
+.overview .graph-content .result-list .item dl::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.overview .graph-content .result-list .item dt {
+    font-size: 32px;
+    margin-right: 64px;
+    float: left;
+}
+
+.overview .graph-content .result-list .item dd {
+    text-align: right;
+    font-size: 64px;
+    line-height: 64px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    float: right;
+}
+
+/* 디바이스 영역 */
+.overview .reach {
+    min-width: 1400px;
+    position: relative;
+    margin-top: 270px;
+}
+
+.overview .reach-bg {
+    background: url('../image/overview-reach-bg.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.overview .reach::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 360px;
+    left: 0;
+    top: -359px;
+    z-index: 1;
+    background-color: #fff;
+    transform-origin: left bottom;
+    transform: rotate(8deg);
+}
+
+.overview .device-contnet .device-list {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.overview .device-contnet img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.overview .device-contnet .tablet {
+    width: 487px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 68px;
+    z-index: 2;
+}
+
+.overview .device-contnet .pc {
+    width: 845px;
+    height: 458px;
+    position: absolute;
+    top: -100px;
+    left: 278px;
+    z-index: 5;
+}
+
+.overview .device-contnet .mobile {
+    width: 148px;
+    height: 278px;
+    position: absolute;
+    top: 100px;
+    right: 288px;
+    z-index: 6;
+}
+
+.overview .device-contnet .mobile-page-one {
+    width: 136px;
+    height: 248px;
+    position: absolute;
+    top: 112px;
+    right: 155px;
+    z-index: 3;
+}
+
+.overview .device-contnet .mobile-page-two {
+    width: 136px;
+    height: 248px;
+    position: absolute;
+    top: 112px;
+    right: 22px;
+    z-index: 2;
+}
+
+.overview .reach-ad {
+    width: 790px;
+    padding: 446px 305px 138px;
+    margin: 0 auto;
+}
+
+.overview .reach-ad-contnet .text-wrap {
+    color: #f5f7f8;
+}
+
+.overview .reach-ad-contnet .point {
+    color: #f5f7f8;
+    font-weight: 800;
+}
+
+.overview .reach-ad-contnet .text {
+    color: #d3d4d5;
+    font-size: 18px;
+}
+
+.overview .reach-ad-contnet .ad-link {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.overview .reach-ad-contnet .ad-link-list {
+    display: inline-block;
+}
+
+.overview .reach-ad-contnet .ad-link-list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item {
+    float: left;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item a {
+    border: 1px solid #0c8644;
+    color: #00ac4a;
+    border-radius: 32px;
+    font-size: 18px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 40px;
+    text-align: center;
+    float: left;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item a span {
+    padding-right: 16px;
+    position: relative;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item a span::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #01ac4b;
+    border-right: 1px solid #01ac4b;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:hover {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:hover a span {
+    color: #fff;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:hover a span::after {
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.overview .reach-ad-contnet .ad-link-list .item:nth-child(2) {
+    margin: 0 20px;
+}
+
+/* 광고 환경 */
+.overview .envi {
+    background-color: #f5f7f8;
+}
+
+.overview .envi-inner {
+    padding: 157px 52px 160px;
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.overview .envi-content .point {
+    color: #000000;
+}
+
+.overview .envi-list-content {
+    background-color: #fff;
+    margin-top: 54px;
+}
+
+.overview .envi-list-content .list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.overview .envi-list-content .list .item {
+    width: 432px;
+    padding: 95px 0 86px;
+    float: left;
+    position: relative;
+}
+
+.overview .envi-list-content .list .item::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 326px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 54px;
+    right: 0;
+}
+
+.overview .envi-list-content .list .item:last-child:after {
+    content: none;
+}
+
+.overview .envi-list-content .icon {
+    height: 108px;
+    text-align: center;
+}
+
+.overview .envi-list-content .icon i {
+    display: inline-block;
+}
+
+.overview .envi-list-content .icon .icon-one {
+    background-image: url('../image/overview-icon-one.png');
+    width: 64px;
+    height: 80px;
+    background-size: 64px 80px;
+}
+
+.overview .envi-list-content .icon .icon-two {
+    background-image: url('../image/overview-icon-two.png');
+    width: 87px;
+    height: 59px;
+    background-size: 87px 59px;
+}
+
+.overview .envi-list-content .icon .icon-three {
+    background-image: url('../image/overview-icon-three.png');
+    width: 89px;
+    height: 89px;
+    background-size: 89px 89px;
+}
+
+.overview .envi-list-content .envi-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.overview .envi-list-content .title {
+    color: #01ac4b;
+    font-size: 32px;
+}
+
+.overview .envi-list-content .text {
+    color: #343434;
+    font-size: 18px;
+    margin-top: 16px;
+}
