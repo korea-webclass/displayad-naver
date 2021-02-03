@@ -4,7 +4,7 @@
 
 /* 비주얼 */
 .overview .visual .bg-one {
-    background: url('../image/sub-overview-visual-bg01.png') no-repeat;
+    background: url('../image/overview-visual-bg-one.png') no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
 }
 
 .overview .visual .bg-two {
-    background: url('../image/sub-overview-visual-bg02.png') no-repeat;
+    background: url('../image/overview-visual-bg-two.png') no-repeat;
     position: absolute;
     top: 0;
     right: 0;
