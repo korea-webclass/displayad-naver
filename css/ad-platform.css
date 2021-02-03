@@ -69,7 +69,7 @@
     color: #767676;
 }
 
-/* 탭 onClick */
+/* 탭 on click */
 .ad-platform .tab-content .item.on {
     border-bottom: 2px solid #00ac4a;
 }
@@ -84,30 +84,11 @@
     color: #00ac4a;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 콘텐츠 */
 .ad-platform .ad-formal {
-    /* height: 2213px; */
     position: relative;
 }
+
 .ad-platform .ad-formal::after {
     content: '';
     position: absolute;
@@ -120,33 +101,37 @@
     transform-origin: left bottom;
     transform: rotate(5.2deg);
 }
-.ad-platform .ad-formal-layout {
-    /* min-width: 1400px; */
+
+.ad-platform .ad-formal-inner {
     width: 1118px;
     padding: 119px 141px 50px;
     margin: 0 auto;
 }
-.ad-platform .ad-formal-wrap {
+
+.ad-platform .ad-formal-content {
     text-align: center;
     margin: 0 auto;
 }
 
-.ad-platform .ad-formal-wrap .text-cont .title {
+.ad-platform .ad-formal-content .text-cont .title {
     display: block;
     font-size: 42px;
     letter-spacing: -1.2px;
     margin-bottom: 16px;
 }
-.ad-platform .ad-formal-wrap .text-cont .desc {
+
+.ad-platform .ad-formal-content .desc {
     font-size: 20px;
     color: #333333;
     letter-spacing: -0.6px;
     margin-bottom: 42px;
 }
-.ad-platform .ad-formal-wrap .text-cont .desc .point {
+
+.ad-platform .ad-formal-content .point {
     color: #00ac4a;
 }
-.ad-platform .ad-formal-wrap .link {
+
+.ad-platform .ad-formal-content .link {
     background-image: linear-gradient(to right, #07d05a, #24beac);
     width: 312px;
     padding: 16px 0 15px;
@@ -155,18 +140,21 @@
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
-.ad-platform .ad-formal-wrap .link:hover {
+
+.ad-platform .ad-formal-content .link:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.07);
     transform: translateY(-2px);
 }
-.ad-platform .ad-formal-wrap .link .text {
+
+.ad-platform .ad-formal-content .text {
     font-size: 17px;
     letter-spacing: -0.6px;
     color: #ffffff;
     padding-right: 12px;
     position: relative;
 }
-.ad-platform .ad-formal-wrap .link .text::after {
+
+.ad-platform .ad-formal-content .text::after {
     content: '';
     width: 8px;
     height: 8px;
@@ -178,8 +166,9 @@
     top: 4px;
     right: 0px;
 }
-.ad-platform .ad-formal-wrap .ad-formal-bg-img {
-    background-image: url('../image/ad-info-img.png');
+
+.ad-platform .ad-formal-content .ad-formal-bg-img {
+    background-image: url('../image/ad-platform-content-img.png');
     background-repeat: no-repeat;
     background-size: 1100px 644px;
     width: 1100px;
@@ -188,32 +177,126 @@
     margin-top: 64px;
 }
 
-.ad-platform .documentation .text-cont {
+/* 콘텐츠 - 운영 안내 */
+.ad-platform .docu .text-cont {
     margin-top: 81px;
 }
-.ad-platform .documentation .text-cont .title {
+
+.ad-platform .docu .title {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.6px;
 }
-.ad-platform .documentation .text-cont .text {
+
+.ad-platform .docu .text {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.6px;
     color: #333333;
 }
-.ad-platform .documentation .text-cont .point {
+
+.ad-platform .docu .point {
     color: #00ac4a;
 }
 
+/* 콘텐츠 - 운영 안내 - 순서 */
+.ad-platform .order-info-content {
+    width: 1118px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
 
-.ad-platform .documentation .ad-cont .link-wrap::after {
+.ad-platform .order-info-content .list {
+    border-top: 1px solid #999999;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.ad-platform .order-info-content .item {
+    position: relative;
+    text-align: left;
+    padding: 40px 0 40px;
+}
+
+.ad-platform .order-info-content .item:first-child {
+    border: none;
+}
+
+.ad-platform .order-info-content .item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.ad-platform .documentation .ad-cont .link-wrap .link-item {
+.ad-platform .order-info-content .item::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    background-color: #03c75a;
+}
+
+.ad-platform .order-info-content .item:last-child::before {
+    width: 2px;
+    height: 72px;
+}
+
+.ad-platform .order-info-content .item:last-child::after {
+    position: relative;
+    bottom: -27px;
+    border-bottom: 1px solid #eeeeee
+}
+
+.ad-platform .order-info-content .num {
+    background-color: #03c75a;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'SpoqaHanSansBold, Arial, NanumSquareR, sans-serif';
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    float: left;
+    position: relative;
+}
+
+.ad-platform .order-info-content .title {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    float: left;
+    width: 232px;
+    display: block;
+    padding-left: 28px;
+    font-family: 'NanumSquare';
+    font-weight: 700;
+}
+
+.ad-platform .order-info-content .text-content {
+    float: left;
+    padding-left: 34px;
+}
+
+.ad-platform .order-info-content .text {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555555;
+    text-align: left;
+}
+
+.ad-platform .order-info-content .link-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ad-platform .order-info-content .link-item {
     text-align: center;
     display: block;
     float: left;
@@ -224,23 +307,28 @@
     border-radius: 40px;
     margin-right: 8px;
 }
-.ad-platform .documentation .ad-cont .link-wrap .link-item:hover {
+
+.ad-platform .order-info-content .link-item:hover {
     background-image: linear-gradient(to right, #07d05a, #24beac);
 }
-.ad-platform .documentation .ad-cont .link-wrap .link-item:hover .text {
+
+.ad-platform .order-info-content .link-item:hover .link-text {
     color: #fff;
 }
-.ad-platform .documentation .ad-cont .link-wrap .link-item:hover .text::after {
+
+.ad-platform .order-info-content .link-item:hover .link-text::after {
     border-top: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
 }
 
-.ad-platform .documentation .ad-cont .link-wrap .link-item .text {
+.ad-platform .order-info-content .link-text {
     color: #00ac4a;
     padding-right: 12px;
     position: relative;
+    font-size: 16px;
 }
-.ad-platform .documentation .ad-cont .link-wrap .link-item .text::after {
+
+.ad-platform .order-info-content .link-text::after {
     content: '';
     width: 7px;
     height: 7px;
@@ -268,95 +356,6 @@
 
 
 
-
-
-
-
-
-
-/* 직접 운영 안내 - 콘텐츠 */
-
-
-.ad-platform .documentation .ad-cont {
-    width: 1118px;
-    margin: 0 auto;
-    padding-top: 55px;
-}
-.ad-platform .documentation .ad-cont .list {
-    border-top: 1px solid #999999;
-    padding-left: 5px;
-    padding-top: 20px;
-}
-.ad-platform .documentation .ad-cont .list .item {
-    position: relative;
-    /* border-top: 1px solid #eeeeee; */
-    text-align: left;
-    padding: 40px 0 40px;
-}
-.ad-platform .documentation .ad-cont .list .item:first-child {
-    border: none;
-}
-
-.ad-platform .documentation .ad-cont .list .item::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.ad-platform .documentation .ad-cont .list .item::before {
-    content: '';
-    display: block;
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: 15px;
-    background-color: #03c75a;
-}
-.ad-platform .documentation .ad-cont .list .item:last-child::before {
-    width: 2px;
-    height: 72px;
-}
-.ad-platform .documentation .ad-cont .list .item:last-child::after {
-    position: relative;
-    bottom: -27px;
-    border-bottom: 1px solid #eeeeee
-}
-.ad-platform .documentation .ad-cont .item .num {
-    background-color: #03c75a;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    display: block;
-    border-radius: 16px;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: 'SpoqaHanSansBold, Arial, NanumSquareR, sans-serif';
-    font-family: 'Spoqa Han Sans';
-    font-weight: 700;
-    float: left;
-    position: relative;
-}
-.ad-platform .documentation .ad-cont .item .title {
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: -0.6px;
-    float: left;
-    width: 232px;
-    display: block;
-    padding-left: 28px;
-    font-family: 'NanumSquare';
-    font-weight: 700;
-}
-.ad-platform .documentation .ad-cont .item .cont {
-    float: left;
-    padding-left: 34px;
-}
-.ad-platform .documentation .ad-cont .item .cont > .text {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #555555;
-    text-align: left;
-}
 
 
 
