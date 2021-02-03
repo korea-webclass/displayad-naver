@@ -2,6 +2,12 @@
 
 .wrap {width: 100%; min-width: 1400px; overflow: hidden;}
 
+/* 
+----------
+주요 특징
+----------
+*/
+
 /* 비주얼 */
 .overview .visual .bg-one {
     background: url('../image/overview-visual-bg-one.png') no-repeat;
@@ -593,4 +599,428 @@
     color: #343434;
     font-size: 18px;
     margin-top: 16px;
+}
+
+/* 
+----------
+디스플레이 광고
+----------
+*/
+
+/* 비주얼 */
+.ad-platform .visual .bg-one {
+    background-image: url('../image/ad-platform-visual-bg-one.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+}
+
+.ad-platform .visual .bg-two {
+    background-image: url('../image/ad-platform-visual-bg-two.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 600px 180px;
+    width: 600px;
+    height: 180px;
+}
+
+/* 탭 */
+.ad-platform .tab {
+    height: 136px;
+}
+
+.ad-platform .tab-inner {
+    width: 720px;
+    padding: 53px 340px 0;
+    margin: 0 auto;
+}
+
+.ad-platform .tab-content .tab-menu {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.ad-platform .tab-content .tab-menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ad-platform .tab-content .item {
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+
+.ad-platform .tab-content .link {
+    display: block;
+    margin-top: 28px;
+}
+
+.ad-platform .tab-content .text {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    display: inline-block;
+}
+
+.ad-platform .tab-content .desc {
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    display: inline-block;
+    color: #767676;
+}
+
+/* 탭 on click */
+.ad-platform .tab-content .item.on {
+    border-bottom: 2px solid #00ac4a;
+}
+
+.ad-platform .tab-content .item.on .link .text {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    color: #00ac4a;
+}
+
+.ad-platform .tab-content .item.on .link .desc {
+    color: #00ac4a;
+}
+
+/* 콘텐츠 */
+.ad-platform .ad-formal {
+    position: relative;
+}
+
+.ad-platform .ad-formal::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 1640px;
+    left: -1480px;
+    top: 614px;
+    z-index: -1;
+    background-color: #f5f7f8;
+    transform-origin: left bottom;
+    transform: rotate(5.2deg);
+}
+
+.ad-platform .ad-formal-inner {
+    width: 1118px;
+    padding: 119px 141px 50px;
+    margin: 0 auto;
+}
+
+.ad-platform .ad-formal-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ad-platform .ad-formal-content .text-cont .title {
+    display: block;
+    font-size: 42px;
+    letter-spacing: -1.2px;
+    margin-bottom: 16px;
+}
+
+.ad-platform .ad-formal-content .desc {
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: -0.6px;
+    margin-bottom: 42px;
+}
+
+.ad-platform .ad-formal-content .point {
+    color: #00ac4a;
+}
+
+.ad-platform .ad-formal-content .link {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    width: 312px;
+    padding: 16px 0 15px;
+    border-radius: 40px;
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ad-platform .ad-formal-content .link:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.ad-platform .ad-formal-content .text {
+    font-size: 17px;
+    letter-spacing: -0.6px;
+    color: #ffffff;
+    padding-right: 12px;
+    position: relative;
+}
+
+.ad-platform .ad-formal-content .text::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    right: 0px;
+}
+
+.ad-platform .ad-formal-content .ad-formal-bg-img {
+    background-image: url('../image/ad-platform-content-img.png');
+    background-repeat: no-repeat;
+    background-size: 1100px 644px;
+    width: 1100px;
+    height: 644px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+/* 콘텐츠 - 운영 안내 */
+.ad-platform .docu .text-cont {
+    margin-top: 81px;
+}
+
+.ad-platform .docu .title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+
+.ad-platform .docu .text {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #333333;
+}
+
+.ad-platform .docu .point {
+    color: #00ac4a;
+}
+
+/* 콘텐츠 - 운영 안내 - 순서 */
+.ad-platform .order-info-content {
+    width: 1118px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.ad-platform .order-info-content .list {
+    border-top: 1px solid #999999;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.ad-platform .order-info-content .item {
+    position: relative;
+    text-align: left;
+    padding: 40px 0 40px;
+}
+
+.ad-platform .order-info-content .item:first-child {
+    border: none;
+}
+
+.ad-platform .order-info-content .item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ad-platform .order-info-content .item::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    background-color: #03c75a;
+}
+
+.ad-platform .order-info-content .item:last-child::before {
+    width: 2px;
+    height: 72px;
+}
+
+.ad-platform .order-info-content .item:last-child::after {
+    position: relative;
+    bottom: -27px;
+    border-bottom: 1px solid #eeeeee
+}
+
+.ad-platform .order-info-content .num {
+    background-color: #03c75a;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'SpoqaHanSansBold, Arial, NanumSquareR, sans-serif';
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    float: left;
+    position: relative;
+}
+
+.ad-platform .order-info-content .title {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    float: left;
+    width: 232px;
+    display: block;
+    padding-left: 28px;
+    font-family: 'NanumSquare';
+    font-weight: 700;
+}
+
+.ad-platform .order-info-content .text-content {
+    float: left;
+    padding-left: 34px;
+}
+
+.ad-platform .order-info-content .text {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555555;
+    text-align: left;
+}
+
+.ad-platform .order-info-content .link-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ad-platform .order-info-content .link-item {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 190px;
+    padding: 8px 0 7px;
+    background-image: none;
+    border: 1px solid #94e4b9;
+    border-radius: 40px;
+    margin-right: 8px;
+}
+
+.ad-platform .order-info-content .link-item:hover {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+}
+
+.ad-platform .order-info-content .link-item:hover .link-text {
+    color: #fff;
+}
+
+.ad-platform .order-info-content .link-item:hover .link-text::after {
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.ad-platform .order-info-content .link-text {
+    color: #00ac4a;
+    padding-right: 12px;
+    position: relative;
+    font-size: 16px;
+}
+
+.ad-platform .order-info-content .link-text::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #00ac4a;
+    border-right: 1px solid #00ac4a;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+/* 광고 대행 안내 */
+.ad-platform .product {
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-platform .product::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 1340px;
+    left: -200px;
+    top: -1348px;
+    z-index: 1;
+    background-color: #f5f7f8;
+    transform-origin: left bottom;
+    transform: rotate(5.2deg);
+}
+
+.ad-platform .product-bg {
+    background-image: url('../image/92005e7200c42cca0716e8abc0d87b50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.ad-platform .product-inner {
+    padding: 240px 287px 120px;
+    width: 826px;
+    margin: 0 auto;
+}
+
+.ad-platform .product-content {
+    text-align: center;
+}
+
+.ad-platform .product-content .text-cont {
+    color: #ffffff;
+}
+
+.ad-platform .product-content .text {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.ad-platform .product-content .desc {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-bottom: 56px;
+    color: #d3d3d5;
+}
+
+.ad-platform .product-content .point {
+    color: #00ac4a;
+    font-weight: normal;
+}
+
+.ad-platform .product-content .link {
+    display: inline-block;
+    width: 553px;
+    padding: 26px 0;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    border-radius: 52px;
+    border: 1px solid rgba(3, 199, 90, 0.7);
+    color: #00ac4a;
+}
+
+.ad-platform .product-content .link:hover {
+    background-image: linear-gradient(to right, #07d05a, #24beac);
+    color: #fff;
 }
