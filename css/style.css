@@ -1032,7 +1032,7 @@
 */
 
 /* 비주얼 */
-.sub-container .visual .bg-one {
+.advertisement-list .visual .bg-one {
     background: url('../image/one.png') no-repeat;
     position: absolute;
     left: 0;
@@ -1042,7 +1042,7 @@
     height: 180px;
 }
 
-.sub-container .visual .bg-two {
+.advertisement-list .visual .bg-two {
     background: url('../image/two.png') no-repeat;
     position: absolute;
     right: 0;
