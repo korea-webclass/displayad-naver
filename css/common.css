@@ -181,11 +181,6 @@
     background-image: linear-gradient(to right, #07d05a, #24beac);
 }
 
-.sub-container .visual {
-    position: relative;
-    height: 180px;
-}
-
 .sub-container .visual .text-area {
     position: absolute;
     top: 50%;

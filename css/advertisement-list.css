@@ -1,35 +1,9 @@
 @charset "utf-8";
 
 .wrap {width: 100%; min-width: 1748px; overflow: hidden;}
-.inner {width: 1748px; margin: 0 auto;}
-.row {padding: 0 20px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 서브 페이지 - 주요 특징 */
-/* ----------------------- */
-
-/* 주요 특징 - 비주얼 */
-
-
-
-
-
-
-.sub-container .sub-srories .content-wrap .bgi-one {
+/* 비주얼 */
+.sub-container .visual .bg-one {
     background: url('../image/one.png') no-repeat;
     position: absolute;
     left: 0;
@@ -39,7 +13,7 @@
     height: 180px;
 }
 
-.sub-container .sub-srories .content-wrap .bgi-two {
+.sub-container .visual .bg-two {
     background: url('../image/two.png') no-repeat;
     position: absolute;
     right: 0;
@@ -49,209 +23,54 @@
     height: 180px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 백그라운드 배경 고정 콘텐츠 */
-.sub-overview .fixed-scroll-box {
-    min-width: 1400px;
-    height: 1175px;
-}
-.sub-overview .fixed-scroll-bg {
-    background: url('../image/fixed-scroll-img.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-}
-.sub-overview .fixed-scroll-box .product {
-    height: 668px;
-}
-.sub-overview .fixed-scroll-box .product .electronics {
-    width: 1305px;
-    margin: 0 auto;
-    position: relative;
-}
-.sub-overview .fixed-scroll-box .product .electronics .tablet {
-    width: 488px;
-    height: 350px;
-    position: absolute;
-    top: 254px;
-    left: 80px;
-    z-index: 1;
-}
-.sub-overview .fixed-scroll-box .product .electronics .pc {
-    width: 853px;
-    height: 456px;
-    position: absolute;
-    top: 152px;
-    left: 300px;
-    z-index: 2;
-}
-.sub-overview .fixed-scroll-box .product .electronics .mobile {
-    width: 148px;
-    height: 278px;
-    position: absolute;
-    top: 342px;
-    right: 172px;
-    z-index: 5;
-}
-.sub-overview .fixed-scroll-box .product .electronics .mobile-page-01 {
-    width: 136px;
-    height: 249px;
-    position: absolute;
-    top: 350px;
-    right: 41px;
-    z-index: 4;
-}
-.sub-overview .fixed-scroll-box .product .electronics .mobile-page-02 {
-    width: 136px;
-    height: 249px;
-    position: absolute;
-    top: 350px;
-    right: -95px;
-    z-index: 3;
-}
-.sub-overview .fixed-scroll-box .reach {
-    height: 507px;
-}
-.sub-overview .fixed-scroll-box .reach .corp {
-    font-size: 42px;
-    text-align: center;
-    color: #fefefe;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-    margin-bottom: 32px;
-}
-.sub-overview .fixed-scroll-box .reach .corp .point {
-    font-weight: 800;
-}
-.sub-overview .fixed-scroll-box .reach .desc {
-    color: #c0c1c2;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: -0.6px;
-    font-size: 18px;
-    margin-bottom: 60px;
-}
-.sub-overview .fixed-scroll-box .reach .link-cont {
-    text-align: center;
-}
-.sub-overview .fixed-scroll-box .reach .link-cont .link {
-    display: inline-block;
-    padding: 0 40px;
-    border: 1px solid rgba(3, 199, 90, 0.7);
-    letter-spacing: -0.6px;
-    border: 1px solid rgba(0, 172, 75, 0.7);
-    border-radius: 32px;
-    height: 56px;
-    line-height: 56px;
-    margin: 0 8px;
-}
-.sub-overview .fixed-scroll-box .reach .link-cont .link:hover {
-    color: #ffffff;
-    background-image: linear-gradient(to right, #07d05a, #24beac);
-}
-.sub-overview .fixed-scroll-box .reach .link-cont .link .text {
-    padding-right: 16px;
-    color: #00ac4a;
-    position: relative;
-}
-.sub-overview .fixed-scroll-box .reach .link-cont .link .text::after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-top: 1px solid #00ac4a;
-    border-right: 1px solid #00ac4a;
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 4px;
-    right: 0px;
-}
-/* 서브페이지 광고상품소개 비주얼 */
-.advertisement-list-page .visual .cont {
-    position: relative;
-    min-width: 1400px
-}
-.advertisement-list-page .visual .cont .bg-01 {
-    background-image: url('../image/advertisement-list-page-visual-cont-bg-01.png');
-    background-repeat: no-repeat;
-    background-size: 664px, 240px;
-    width: 664px;
-    height: 240px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.advertisement-list-page .visual .cont .bg-02 {
-    background-image: url('../image/advertisement-list-page-visual-cont-bg-02.png');
-    background-repeat: no-repeat;
-    background-size: 720px 180px;
-    width: 720px;
-    height: 180px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-/* 광고상품소개 - 목록 */
-
-/* 목록 콘텐츠 */
-.advertisement-list-page .ad-product-cont {
-    /* min-width: 1400px; */
+/* 광고 상품 목록 */
+.advertisement-list .product-list-content {
     width: 1296px;
     margin: 0 auto;
     padding-top: 120px;
     position: relative;
 }
-.advertisement-list-page .ad-product-cont ul::after {
+
+.advertisement-list .product-list-content .list::after {
     content: '';
     display: block;
     clear: both;
 }
-.advertisement-list-page .ad-product-cont li {
+
+.advertisement-list .product-list-content .item {
     float: left;
     margin-right: 24px;
 }
-.advertisement-list-page .ad-product-cont li + li {
+
+.advertisement-list .product-list-content .item + .item {
     margin-top: 24px;
 }
-.advertisement-list-page .ad-product-cont li:nth-child(1) {
-    margin-top: 0px;
-}
-.advertisement-list-page .ad-product-cont li:nth-child(2) {
+
+.advertisement-list .product-list-content .item:nth-child(1) {
     margin-top: 0px;
 }
 
-.advertisement-list-page .ad-product-cont li:nth-child(2n) {
+.advertisement-list .product-list-content .item:nth-child(2) {
+    margin-top: 0px;
+}
+
+.advertisement-list .product-list-content .item:nth-child(2n) {
     margin-right: 0;
 }
 
-
-.advertisement-list-page .ad-product-cont .item a {
+.advertisement-list .product-list-content .item a {
     position: relative;
     display: block;
 }
 
-.advertisement-list-page .ad-product-cont .text-cont {
+.advertisement-list .product-list-content .text-cont {
     position: absolute;
     left: 40px;
     bottom: 48px;
     color: #ffffff;
 }
 
-.advertisement-list-page .ad-product-cont .text-cont .title {
+.advertisement-list .product-list-content .title {
     font-size: 32px;
     display: inline-block;
     vertical-align: middle;
@@ -260,7 +79,7 @@
     margin-right: 8px;
 }
 
-.advertisement-list-page .ad-product-cont .text-cont .text {
+.advertisement-list .product-list-content .text {
     font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 1px 11px;
@@ -268,53 +87,46 @@
     display: inline-block;
     border-radius: 16px;
     letter-spacing: -0.6px;
+    color: #ffffff;
 }
 
-.advertisement-list-page .ad-product-cont .text-cont .desc {
+.advertisement-list .product-list-content .desc {
     margin-top: 5px;
     line-height: 28px;
     letter-spacing: -0.6px;
 }
 
-/* 목록 콘텐츠 이미지 */
-.advertisement-list-page .ad-product-cont .main-ad-img {background-image: url('../image/main-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .sub-ad-img {background-image: url('../image/sub-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .topic-ad-img {background-image: url('../image/topic-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .video-ad-img {background-image: url('../image/video-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .search-ad-img {background-image: url('../image/search-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .band-ad-img {background-image: url('../image/band-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .webtoon-ad-img {background-image: url('../image/webtoon-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list-page .ad-product-cont .influencer-ad-img {background-image: url('../image/influencer-ad-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-
-
-
-
-
-
-
-
-
+/* 광고 상품 목록 - 이미지 */
+.advertisement-list .product-list-content .main-ad-img {background-image: url('../image/advertisement-list-product-list-main-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .sub-ad-img {background-image: url('../image/advertisement-list-product-list-sub-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .topic-ad-img {background-image: url('../image/advertisement-list-product-list-topic-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .video-ad-img {background-image: url('../image/advertisement-list-product-list-video-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .search-ad-img {background-image: url('../image/advertisement-list-product-list-search-img.png'); width: 636px; height: 404px; background-size: 636px, 404px; background-position: 30px;}
+.advertisement-list .product-list-content .band-ad-img {background-image: url('../image/advertisement-list-product-list-band-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .webtoon-ad-img {background-image: url('../image/advertisement-list-product-list-webtoon-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
 
 /* 상품 상세정보 보기 */
-.advertisement-list-page .product-info {
-    /* height: 502px; */
+.advertisement-list .product-info {
     min-width: 1400px;
     background-color: #22222a;
     margin-top: 129px;
     position: relative;
     overflow: hidden;
 }
-.advertisement-list-page .product-info .layout {
-    /* min-width: 1400px; */
+
+.advertisement-list .product-inner {
     width: 1298px;
     margin: 0 auto;
     padding: 205px 51px 120px;
     overflow: hidden;
 }
-.advertisement-list-page .product-info .contents-wrap {
+
+.advertisement-list .product-content {
     display: inline-block;
 }
-.advertisement-list-page .product-info .title {
+
+.advertisement-list .product-content .title {
     color: #ffffff;
     margin-top: 4px;
     margin-bottom: 36px;
@@ -322,17 +134,19 @@
     font-size: 31px;
     text-align: center;
 }
-.advertisement-list-page .product-info .link-cont {
+
+.advertisement-list .product-content .link-content {
     text-align: center;
     margin: 0 auto;
-    /* display: inline-block; */
 }
-.advertisement-list-page .product-info .link-cont::after {
+
+.advertisement-list .product-content .link-content::after {
     content: '';
     display: block;
     clear: both;
 }
-.advertisement-list-page .product-info .link-cont .link {
+
+.advertisement-list .product-content .link {
     border: 1px solid #17ba5a;
     border-radius: 52px;
     margin-right: 22px;
@@ -341,22 +155,25 @@
     display: block;
     float: left;
 }
-.advertisement-list-page .product-info .link-cont .link:hover {
+
+.advertisement-list .product-content .link:hover {
     background-image: linear-gradient(to right, #07d05a, #24beac);
-    /* color: #fff; */
 }
-.advertisement-list-page .product-info .link-cont .link:hover > span {
+
+.advertisement-list .product-content .link:hover > span {
     color: #fff;
 }
-.advertisement-list-page .product-info .link-cont .link:hover > span::after {
+
+.advertisement-list .product-content .link:hover > span::after {
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
 }
 
-.advertisement-list-page .product-info .link-cont .link:last-child {
+.advertisement-list .product-content .link:last-child {
     margin-right: 0;
 }
-.advertisement-list-page .product-info .link-cont .link span {
+
+.advertisement-list .product-content .link-text {
     margin-top: 30px;
     display: inline-block;
     color: #17ba5a;
@@ -367,7 +184,8 @@
     padding-right: 33px;
     position: relative;
 }
-.advertisement-list-page .product-info .link-cont .link span::after {
+
+.advertisement-list .product-content .link-text::after {
     content: '';
     width: 13px;
     height: 13px;
@@ -380,7 +198,7 @@
     right: 9px;
 }
 
-.advertisement-list-page .product-info .rotate_bg {
+.advertisement-list .product-content .rotate_bg {
     position: absolute;
     width: 200%;
     height: 100%;
@@ -391,98 +209,3 @@
     transform: rotate(5.2deg);
     z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
