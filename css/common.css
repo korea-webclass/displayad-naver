@@ -127,7 +127,7 @@
     width: 100%;
 }
 
-/* gnb 현재 페이지 */
+/* gnb - 활성화 */
 .header-wrap .gnb .item .link.on {
     /* position: relative; */
     font-weight: 700;
