@@ -103,6 +103,7 @@
     position: relative;
     height: 932px;
 }
+
 .ad-vertisement-main .sec .sec-bg {
     position: absolute;
     top: 50%;
@@ -205,16 +206,23 @@
 }
 
 /* PC 광고 */
-.ad-vertisement-main .cont-box .box {
+.ad-vertisement-main .pc-ad {
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-vertisement-main .pc-inner {
     width: 1080px;
     padding: 0 160px;
     margin: 0 auto;
 }
-.ad-vertisement-main .cont-box .box .box-wrap {
+
+.ad-vertisement-main .pc-content {
+    padding-top: 180px;
     text-align: center;
 }
 
-.ad-vertisement-main .cont-box .box .box-text {
+.ad-vertisement-main .pc-content .text {
     font-size: 40px;
     font-weight: 700;
     display: inline-block;
@@ -223,8 +231,14 @@
     margin-right: 4px;
     line-height: 60px;
     letter-spacing: -1.2px;
+    color: #000;
 }
-.ad-vertisement-main .cont-box .box .box-point {
+
+.ad-vertisement-main .pc-content .text-color, .desc-color {
+    color: #fff;
+}
+
+.ad-vertisement-main .pc-content .point {
     display: inline-block;
     vertical-align: middle;
     letter-spacing: -0.6px;
@@ -236,33 +250,26 @@
     margin-bottom: 16px;
     padding: 4px 12px;
 }
-.ad-vertisement-main .cont-box .box .box-desc {
+
+.ad-vertisement-main .pc-content .desc {
     line-height: 28px;
     letter-spacing: -0.6px;
     margin-bottom: 40px;
 }
 
-.ad-vertisement-main .cont-box .box .box-img {}
-.ad-vertisement-main .cont-box .box .box-img img {
+.ad-vertisement-main .pc-content img {
     width: 100%;
     vertical-align: top;
 }
-.ad-vertisement-main .cont-box .box-bg-img {
-    background: url('../image/box-cont-imgs (17).jpg') no-repeat;
+
+.ad-vertisement-main .pc-ad .rolling-bg {
+    background: url('../image/ad-vertisement-main-pc-ad-rolling-bg.jpg') no-repeat;
     width: 100%;
     height: 1224px;
     background-size: 100%, 1124px;
 }
-.ad-vertisement-main .cont-box .box-wrap {
-    padding-top: 180px;
-}
 
-
-.ad-vertisement-main .box-bg {
-    position: relative;
-    overflow: hidden;
-}
-.ad-vertisement-main .box-bg .diagonal-one {
+.ad-vertisement-main .pc-ad .diagonal-one {
     position: absolute;
     width: 120%;
     height: 480px;
@@ -275,7 +282,8 @@
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
-.ad-vertisement-main .box-bg .diagonal-two {
+
+.ad-vertisement-main .pc-ad .diagonal-two {
     position: absolute;
     right: 0;
     bottom: -350px;
@@ -291,15 +299,24 @@
     z-index: 1;
 }
 
-.ad-vertisement-main .box-bg .box-wrap {
-    color: #ffffff;
-}
-.ad-vertisement-main .box-bg .box-wrap .box-text {}
-.ad-vertisement-main .box-bg .box-wrap .box-point {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-.ad-vertisement-main .box-bg .box-wrap .box-desc {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .ad-vertisement-main .cont-ad {
