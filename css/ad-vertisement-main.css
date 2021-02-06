@@ -299,35 +299,18 @@
     z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 광고 콘텐츠 링크 */
 .ad-vertisement-main .cont-ad {
     position: relative;
     height: 440px;
     background-color: #f5f7f8;
 }
+
 .ad-vertisement-main .cont-ad .ad-box {
     padding: 118px 96px 119px;
     overflow: hidden;
 }
+
 .ad-vertisement-main .cont-ad .box-wrap {
     position: relative;
     width: 200%;
@@ -340,6 +323,7 @@
     left: 0;
     width: 200%;
 }
+
 .ad-vertisement-main .cont-ad .box-list::after {
     content: '';
     display: block;
@@ -354,19 +338,19 @@
     position: relative;
 }
 
-
 .ad-vertisement-main .cont-ad .box-link {
     display: block;
     width: 100%;
     height: 203px;
     background-size: 100%, 203px;
     background-size: cover;
-
 }
+
 .ad-vertisement-main .cont-ad .box-link.on {
     border: 8px solid #03c75a;
     box-sizing: border-box;
 }
+
 .ad-vertisement-main .cont-ad .box-point {
     font-size: 24px;
     color: #ffffff;
@@ -384,10 +368,6 @@
 .ad-vertisement-main .cont-ad .link-img07 {background: url('../image/box-cont-imgs07.png') no-repeat; background-size: cover;}
 .ad-vertisement-main .cont-ad .link-img08 {background: url('../image/box-cont-imgs08.png') no-repeat; background-size: cover;}
 
-.ad-vertisement-main .cont-ad .slide-control {
-
-}
-
 .ad-vertisement-main .cont-ad .slide-control .prev {
     display: inline-block;
     width: 48px;
@@ -398,17 +378,18 @@
     top: 186px;
     left: 0;
 }
+
 .ad-vertisement-main .cont-ad .slide-control .prev::after {
     content: '';
-    width: 16px; /* 사이즈 */
-    height: 16px; /* 사이즈 */
-    border-top: 2px solid #fff; /* 선 두께 */
-    border-right: 2px solid #fff; /* 선 두께 */
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
     display: inline-block;
-    transform: rotate(225deg); /* 각도 */
+    transform: rotate(225deg);
     position: absolute;
-    top: 20px; /* 기본 0px 값으로 해주세요 */
-    left: 18px; /* 기본 0px 값으로 해주세요 */
+    top: 20px;
+    left: 18px;
 }
 
 .ad-vertisement-main .cont-ad .slide-control .next {
@@ -424,16 +405,65 @@
 
 .ad-vertisement-main .cont-ad .slide-control .next::after {
     content: '';
-    width: 16px; /* 사이즈 */
-    height: 16px; /* 사이즈 */
-    border-top: 2px solid #fff; /* 선 두께 */
-    border-right: 2px solid #fff; /* 선 두께 */
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
     display: inline-block;
-    transform: rotate(45deg); /* 각도 */
+    transform: rotate(45deg);
     position: absolute;
-    top: 20px; /* 기본 0px 값으로 해주세요 */
-    right: 18px; /* 기본 0px 값으로 해주세요 */
+    top: 20px;
+    right: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ad-vertisement-main .box-info {
     background-image: linear-gradient(282deg, #00c652, #00c5ae);
