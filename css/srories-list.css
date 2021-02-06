@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-/* 페이지 전체 */
+.wrap {width: 100%; min-width: 1400px; overflow: hidden;}
 
 /* 비주얼 */
-.sub-container .sub-srories .content-wrap .bgi-one {
-    background: url('../image/sub-srories-visual-bg-one.png') no-repeat;
+.srories-list .visual .bg-one {
+    background: url('../image/srories-list-visual-bg-one.png') no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -13,8 +13,8 @@
     height: 180px;
 }
 
-.sub-container .sub-srories .content-wrap .bgi-two {
-    background: url('../image/sub-srories-visual-bg-two.png') no-repeat;
+.srories-list .visual .bg-two {
+    background: url('../image/srories-list-visual-bg-two.png') no-repeat;
     position: absolute;
     top: 0;
     right: 0;
