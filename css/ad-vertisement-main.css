@@ -50,38 +50,38 @@
 }
 
 /* 탭 */
-.sub-content .tab-content {
+.ad-vertisement-main .tab-content {
     text-align: center;
     margin-top: 64px;
 }
 
-.sub-content .tab-content .tab-menu {
+.ad-vertisement-main .tab-content .tab-menu {
     display: inline-block;
     vertical-align: top;
 }
 
-.sub-content .tab-content .tab-menu::after {
+.ad-vertisement-main .tab-content .tab-menu::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-content .tab-content .item {
+.ad-vertisement-main .tab-content .item {
     float: left;
     margin-right: 14px;
 }
 
-.sub-content .tab-content .item::after {
+.ad-vertisement-main .tab-content .item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-content .tab-content .item:last-child {
+.ad-vertisement-main .tab-content .item:last-child {
     margin-right: 0;
 }
 
-.sub-content .tab-content .link {
+.ad-vertisement-main .tab-content .link {
     display: block;
     padding: 0 20px;
     height: 36px;
@@ -92,58 +92,66 @@
 }
 
 /* 탭 - 활성화 */
-.sub-content .tab-content .link.on {
+.ad-vertisement-main .tab-content .link.on {
     border-color: #03c75a;
     background-color: #03c75a;
     color: #fff;
 }
 
-
-
-
-.sub-content .sec-scroll {
+/* 모바일 광고 */
+.ad-vertisement-main .sec {
     position: relative;
+    height: 932px;
 }
-.sub-content .sec-cont {
+.ad-vertisement-main .sec .sec-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(100deg, #00c652, #00c5ae);
+}
+
+.ad-vertisement-main .sec-inner {
     width: 1080px;
     padding: 0 160px;
     margin: 0 auto;
 }
-.sub-content .sec-cont .sec-wrap {
-    padding: 40px 0 135px 0;
+
+.ad-vertisement-main .sec-content {
     position: relative;
     height: 932px;
 }
-.sub-content .sec-cont .sec-wrap::after {
+
+.ad-vertisement-main .sec-content::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-content .sec-cont .cont-img {
-    float: left;
-    width: 340px;
-    height:676px;
+.ad-vertisement-main .sec-content .sec-img {
+    width: 480px;
     position: absolute;
-    top: 88px;
-    left: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 140px;
 }
-.sub-content .sec-cont .cont-img img {
+
+.ad-vertisement-main .sec-content .sec-img img {
     width: 100%;
     vertical-align: top;
 }
 
-.sub-content .sec-cont .text-area {
-    float: right;
+.ad-vertisement-main .sec-content .text-area {
     position: absolute;
-    top: 260px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 120px;
-}
-.sub-content .sec-cont .text-color {
-    color: #ffffff;
+    width: 360px;
 }
 
-.sub-content .sec-cont .text-area .text {
+.ad-vertisement-main .sec-content .text {
     font-size: 40px;
     font-weight: 700;
     display: inline-block;
@@ -152,8 +160,10 @@
     margin-right: 4px;
     line-height: 60px;
     letter-spacing: -1.2px;
+    color: #000000;
 }
-.sub-content .sec-cont .text-area .title {
+
+.ad-vertisement-main .sec-content .point {
     display: inline-block;
     vertical-align: middle;
     letter-spacing: -0.6px;
@@ -166,34 +176,55 @@
     padding: 4px 12px;
 }
 
-.sub-content .sec-cont .text-area .title-point {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-}
-
-.sub-content .sec-cont .text-area .desc {
+.ad-vertisement-main .sec-content .desc {
     line-height: 28px;
     letter-spacing: -0.6px;
     margin-bottom: 24px;
 }
 
-.sub-content .sec-cont .text-area .point {
-    display: block;
+.ad-vertisement-main .sec-content dl {
     font-size: 14px;
+}
+
+.ad-vertisement-main .sec-content dl dt {
     color: #00ac4a;
-    font-weight: 700;
-    margin-bottom: 6px;
-    
+    letter-spacing: -0.6px;
 }
 
-.sub-content .sec-cont .text-area .point-text {
-    color: #ffffff;
-}
-
-.sub-content .sec-cont .text-area .point-desc    {
-    font-size: 14px;
+.ad-vertisement-main .sec-content dl p {
     margin-bottom: 12px;
+    letter-spacing: -0.6px;
 }
+
+.ad-vertisement-main .sec-three .text-area * {
+    color: #fff;
+}
+
+.ad-vertisement-main .sec-three .text-area .point {
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sub-content .cont-color {
     position: absolute;
