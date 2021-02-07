@@ -1,16 +1,12 @@
 @charset "utf-8";
 
 /* 비주얼 */
-.sub-container .sub-detail {
+.sub-container .visual {
     background-image: none;
     height: 470px;
 }
 
-.sub-container .sub-detail .detail-wrap {
-    height: 470px;
-    position: relative;
-}
-.sub-container .sub-detail .detail-wrap .text-area {
+.sub-container .visual .text-area {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,20 +16,20 @@
     text-align: center;
     z-index: 1;
 }
-.sub-container .sub-detail .detail-wrap .text-area .copy {
+.sub-container .visual .text-area .copy {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.6px;
     margin-bottom: 16px;
 }
 
-.sub-container .sub-detail .detail-wrap .text-area .desc {
+.sub-container .visual .text-area .desc {
     font-size: 42px;
     line-height: 60px;
     letter-spacing: -1.2px;
 }
 
-.sub-container .sub-detail .detail-wrap .bgi-one {
+.sub-container .visual .bg-one {
     position: absolute;
     background-color: #000000;
     background-size: 100%, 470px;
@@ -46,7 +42,7 @@
     background-size: cover;
 }
 
-.sub-container .sub-detail .detail-wrap .bgi-one::after {
+.sub-container .visual .bg-one::after {
     content: '';
     display: block;
     position: absolute;
@@ -58,14 +54,14 @@
     opacity: 0.5;
 }
 
-.sub-container .sub-detail .detail-wrap .bgi-two {
+.sub-container .visual .bg-two {
     position: relative;
     width: 1080px;
     height: 470px;
     margin: 0 auto;
 }
 
-.sub-container .sub-detail .detail-wrap .bgi-two::after {
+.sub-container .visual .bg-two::after {
     content: '';
     display: inline-block;
     position: absolute;
