@@ -16,6 +16,7 @@
     text-align: center;
     z-index: 1;
 }
+
 .sub-container .visual .text-area .copy {
     font-size: 18px;
     line-height: 30px;
@@ -74,14 +75,14 @@
     background-image: url('../image/srories-list-banner.png');
 }
 
-/* 콘텐츠 */
-.sub-container .srories-list {
+/* 내용 */
+.srories-detail .detail-inner {
     width: 1080px;
     padding: 120px 52px 107px;
     margin: 0 auto;
 }
 
-.sub-container .srories-list .content-wrap .title {
+.srories-detail .detail-content .title {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 24px;
@@ -89,52 +90,48 @@
     letter-spacing: -0.6px;
 }
 
-.sub-container .srories-list .content-wrap .desc {
+.srories-detail .detail-content .desc {
     line-height: 28px;
     letter-spacing: -0.6px;
 }
 
-.sub-container .srories-list .content-wrap .desc-wrap .desc-text {
+.srories-detail .detail-content .desc-wrap .desc-text {
     font-style: italic;
     line-height: 28px;
     letter-spacing: -0.6px;
 }
 
-.sub-container .srories-list .content-wrap .space {
+.srories-detail .detail-content .space {
     width: 100%;
     height: 24px;
 }
-.sub-container .srories-list .content-wrap .blod {
+
+.srories-detail .detail-content .blod {
     font-weight: 700;
     font-family: 'NanumSquare';
 }
 
-.sub-container .srories-list .content-wrap .desc .blod {
+.srories-detail .detail-content .desc .blod {
     font-weight: 700;
     font-family: 'NanumSquare';
 }
 
-.sub-container .srories-list .content-wrap .cont-img {
+.srories-detail .detail-content .detail-img {
     width: 100%; 
     vertical-align: top;
 }
 
-/* 정보 */
-.sub-container .srories-list .content-wrap .cont-title {
-
-}
-
-.sub-container .srories-list .content-wrap .cont-title .text-area {
+.srories-detail .detail-content .text-area {
     margin-top: 60px;
 }
 
-.sub-container .srories-list .content-wrap .cont-title .text-area::after {
+.srories-detail .detail-content .text-area::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-container .srories-list .content-wrap .cont-title .item {
+.srories-detail .detail-content .text-area .item {
     float: left;
     text-align: center;
     border-right: 1px solid #eeeeee;
@@ -143,12 +140,12 @@
     box-sizing: border-box;
 }
 
-.sub-container .srories-list .content-wrap .cont-title .item:last-child {
+.srories-detail .detail-content .text-area .item:last-child {
     padding: 0;
     border-right: none;
 }
 
-.sub-container .srories-list .content-wrap .cont-title .tit {
+.srories-detail .detail-content .text-area .title {
     display: block;
     font-size: 42px;
     font-weight: 500;
@@ -158,20 +155,20 @@
     color: #00ac4a;
 }
 
-.sub-container .srories-list .content-wrap .cont-title .text {
+.srories-detail .detail-content .text-area .text {
     display: block;
     line-height: 28px;
     letter-spacing: -0.6px;
 }
 
-.sub-container .srories-list .content-wrap .desc-wrap {
+.srories-detail .detail-content .desc-wrap {
     margin-top: 28px;
     padding: 40px 20px 40px 92px;
     background-color: #f8f8f8;
     position: relative;
 }
 
-.sub-container .srories-list .content-wrap .desc-wrap::after {
+.srories-detail .detail-content .desc-wrap::after {
     content: '';
     display: block;
     position: absolute;
@@ -181,25 +178,20 @@
     height: 28px;
     background-image: url('../image/box-img.png');
     background-size: 33px, 28px;
-    
 }
 
-.sub-container .srories-list .content-wrap .word {
-
-}
-
-.sub-container .srories-list .content-wrap .word::after {
+.srories-detail .detail-content .hash-tag-content::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-container .srories-list .content-wrap .word .item {
+.srories-detail .detail-content .hash-tag-content .item {
     float: left;
     margin: 0 8px 12px 0;
 }
 
-.sub-container .srories-list .content-wrap .word .item .link {
+.srories-detail .detail-content .hash-tag-content .link {
     display: inline-block;
     padding: 0 14px;
     line-height: 36px;
@@ -209,112 +201,107 @@
 
 }
 
-.sub-container .srories-list .content-wrap .cont-more {
+.srories-detail .more-content {
     text-align: center;
     margin-top: 120px;
 }
-.sub-container .srories-list .content-wrap .cont-more .more-wrap {
-    display: inline-block;
-}
-.sub-container .srories-list .content-wrap .cont-more .more-wrap::after {
+
+.srories-detail .more-content::after {
     content: '';
     display: block;
     clear: both;
 }
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .item {
-    float: left;
+
+.srories-detail .more-content > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.srories-detail .more-content .link {
     border: 1px solid #b7b7b7;
     border-radius: 32px;
+    height: 62px;
     line-height: 62px;
     padding: 0 31px;
     font-size: 20px;
     margin-right: 16px;
-}
-
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .item:last-child {
-    margin-right: 0;
-}
-
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .link {
     display: block;
-    height: 62px;
+    float: left;
 }
 
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .link::before {
-
-}
-
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .icon-img {
-    display: inline-block;
+.srories-detail .more-content .more-icon {
+    float: left;
+    display: block;
     background: url('../image/ad-icon.png');
     width: 64px;
     height: 64px;
     background-size: 64px, 64px;
 }
 
-.sub-container .srories-list .content-wrap .cont-more .more-wrap .icon-img:hover {
-    display: inline-block;
+.srories-detail .more-content .more-icon:hover {
+    display: block;
     background: url('../image/ad-icon-hover.png');
     width: 64px;
     height: 64px;
     background-size: 64px, 64px;
 }
 
-.sub-container .different {
+/* 다른 사례 보기 */
+.different {
     background-color: #f5f7f8;
 }
-.sub-container .different .different-box {
+
+.different .different-box {
     width: 1296px;
     margin: 0 auto;
     padding: 112px 52px 120px;
 }
-.sub-container .different .box-wrap .title {
+
+.different .box-wrap .title {
     font-size: 42px;
     margin-bottom: 60px;
     text-align: center;
 }
 
-/* 다른 사례 더보기 */
-.sub-container .different .box-wrap .list-box::after {
+.different .box-wrap .list-box::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-container .different .box-wrap .list-box .item {
+.different .box-wrap .list-box .item {
     float: left;
     width: 416px;
     margin-right: 24px;
-    margin-bottom: 80px;
     background-color: #fff;
     transition: all 0.3s ease-out;
 }
 
-.sub-container .different .box-wrap .list-box .item:last-child {
+.different .box-wrap .list-box .item:last-child {
     margin-right: 0;
 }
 
-.sub-container .different .box-wrap .list-box .item:hover {
+.different .box-wrap .list-box .item:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.07);
 }
 
-.sub-container .different .box-wrap .list-box .link {
+.different .box-wrap .list-box .link {
     display: block;
 }
 
-.sub-container .different .box-wrap .list-box img {
+.different .box-wrap .list-box img {
     width: 100%;
     height: 238px;
     vertical-align: top;
 }
 
-.sub-container .different .box-wrap .list-box .text-area {
+.different .box-wrap .list-box .text-area {
     height: 107px;
     padding: 32px;
 }
 
-.sub-container .different .box-wrap .list-box .text-area .copy {
+.different .box-wrap .list-box .text-area .copy {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: -0.6px;
@@ -322,7 +309,7 @@
     margin-bottom: 13px;
 }
 
-.sub-container .different .box-wrap .list-box .text-area .desc {
+.different .box-wrap .list-box .text-area .desc {
     line-height: 28px;
     letter-spacing: -0.6px;
 }
