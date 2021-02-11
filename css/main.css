@@ -70,19 +70,6 @@
     margin-bottom: 23px;
 }
 
-.main .visual-slide .slide-text .more {
-    width: 137px;
-    height: 46px;
-    border-radius: 32px;
-    background-image: linear-gradient(100deg, #00c652, #00c5ae);
-    display: inline-block;
-    font-size: 15px;
-    color: #ffffff;
-    line-height: 46px;
-    text-align: center;
-    font-weight: 700;
-}
-
 /* 최신 업데이트 소식 */
 .main .latest-news {
     background-color: #f5f7f8;
