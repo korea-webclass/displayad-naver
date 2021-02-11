@@ -38,42 +38,6 @@
     z-index: 1;
 }
 
-.main .slide-control {
-    position: absolute;
-    bottom: 48px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.main .control-item::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.main .slide-control .item {
-    float: left;
-    margin-right: 16px;
-}
-
-.main .slide-control .item:last-child {
-    margin-right: 0;
-}
-
-.main .slide-control .circle {
-    width: 10px;
-    height: 10px;
-    background-color: #aaa;
-    border-radius: 32px;
-    display: block;
-}
-
-.main .slide-control .item.on .circle {
-    width: 36px;
-    background-color: #fff;
-}
-
 .main .visual-slide .slide-bg {
     background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
     width: 100%;
@@ -228,6 +192,7 @@
     background: #000;
 }
 
+/* 네이버를 활용한 다양한 마케팅 스토리 */
 .main .success {
     height: 908px;
     padding: 130px 0 176px;
@@ -235,14 +200,24 @@
     position: relative;
 }
 
-.main .success .content-title {
+/* success 슬라이드 활성화 */
+.main .success-slide-control {
+    bottom: 132px;
+}
+
+.main .success-slide-control .item.on .circle {
+    width: 10px;
+    background-color: #03c75a;
+}
+
+.main .success .copy {
     font-size: 40px;
     text-align: center;
     line-height: 100%;
     margin-bottom: 68px;
 }
 
-.main .success .content-title .point {
+.main .success .point {
     font-weight: 700;
 }
 
@@ -285,9 +260,9 @@
     float: left;
 }
 
-.main .success .box-text-wrap {
+.main .success .box-text-area {
     position: relative;
-    display:table;
+    display: table;
     width: 540px;
     height: 496px;
     float: left;
@@ -298,36 +273,52 @@
 }
 
 .main .success .box-text {
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .main .success .box-text > div {
     text-align: center;
 }
 
-.main .success .box-text .title {
+.main .success .title {
     font-size: 30px;
     display: block;
     line-height: 100%;
     margin-bottom: 12px;
 }
 
-.main .success .box-text .text {
+.main .success .text {
     font-size: 16px;
     display: block;
     line-height: 100%;
     margin-bottom: 52px;
 }
 
-.main .success .box-text .desc {
+.main .success .desc {
     font-size: 19px;
     letter-spacing: -0.6px;
     line-height: 32px;
     margin-bottom: 52px;
 }
 
-.main .success .box-text .view {
+.main .success .view {
+    position: relative;
     line-height: 100%;
 }
 
+.main .success .view:hover::after {
+    width: 100%;
+}
+
+.main .success .view::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}

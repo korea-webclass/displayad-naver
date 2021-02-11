@@ -161,7 +161,42 @@
     height: 20px;
 }
 
+/* 메인 공통 */
+.main-content .slide-control {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 
+.main-content .control-item::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-content .slide-control .item {
+    float: left;
+    margin-right: 16px;
+}
+
+.main-content .slide-control .item:last-child {
+    margin-right: 0;
+}
+
+.main-content .slide-control .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 32px;
+    display: block;
+}
+
+.main-content .slide-control .item.on .circle {
+    width: 36px;
+    background-color: #fff;
+}
 
 
 
