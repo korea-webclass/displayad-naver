@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
-.main-container .visual {
+.wrap {width: 100%; min-width: 1400px; overflow: hidden;}
+
+/* 
+----------
+메인
+----------
+*/
+
+/* 비주얼 */
+.main .visual {
     position: relative;
     height: 900px;
 }
 
-.main-container .visual-slide .prev {
+.main .visual-slide .prev {
     display: block;
     background: url('../image/main/main-visual-arr-prev.png') no-repeat;
     background-size: cover;
@@ -14,9 +23,10 @@
     position: absolute;
     top: 440px;
     left: 56px;
+    z-index: 1;
 }
 
-.main-container .visual-slide .next {
+.main .visual-slide .next {
     display: block;
     background: url('../image/main/main-visual-arr-next.png') no-repeat;
     background-size: cover;
@@ -25,31 +35,33 @@
     position: absolute;
     top: 440px;
     right: 56px;
+    z-index: 1;
 }
 
-.main-container .slide-control {
+.main .slide-control {
     position: absolute;
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
-.main-container .control-item::after {
+.main .control-item::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main-container .slide-control .item {
+.main .slide-control .item {
     float: left;
     margin-right: 16px;
 }
 
-.main-container .slide-control .item:last-child {
+.main .slide-control .item:last-child {
     margin-right: 0;
 }
 
-.main-container .slide-control .circle {
+.main .slide-control .circle {
     width: 10px;
     height: 10px;
     background-color: #aaa;
@@ -57,55 +69,60 @@
     display: block;
 }
 
-.main-container .slide-control .item.on .circle {
+.main .slide-control .item.on .circle {
     width: 36px;
     background-color: #fff;
 }
 
-.main-container .visual-slide .slide-bg {
+.main .visual-slide .slide-bg {
     background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
     width: 100%;
     height: 900px;
     background-size: cover;
     position: relative;
-    z-index: -1;
 }
 
-.main-container .visual-slide .slide-text .content {
+.main .visual-slide .slide-text .text-area {
     position: absolute;
     top: 380px;
     left: 260px;
+    z-index: 1;
 }
 
-.main-container .visual-slide .slide-text .title {
-    font-size: 56px;
+.main .visual-slide .slide-text .title {
+    font-size: 60px;
     line-height: 100%;
+    letter-spacing: -2px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 }
 
-.main-container .visual-slide .slide-text .desc {
-    font-size: 18px;
+.main .visual-slide .slide-text .desc {
+    font-size: 19px;
     line-height: 32px;
+    letter-spacing: -0.6px;
     color: #ffffff;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
 }
 
-.main-container .visual-slide .slide-text .link-wrap {
+.main .visual-slide .slide-text .more {
     width: 137px;
     height: 46px;
     border-radius: 32px;
     background-image: linear-gradient(100deg, #00c652, #00c5ae);
-}
-
-.main-container .visual-slide .slide-text .more {
-    display: block;
+    display: inline-block;
     font-size: 15px;
     color: #ffffff;
     line-height: 46px;
     text-align: center;
+    font-weight: 700;
 }
+
+
+
+
+
 
 .main-container .content {
     width: 1296px;
