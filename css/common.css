@@ -206,8 +206,6 @@
 
 /* 메인 - 콘텐츠 버튼 */
 .main-content .btn {
-    width: 137px;
-    height: 46px;
     border-radius: 32px;
     background-image: linear-gradient(100deg, #00c652, #00c5ae);
     display: inline-block;
