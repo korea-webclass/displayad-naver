@@ -389,3 +389,116 @@
 .main .brand-content .brand-btn {
     width: 180px;
 }
+
+/* 광고 데이터 */
+.main .ad-data {
+    background-image: linear-gradient(107deg, #00c652, #00c5ae);
+    position: relative;
+    height: 551px;
+}
+
+.main .ad-data-content {
+    position: relative;
+    height: 551px;
+}
+
+/* ad-data 이전/다음 */
+.main .ad-data-content .prev {
+    display: block;
+    background: url('../image/main/main-contents-slide-prev.png') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.main .ad-data-content .next {
+    display: block;
+    background: url('../image/main/main-contents-slide-next.png') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/* ad-data 슬라이드 활성화 */
+.main .ad-data-slide-control {
+    bottom: 58px;
+}
+
+.main .ad-data-slide-control .circle {
+    background-color: #82d1b7;
+}
+
+.main .ad-data-slide-control .item.on .circle {
+    width: 10px;
+    background-color: #fff;
+}
+
+/* ad-data 백그라운드 이미지 */
+.main .ad-data-content .bg-prev {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 601px;
+    height: 899px;
+    background: url('../image/main/main-elem-01.png') no-repeat;
+    background-size: 601px 899px;
+    z-index: 1;
+}
+
+.main .ad-data-content .bg-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 601px;
+    height: 899px;
+    background: url('../image/main/main-elem-02.png') no-repeat;
+    background-size: 601px 899px;
+    z-index: 1;
+}
+
+.main .ad-data-content .item-text {
+    color: #fff;
+    text-align: center;
+    display: table;
+    width: 100%;
+    padding: 91px 0 128px;
+}
+
+.main .ad-data-content .item-text > div {
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -0.6px;
+}
+
+.main .ad-data-content .text {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 56px;
+}
+
+.main .ad-data-content .count {
+    font-size: 128px;
+    font-family: 'Spoqa Han Sans', 'sans-serif';
+    line-height: 100%;
+    display: block;
+    margin-bottom: 52px;
+}
+
+.main .ad-data-content .desc {
+    font-size: 24px;
+    line-height: 38px;
+}

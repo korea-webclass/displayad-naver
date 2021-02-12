@@ -55,8 +55,7 @@ body {font-family: 'NanumSquare', sans-serif; font-weight: 400;}
 
 
 /* SpoqaHanSans-kr.css */
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
 /* SpoqaHanSans-kr */
 @font-face {
