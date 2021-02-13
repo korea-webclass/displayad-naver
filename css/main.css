@@ -502,3 +502,108 @@
     font-size: 24px;
     line-height: 38px;
 }
+
+/* 마케팅 전략 */
+.main .strategy {
+    position: relative;
+    overflow: hidden;
+    height: 1196px;
+}
+
+.main .strategy-bg {
+    background: url('../image/main/main-strategy-content-bg-img.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1196px;
+}
+
+.main .strategy-inner {
+    width: 1296px;
+    padding: 130px 52px 120px;
+    margin: 0 auto;
+}
+
+.main .strategy-content {
+    color: #ffffff;
+    text-align: center;
+}
+
+.main .strategy-content .text {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 24px;
+    letter-spacing: -0.6px;
+}
+
+.main .strategy-content .desc {
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.main .strategy-content .point {
+    color: #00ab4a;
+}
+
+.main .strategy-list {
+    position: relative;
+    height: 195px;
+    margin-top: 72px;
+}
+
+.main .strategy-list .item {
+    position: absolute;
+    border: 1px solid #555;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 32px;
+}
+
+.main .strategy-list .one {top: 25px; left: 178px;}
+.main .strategy-list .two {top: 0; left: 537px;}
+.main .strategy-list .three {top: 20px; right: 82px;}
+.main .strategy-list .four {bottom: 0; left: 80px;}
+.main .strategy-list .five {bottom: 25px; left: 473px;}
+.main .strategy-list .six {bottom: 6px; right: 126px;}
+
+.main .strategy-mobile {
+    width: 1296px;
+    height: 595px;
+    position: relative;
+}
+
+.main .strategy-mobile .page {
+    position: absolute;
+    width: 340px;
+}
+
+.main .strategy-mobile .one {
+    bottom: 0px;
+    left: 180px;
+}
+
+.main .strategy-mobile .two {
+    top: 50px;
+    left: 468px;
+    z-index: 1;
+    box-shadow: 0 30px 60px 0 rgb(0 0 0 / 60%);
+}
+
+.main .strategy-mobile .three {
+    bottom: 0px;
+    right: 180px;
+}
+
+.main .strategy .diagonal {
+    position: absolute;
+    right: 0;
+    bottom: -288px;
+    width: 120%;
+    height: 300px;
+    background-color: #fff;
+    transform-origin: right bottom;
+    transform: rotate(5.2deg);
+    z-index: 1;
+}
