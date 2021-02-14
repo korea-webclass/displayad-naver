@@ -788,6 +788,18 @@
     background: #000;
 }
 
+.main .different .diagonal {
+    position: absolute;
+    right: 0;
+    bottom: -280px;
+    width: 120%;
+    height: 280px;
+    background-color: #1d1f22;
+    transform-origin: right bottom;
+    transform: rotate(5deg);
+    z-index: 0;
+}
+
 /* 질문 */
 .main .faq {
     background-color: #1d1f22;
@@ -820,16 +832,4 @@
 
 .main .faq-content .new-more::after {
     background: #fff;
-}
-
-.main .different .diagonal {
-    position: absolute;
-    right: 0;
-    bottom: -280px;
-    width: 120%;
-    height: 280px;
-    background-color: #1d1f22;
-    transform-origin: right bottom;
-    transform: rotate(5deg);
-    z-index: 0;
 }
