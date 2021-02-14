@@ -89,35 +89,35 @@
     position: relative;
 }
 
-.main .latest-news-content .text {
+.main .card-content .text {
     font-size: 40px;
     line-height: 100%;
     margin-bottom: 48px;
     text-align: center;
 }
 
-.main .latest-news-content .box::after {
+.main .card-content .box::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main .latest-news-content .box-item {
+.main .card-content .box-item {
     float: left;
     margin-right: 24px;
     transition: all 0.3s ease;
 }
 
-.main .latest-news-content .box-item:hover {
+.main .card-content .box-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.07);
 }
 
-.main .latest-news-content .box-item:last-child {
+.main .card-content .box-item:last-child {
     margin-right: 0;
 }
 
-.main .latest-news-content .item-link {
+.main .card-content .item-link {
     display: inline-block;
     width: 416px;
     height: 240px;
@@ -128,14 +128,14 @@
     position: relative;
 }
 
-.main .latest-news-content .point {
+.main .card-content .point {
     display: block;
     margin-bottom: 16px;
     font-size: 14px;
     color: #04c75b;
 }
 
-.main .latest-news-content .desc {
+.main .card-content .desc {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 20px;
@@ -144,14 +144,14 @@
     -webkit-box-orient: vertical;
 }
 
-.main .latest-news-content .more {
+.main .card-content .more {
     position: absolute;
     bottom: 32px;
     font-size: 18px;
     color: #777777;
 }
 
-.main .latest-news-content .new-more {
+.main .card-content .new-more {
     position: absolute;
     top: 23px;
     right: 0;
@@ -160,7 +160,7 @@
     padding-right: 30px;
 }
 
-.main .latest-news-content .new-more::before {
+.main .card-content .new-more::before {
     content: '';
     width: 10px;
     height: 10px;
@@ -172,7 +172,7 @@
     transform: translate(-50%,-50%) rotate(135deg);
 }
 
-.main .latest-news-content .new-more::after {
+.main .card-content .new-more::after {
     content: '';
     width: 20px;
     height: 1px;
@@ -686,12 +686,13 @@
 /* 다른 사례 보기 */
 .different {
     background-color: #f5f7f8;
+    position: relative;
 }
 
 .different .different-box {
     width: 1296px;
     margin: 0 auto;
-    padding: 112px 52px 120px;
+    padding: 120px 52px 248px;
 }
 
 .different .box-wrap {
@@ -787,14 +788,48 @@
     background: #000;
 }
 
-/* .different .diagonal {
+/* 질문 */
+.main .faq {
+    background-color: #1d1f22;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .faq-inner {
+    width: 1296px;
+    padding: 52px 52px 160px;
+    margin: 0 auto;
+}
+
+.main .faq-content {
+    position: relative;
+}
+
+.main .faq-content .text {
+    color: #ffffff;
+}
+
+.main .faq-content .new-more {
+    color: #ffffff;
+}
+
+.main .faq-content .new-more::before {
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #fff;
+}
+
+.main .faq-content .new-more::after {
+    background: #fff;
+}
+
+.main .different .diagonal {
     position: absolute;
     right: 0;
-    bottom: -288px;
+    bottom: -280px;
     width: 120%;
-    height: 300px;
-    background-color: #fff;
+    height: 280px;
+    background-color: #1d1f22;
     transform-origin: right bottom;
-    transform: rotate(5.2deg);
-    z-index: 1;
-} */
+    transform: rotate(5deg);
+    z-index: 0;
+}
