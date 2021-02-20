@@ -144,6 +144,31 @@
     background-color: #03c75a;
 }
 
+.header-wrap .sub {
+    position: absolute;
+    left: -96px;
+    width: 100%;
+    padding: 0 96px;
+    background-color: #fff;
+}
+
+.header-wrap .sub::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-wrap .sub-item {
+    float: left;
+}
+
+.header-wrap .sub-item a {
+    padding: 0 12px;
+    margin: 0 12px;
+    height: 62px;
+    line-height: 62px;
+}
+
 /* 메뉴 더보기 */
 .header-wrap .detail-util {
     position: absolute;
