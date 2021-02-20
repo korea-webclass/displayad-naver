@@ -8,6 +8,58 @@
 ----------
 */
 
+/* 헤더 */
+.header {
+    border-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+/* 헤더 활성화 */
+.header:hover .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+.header:hover .header-wrap .gnb .item .link {
+    color: #333;
+}
+
+.header:hover .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header.fixed {
+    background-color: transparent;
+}
+.header:hover {
+    background-color: #ffffff;
+}
+.header-wrap .logo-link {
+    background: url('../image/main/main-header-logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header-wrap .gnb .item .link {
+    color: #fff;
+}
+
+.header-wrap .util-btn {
+    background: url('../image/main/main-header-util.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
 /* 비주얼 */
 .main .visual {
     position: relative;
