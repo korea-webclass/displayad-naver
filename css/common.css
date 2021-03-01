@@ -46,8 +46,9 @@ body {
 .header {
     position: relative; 
     min-width: 1400px;
-    height: 88px;
+    height: 89px;
     border-bottom: 1px solid #e7e8e9;
+    overflow: hidden;
 }
 
 .header.fixed {
@@ -57,6 +58,10 @@ body {
     left:0;
     z-index: 100;
     background-color: #fff;
+}
+
+.header.sub {
+    height: 151px;
 }
 
 .header-content {
@@ -146,12 +151,17 @@ body {
     background-color: #03c75a;
 }
 
+/* 헤더 - 하위메뉴 */
 .header-wrap .sub {
+    display: none;
     position: absolute;
     left: -96px;
     width: 100%;
     padding: 0 96px;
-    background-color: #fff;
+}
+
+.header-wrap .sub.on {
+    display: block;
 }
 
 .header-wrap .sub::after {

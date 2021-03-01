@@ -8,39 +8,14 @@
 ----------
 */
 
-/* 헤더 */
-.header {
+/* 헤더 - 스크롤 on*/
+.header.on {
+    background-color: transparent;
     border-bottom: 0;
     transition: all 0.3s ease;
 }
 
-/* 헤더 활성화 */
-.header:hover .logo-link {
-    background: url('../image/logo.png') no-repeat;
-    background-size: 222px, 22px;
-    display: block;
-    width: 222px;
-    height: 22px;
-}
-.header:hover .header-wrap .gnb .item .link {
-    color: #333;
-}
-
-.header:hover .util-btn {
-    background: url('../image/all-menu.png') no-repeat;
-    background-size: 20px, 20px;
-    display: block;
-    width: 20px;
-    height: 20px;
-}
-
-.header.fixed {
-    background-color: transparent;
-}
-.header:hover {
-    background-color: #ffffff;
-}
-.header-wrap .logo-link {
+.header.on .logo-link {
     background: url('../image/main/main-header-logo.png') no-repeat;
     background-size: 222px, 22px;
     display: block;
@@ -48,16 +23,40 @@
     height: 22px;
 }
 
-.header-wrap .gnb .item .link {
+.header.on .gnb .item .link {
     color: #fff;
 }
 
-.header-wrap .util-btn {
+.header.on .util-btn {
     background: url('../image/main/main-header-util.png') no-repeat;
     background-size: 20px, 20px;
     display: block;
     width: 20px;
     height: 20px;
+}
+
+.header.on:hover .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header.on:hover .header-wrap .gnb .item .link {
+    color: #333;
+}
+
+.header.on:hover .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header.on:hover {
+    background-color: #ffffff;
 }
 
 /* 비주얼 */
