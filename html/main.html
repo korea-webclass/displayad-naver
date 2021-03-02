@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=1400">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 
+    <!-- slick 슬라이드 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- //slick 슬라이드 -->
+
     <!-- aos.js -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -96,17 +101,42 @@
                                 <li class="item"><a href="#" class="circle"><span class="hide">비주얼 설명</span></a></li>
                             </ul>
                         </div>
-                        <div class="slide-bg slide-text">
-                            <div class="text-area">
-                                <h3 class="title">네이버 성과형 디스플레이 광고</h3>
-                                <p class="desc">네이버 프리미엄 지면에서 보다 높은 광고 효율을<br>실현할 수 있는 성과형 광고를 시작하세요.</p>
-                                <a href="#" class="btn text-area-btn">자세히 보기</a>
+                        <!-- <div class="slide-group">
+                            <div class="slide-list slide-bg slide-text">
+                                <div class="text-area">
+                                    <h3 class="title">네이버 성과형 디스플레이 광고</h3>
+                                    <p class="desc">네이버 프리미엄 지면에서 보다 높은 광고 효율을<br>실현할 수 있는 성과형 광고를 시작하세요.</p>
+                                    <a href="#" class="btn text-area-btn">자세히 보기</a>
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
+
+
+                        <!-- 슬라이드 -->
+                        <section class="vertical-center-4 slider">
+                            <div>
+                                <img src="../image/main/main-visual-img01.jpg">
+                            </div>
+                            <div>
+                                <img src="../image/main/main-visual-img01.jpg">
+                            </div>
+                            <div>
+                                <img src="../image/main/main-visual-img01.jpg">
+                            </div>
+                        </section>
+
+
+                        <script>
+                            $('.single-item').slick();
+                        </script>
+
+
+
                     </div>
                 </div>
                 <!-- 최신 업데이트 소식 -->
-                <div class="latest-news" data-aos="fade-up" data-aos-duration="2000">
+                <!-- data-aos="fade-up" data-aos-duration="2000" -->
+                <div class="latest-news">
                     <div class="latest-news-inner">
                         <div class="latest-news-content card-content">
                             <h3 class="text">최신 업데이트 소식</h3>
@@ -252,10 +282,10 @@
                     </div>
                 </div>
                 <!-- 마케팅 전략 -->
-                <div class="strategy" data-aos="fade-up" data-aos-duration="2000">
+                <div class="strategy">
                     <div class="strategy-bg">
                         <div class="strategy-inner">
-                            <div class="strategy-content">
+                            <div class="strategy-content" data-aos="fade-up" data-aos-duration="2000">
                                 <span class="text">브랜딩부터 퍼포먼스 마케팅까지</span>
                                 <p class="desc">브랜드의 가치를 알리고, 마케팅 효율을 극대화하는<br><span class="point">통합 마케팅 전략</span>을 세울 수 있습니다</p>
                                 <ul class="strategy-list">

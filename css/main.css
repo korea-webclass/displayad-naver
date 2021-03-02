@@ -89,6 +89,20 @@
     z-index: 1;
 }
 
+.main .visual-slide .slide-group {
+    overflow: hidden;
+}
+
+.main .visual-slide .slide-group::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .visual-slide .slide-list {
+    float: left;
+}
+
 .main .visual-slide .slide-bg {
     background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
     width: 100%;
