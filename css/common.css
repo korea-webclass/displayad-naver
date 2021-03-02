@@ -60,9 +60,6 @@ body {
     background-color: #fff;
 }
 
-.header.sub {
-    height: 151px;
-}
 
 .header-content {
     margin: 0 96px;
@@ -158,6 +155,11 @@ body {
     left: -96px;
     width: 100%;
     padding: 0 96px;
+}
+
+.header.sub {
+    height: 151px;
+    /* display: block; */
 }
 
 .header-wrap .sub.on {
