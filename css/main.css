@@ -103,8 +103,24 @@
     float: left;
 }
 
-.main .visual-slide .slide-bg {
+.main .visual-slide .slide-bg01 {
     background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.main .visual-slide .slide-bg02 {
+    background: url('../image/main/main-visual-img02.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.main .visual-slide .slide-bg03 {
+    background: url('../image/main/main-visual-img03.jpg') no-repeat center ;
     width: 100%;
     height: 900px;
     background-size: cover;
