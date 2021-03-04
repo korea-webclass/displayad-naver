@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+:root {
+    --swiper-navigation-size: 0px;
+    /* --swiper-navigation-color: var(--swiper-theme-color); */
+}
+
+.swiper-container::after {
+    content: '';
+    display: block;
+    width: 1655px;
+    height: 1px;
+    background-color: #878881;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -31,8 +51,9 @@
     width: 56px;
     height: 56px;
     position: absolute;
-    top: 0px;
     left: 56px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
@@ -44,7 +65,8 @@
     width: 56px;
     height: 56px;
     position: absolute;
-    top: 0px;
     right: 56px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }

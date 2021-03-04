@@ -129,18 +129,20 @@
 
 .main .visual-slide .slide-text .text-area {
     position: absolute;
-    top: 380px;
+    /* top: 380px; */
     left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
 .main .visual-slide .slide-text .title {
     font-size: 60px;
-    line-height: 100%;
+    line-height: 72px;
     letter-spacing: -2px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 53px;
+    margin-bottom: 46px;
 }
 
 .main .visual-slide .slide-text .desc {
@@ -154,6 +156,8 @@
     width: 137px;
     height: 46px;
 }
+
+
 
 /* 최신 업데이트 소식 */
 .main .latest-news {
