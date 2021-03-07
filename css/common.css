@@ -166,6 +166,14 @@ body {
     display: block;
 }
 
+.header-wrap .sub-three {
+    padding-left: 230px;
+}
+
+.header-wrap .sub-four {
+    padding-left: 682px;
+}
+
 .header-wrap .sub::after {
     content: '';
     display: block;
