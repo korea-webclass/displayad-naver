@@ -137,3 +137,12 @@
 .content-slide .text div {
     line-height: 32px;
 } */
+
+.swiper-pagination.success-btn .swiper-pagination-bullet-active {
+    width: 10px;
+    background-color: #03c75a;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 120px;
+}
