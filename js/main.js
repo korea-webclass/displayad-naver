@@ -44,7 +44,7 @@ window.onload = function () {
         }
     }
 
-    // swiper.js 슬라이드 영역
+    // swiper.js 메인 슬라이드 영역
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -62,6 +62,18 @@ window.onload = function () {
         },
     });
 
+    // swiper.js success 슬라이드 영역
+    var swiper = new Swiper('.swiper-container-success', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    
     // 카운트 다운 애니메이션
     var memberCountConTxt= 30000000;
 
