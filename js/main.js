@@ -5,10 +5,9 @@ window.onload = function () {
     const gnbLi = htmlElem.querySelectorAll('.gnb .item');
     // const gnbSub = htmlElem.querySelector('.sub');
     const count = document.querySelector('.main .ad-data-content .count');
-
-
-
-
+    const detailUtil = document.querySelector('.detail-util');
+    const utilMenu = document.querySelector('.detail-util .menu');
+    
 
     // 헤더 스크롤
     window.addEventListener('scroll', scroll);
@@ -43,6 +42,15 @@ window.onload = function () {
             header.classList.remove('sub');
         }
     }
+
+    // 헤더 우측 메뉴
+    detailUtil.addEventListener('mouseenter', function () {
+        utilMenu.classList.add('on');
+    });
+    detailUtil.addEventListener('mouseleave', function () {
+        utilMenu.classList.remove('on');
+    });
+
 
     // swiper.js visual 슬라이드 영역
     var swiper = new Swiper('.swiper-container', {

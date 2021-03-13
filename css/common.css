@@ -48,7 +48,7 @@ body {
     min-width: 1400px;
     height: 89px;
     border-bottom: 1px solid #e7e8e9;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header.fixed {
@@ -193,19 +193,45 @@ body {
 
 /* 메뉴 더보기 */
 .header-wrap .detail-util {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     padding: 20px;
     margin-top: 14px;
+    float: right;
 }
 
-.header-wrap .util-btn {
+.header-wrap .detail-util .util-btn {
     background: url('../image/all-menu.png') no-repeat;
     background-size: 20px, 20px;
     display: block;
     width: 20px;
     height: 20px;
+}
+
+.header-wrap .detail-util .menu {
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    width: 202px;
+    padding: 0 16px;
+    position: absolute;
+    top: 48px;
+    right: 18px;
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+}
+.header-wrap .detail-util .menu.on {
+    display: block;
+}
+.header-wrap .detail-util .item {
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.header-wrap .detail-util .item:last-child {
+    border-bottom: none;
 }
 
 /* 
