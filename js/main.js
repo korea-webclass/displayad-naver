@@ -44,7 +44,7 @@ window.onload = function () {
         }
     }
 
-    // swiper.js 메인 슬라이드 영역
+    // swiper.js visual 슬라이드 영역
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -64,6 +64,18 @@ window.onload = function () {
 
     // swiper.js success 슬라이드 영역
     var swiper = new Swiper('.swiper-container-success', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // swiper.js success 슬라이드 영역
+    var swiper = new Swiper('.swiper-container-ad-area', {
         slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 30,
