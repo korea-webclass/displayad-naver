@@ -222,14 +222,17 @@ body {
     text-align: center;
     display: none;
 }
+
 .header-wrap .detail-util .menu.on {
     display: block;
 }
+
 .header-wrap .detail-util .item {
     height: 56px;
     line-height: 56px;
     border-bottom: 1px solid #dcdcdc;
 }
+
 .header-wrap .detail-util .item:last-child {
     border-bottom: none;
 }
