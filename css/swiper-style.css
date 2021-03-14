@@ -171,7 +171,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    width: 60%;
+    width: auto;
     /* width: 1080px; */
 }
 

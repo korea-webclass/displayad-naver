@@ -74,7 +74,7 @@ window.onload = function () {
     var swiper = new Swiper('.swiper-container-success', {
         slidesPerView: 'auto',
         centeredSlides: true,
-        spaceBetween: 30,
+        spaceBetween: 120,
         loop: true,
         pagination: {
             el: '.swiper-pagination',
