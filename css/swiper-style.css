@@ -5,7 +5,7 @@
     /* --swiper-navigation-color: var(--swiper-theme-color); */
 }
 
-.swiper-container::after {
+.swiper-container-visual::after {
     content: '';
     display: block;
     width: 1655px;
