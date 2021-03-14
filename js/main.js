@@ -53,9 +53,9 @@ window.onload = function () {
 
 
     // swiper.js visual 슬라이드 영역
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container-visual', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
         loop: true,
         keyboard: {
             enabled: true,
