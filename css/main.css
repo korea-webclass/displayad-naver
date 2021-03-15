@@ -129,11 +129,19 @@
 
 .main .visual-slide .slide-text .text-area {
     position: absolute;
-    /* top: 380px; */
+    top: 380px;
     left: 260px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+
+    /* position: absolute;
+    top: 52%;
+    left: 260px;
+    margin-top: -166px;
+    max-width: 552px;
+    text-align: left;
+    max-width: none; */
 }
 
 .main .visual-slide .slide-text .title {
@@ -143,6 +151,14 @@
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 46px;
+    display: table;
+    min-height: 144px;
+    margin-bottom: 47px;
+}
+
+.main .visual-slide .slide-text .title > span {
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .main .visual-slide .slide-text .desc {
