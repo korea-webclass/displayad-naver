@@ -6,7 +6,7 @@ window.onload = function () {
     const detailUtil = document.querySelector('.detail-util');
     const utilMenu = document.querySelector('.detail-util .menu');
     
-    // 헤더 스크롤
+    // 헤더 스크롤 고정
     window.addEventListener('scroll', scroll);
     function scroll() {
         if (htmlElem.scrollTop > 30) {
@@ -48,7 +48,7 @@ window.onload = function () {
         utilMenu.classList.remove('on');
     });
 
-    // swiper.js visual 슬라이드 영역
+    // visual 슬라이드 영역
     var swiper = new Swiper('.swiper-container-visual', {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -69,7 +69,7 @@ window.onload = function () {
         },
     });
 
-    // swiper.js success 슬라이드 영역
+    // success 슬라이드 영역
     var swiper = new Swiper('.swiper-container-success', {
         slidesPerView: 'auto',
         centeredSlides: true,
@@ -81,7 +81,7 @@ window.onload = function () {
         },
     });
 
-    // swiper.js success 슬라이드 영역
+    // ad-area 슬라이드 영역
     var swiper = new Swiper('.swiper-container-ad-area', {
         slidesPerView: 'auto',
         centeredSlides: true,

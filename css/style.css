@@ -8,6 +8,27 @@
 ----------
 */
 
+.sub-container .sub-content .text-wrap {
+    text-align: center;
+}
+
+.sub-container .sub-content .title {
+    font-size: 42px;
+    margin-bottom: 16px;
+    letter-spacing: -1.2px;
+}
+
+.sub-container .sub-content .point {
+    color: #00ac4a;
+    font-weight: 700;
+}
+
+.sub-container .sub-content .text {
+    font-size: 20px;
+    color: #767676;
+    letter-spacing: -0.6px;
+}
+
 /* 비주얼 */
 .overview .visual .bg-one {
     background: url('../image/overview-visual-bg-one.png') no-repeat;
