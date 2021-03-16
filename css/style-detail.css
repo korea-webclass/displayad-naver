@@ -123,7 +123,8 @@
 
 .sub-container .detail-content .blod {
     font-weight: 700;
-    font-family: 'NanumSquare';
+    font-family: 'NanumSquareR';
+    letter-spacing: -0.8px;
 }
 
 .sub-container .detail-content .desc .blod {
@@ -321,6 +322,9 @@
     letter-spacing: -0.6px;
     display: block;
     margin-bottom: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .different .box-wrap .list-box .text-area .desc {
