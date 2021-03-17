@@ -94,21 +94,56 @@ window.onload = function () {
     });
     
     // 카운트 다운 애니메이션
-    var memberCountConTxt= 30000000;
-
-    $({val: 0}).animate({val: memberCountConTxt}, {
-        duration: 2000,
-        step: function() {
-            var num = numberWithCommas(Math.floor(this.val));
-            $(".memberCountCon").text(num);
-        },
-        complete: function() {
-            var num = numberWithCommas(Math.floor(this.val));
-            $(".memberCountCon").text(num);
+    window.addEventListener('scroll', countScroll);
+    function countScroll() {
+        console.log(htmlElem.scrollTop);
+        if (htmlElem.scrollTop === 2916) {
+            countConTxt();
         }
-    });
-  
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
+    
+    function countConTxt() {
+        var memberCountConTxt= 30000000;
+    
+        $({val: 0}).animate({val: memberCountConTxt}, {
+            duration: 2000,
+            step: function() {
+                var num = numberWithCommas(Math.floor(this.val));
+                $(".memberCountCon").text(num);
+            },
+            complete: function() {
+                var num = numberWithCommas(Math.floor(this.val));
+                $(".memberCountCon").text(num);
+            }
+        });
+      
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
     }
+
+
+
+
+
+
+
+    // var memberCountConTxt= 30000000;
+
+    // $({val: 0}).animate({val: memberCountConTxt}, {
+    //     duration: 2000,
+    //     step: function() {
+    //         var num = numberWithCommas(Math.floor(this.val));
+    //         $(".memberCountCon").text(num);
+    //     },
+    //     complete: function() {
+    //         var num = numberWithCommas(Math.floor(this.val));
+    //         $(".memberCountCon").text(num);
+    //     }
+    // });
+  
+    // function numberWithCommas(x) {
+    //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // }
 };
