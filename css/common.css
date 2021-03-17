@@ -62,11 +62,11 @@ body {
 
 .header-wrap .gnb .item {
     float: left;
+    margin: 0 30px;
+    padding: 0 2px;
 }
 
 .header-wrap .gnb .item .link {
-    margin: 0 30px;
-    padding: 0 2px;
     display: block;
     height: 89px;
     line-height: 89px;
@@ -116,6 +116,9 @@ body {
     left: -96px;
     width: 100%;
     padding: 0 96px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .header.sub {
