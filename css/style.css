@@ -139,6 +139,15 @@
     margin-bottom: 42px;
 }
 
+.overview .purchase-content .order-box {
+    border-image-source: linear-gradient(to right, #07d05a, #24beac);
+    border-bottom: 1px solid #eee;
+    border-image-slice: 1;
+}
+
+
+
+
 .overview .purchase-content .order-content .purchase-content::after {
     content: '';
     position: absolute;
@@ -225,7 +234,7 @@
 }
 
 /* 구매 결정 단계 단어 */
-.overview .word {border-bottom: 1px solid #eee; border-image-slice: 1; border-image-width: 1px 0 0 0; border-image-source: linear-gradient(to right, #07d05a, #24beac)}
+.overview .word {border-bottom: 1px solid #eee;}
 .overview .word::after {content: ''; display: block; clear: both;}
 .overview .word .word-item {float: left; padding: 22px 18px;}
 .overview .word .key {width: 396px;}
@@ -395,8 +404,6 @@
 }
 
 .overview .device-contnet .tablet {
-    width: 487px;
-    height: 350px;
     position: absolute;
     top: 0px;
     left: 68px;
@@ -404,8 +411,6 @@
 }
 
 .overview .device-contnet .pc {
-    width: 845px;
-    height: 458px;
     position: absolute;
     top: -100px;
     left: 278px;
@@ -413,8 +418,6 @@
 }
 
 .overview .device-contnet .mobile {
-    width: 148px;
-    height: 278px;
     position: absolute;
     top: 100px;
     right: 288px;
@@ -422,8 +425,6 @@
 }
 
 .overview .device-contnet .mobile-page-one {
-    width: 136px;
-    height: 248px;
     position: absolute;
     top: 112px;
     right: 155px;
@@ -431,8 +432,6 @@
 }
 
 .overview .device-contnet .mobile-page-two {
-    width: 136px;
-    height: 248px;
     position: absolute;
     top: 112px;
     right: 22px;
