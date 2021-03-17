@@ -1625,14 +1625,14 @@
     bottom: 32px;
 }
 
-.ad-vertisement-main .list-slide-content .link-main {background: url('../image/box-cont-imgs01.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-sub {background: url('../image/box-cont-imgs02.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-topic {background: url('../image/box-cont-imgs03.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-video {background: url('../image/box-cont-imgs04.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-search {background: url('../image/box-cont-imgs05.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-band {background: url('../image/box-cont-imgs06.jpg') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-webtoon {background: url('../image/box-cont-imgs07.png') no-repeat; background-size: cover;}
-.ad-vertisement-main .list-slide-content .link-influencer {background: url('../image/box-cont-imgs08.png') no-repeat; background-size: cover;}
+.ad-vertisement-main .list-slide-content .link-main {background: url('../image/box-cont-imgs01.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-sub {background: url('../image/box-cont-imgs02.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-topic {background: url('../image/box-cont-imgs03.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-video {background: url('../image/box-cont-imgs04.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-search {background: url('../image/box-cont-imgs05.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-band {background: url('../image/box-cont-imgs06.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-webtoon {background: url('../image/box-cont-imgs07.jpg') no-repeat;}
+.ad-vertisement-main .list-slide-content .link-influencer {background: url('../image/box-cont-imgs08.jpg') no-repeat;}
 
 .ad-vertisement-main .slide-control .prev {
     display: inline-block;
