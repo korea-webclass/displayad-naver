@@ -1147,14 +1147,15 @@
 }
 
 /* 광고 상품 목록 - 이미지 */
-.advertisement-list .product-list-content .main-ad-img {background-image: url('../image/advertisement-list-product-list-main-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .sub-ad-img {background-image: url('../image/advertisement-list-product-list-sub-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .topic-ad-img {background-image: url('../image/advertisement-list-product-list-topic-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .video-ad-img {background-image: url('../image/advertisement-list-product-list-video-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .search-ad-img {background-image: url('../image/advertisement-list-product-list-search-img.png'); width: 636px; height: 404px; background-size: 636px, 404px; background-position: 30px;}
-.advertisement-list .product-list-content .band-ad-img {background-image: url('../image/advertisement-list-product-list-band-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .webtoon-ad-img {background-image: url('../image/advertisement-list-product-list-webtoon-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
-.advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer-img.png'); width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .bg-img {width: 636px; height: 404px; background-size: 636px, 404px;}
+.advertisement-list .product-list-content .main-ad-img {background-image: url('../image/advertisement-list-product-list-main-img.jpg');}
+.advertisement-list .product-list-content .sub-ad-img {background-image: url('../image/advertisement-list-product-list-sub-img.jpg');}
+.advertisement-list .product-list-content .topic-ad-img {background-image: url('../image/advertisement-list-product-list-topic-img.jpg');}
+.advertisement-list .product-list-content .video-ad-img {background-image: url('../image/advertisement-list-product-list-video-img.jpg');}
+.advertisement-list .product-list-content .search-ad-img {background-image: url('../image/advertisement-list-product-list-search-img.jpg');}
+.advertisement-list .product-list-content .band-ad-img {background-image: url('../image/advertisement-list-product-list-band-img.jpg');}
+.advertisement-list .product-list-content .webtoon-ad-img {background-image: url('../image/advertisement-list-product-list-webtoon-img.jpg');}
+.advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer-img.jpg');}
 
 /* 상품 상세정보 보기 */
 .advertisement-list .product-info {
