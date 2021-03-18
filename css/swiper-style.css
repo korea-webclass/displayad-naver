@@ -30,7 +30,7 @@
     width: 36px;
     border-radius: 32px;
     background-color: #fff;
-    transition: all 0.3s width opacity;
+    /* transition: all 0.3s width opacity; */
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {

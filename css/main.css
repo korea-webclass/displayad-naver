@@ -155,28 +155,28 @@
     min-height: 144px;
     margin-bottom: 47px;
 }
-.main .visual-slide .slide-text h3.title > span {opacity: 0;}
-.main .visual-slide .slide-text p.desc {opacity: 0;}
-.main .visual-slide .slide-text a.text-area-btn {opacity: 0;}
+
 .main .visual-slide .slide-text .title > span {
-    animation: text 1s 0.3s both;
     display: table-cell;
     vertical-align: bottom;
 }
 
 .main .visual-slide .slide-text .desc {
-    animation: text 1s 0.6s both;
     font-size: 19px;
     line-height: 32px;
     letter-spacing: -0.6px;
     color: #ffffff;
     margin-bottom: 23px;
 }
+
 .main .visual-slide .slide-text .text-area-btn {
-    animation: text 1s 0.9s both;
     width: 137px;
     height: 46px;
 }
+
+.main .swiper-slide.swiper-slide-active .text-area span {animation: text 1s 0.3s both;}
+.main .swiper-slide.swiper-slide-active .text-area p {animation: text 1s 0.6s both;}
+.main .swiper-slide.swiper-slide-active .text-area a {animation: text 1s 0.9s both;}
 
 @keyframes text {
     0% {
@@ -188,7 +188,6 @@
         transform: translateY(0px);
     }
 }
-
 
 /* 최신 업데이트 소식 */
 .main .latest-news {
