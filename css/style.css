@@ -4,6 +4,953 @@
 
 /* 
 ----------
+메인
+----------
+*/
+
+/* 헤더 - 스크롤 on*/
+.header.on {
+    background-color: transparent;
+    border-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.header.on .logo-link {
+    background: url('../image/main/main-header-logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header.on .gnb .item .link {
+    color: #fff;
+}
+
+.header.on .util-btn {
+    background: url('../image/main/main-header-util.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header.on:hover .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header.on:hover .header-wrap .gnb .item .link {
+    color: #333;
+}
+
+.header.on:hover .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header.on:hover {
+    background-color: #ffffff;
+}
+
+/* 비주얼 */
+.main .visual {
+    position: relative;
+    height: 900px;
+}
+
+.main .visual-slide .prev {
+    display: block;
+    background: url('../image/main/main-visual-arr-prev.png') no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 440px;
+    left: 56px;
+    z-index: 1;
+}
+
+.main .visual-slide .next {
+    display: block;
+    background: url('../image/main/main-visual-arr-next.png') no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 440px;
+    right: 56px;
+    z-index: 1;
+}
+
+.main .visual-slide .slide-group {
+    overflow: hidden;
+}
+
+.main .visual-slide .slide-group::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .visual-slide .slide-list {
+    float: left;
+}
+
+.main .visual-slide .slide-bg01 {
+    background: url('../image/main/main-visual-img01.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.main .visual-slide .slide-bg02 {
+    background: url('../image/main/main-visual-img02.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.main .visual-slide .slide-bg03 {
+    background: url('../image/main/main-visual-img03.jpg') no-repeat center ;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.main .visual-slide .slide-text .text-area {
+    position: absolute;
+    top: 380px;
+    left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    /* position: absolute;
+    top: 52%;
+    left: 260px;
+    margin-top: -166px;
+    max-width: 552px;
+    text-align: left;
+    max-width: none; */
+}
+
+.main .visual-slide .slide-text .title {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 46px;
+    display: table;
+    min-height: 144px;
+    margin-bottom: 47px;
+}
+
+.main .visual-slide .slide-text .title > span {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.main .visual-slide .slide-text .desc {
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #ffffff;
+    margin-bottom: 23px;
+}
+
+.main .visual-slide .slide-text .text-area-btn {
+    width: 137px;
+    height: 46px;
+}
+
+.main .swiper-slide.swiper-slide-active .text-area span {animation: text 1s 0.3s both;}
+.main .swiper-slide.swiper-slide-active .text-area p {animation: text 1s 0.6s both;}
+.main .swiper-slide.swiper-slide-active .text-area a {animation: text 1s 0.9s both;}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* 최신 업데이트 소식 */
+.main .latest-news {
+    background-color: #f5f7f8;
+}
+
+.main .latest-news-inner {
+    width: 1296px;
+    padding: 130px 52px 120px;
+    margin: 0 auto;
+}
+
+.main .latest-news-content {
+    position: relative;
+}
+
+.main .card-content .text {
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.main .card-content .box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .card-content .box-item {
+    float: left;
+    margin-right: 24px;
+    transition: all 0.3s ease;
+}
+
+.main .card-content .box-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.07);
+}
+
+.main .card-content .box-item:last-child {
+    margin-right: 0;
+}
+
+.main .card-content .item-link {
+    display: inline-block;
+    width: 416px;
+    height: 240px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 30px 32px 32px;
+    position: relative;
+}
+
+.main .card-content .point {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #04c75b;
+}
+
+.main .card-content .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main .card-content .more {
+    position: absolute;
+    bottom: 32px;
+    font-size: 18px;
+    color: #777777;
+}
+
+.main .card-content .new-more {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    line-height: 100%;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.main .card-content .new-more::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+
+.main .card-content .new-more::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    transform: translateY(-50%);
+    background: #000;
+}
+
+/* 네이버를 활용한 다양한 마케팅 스토리 */
+.main .success {
+    height: 908px;
+    padding: 130px 0 176px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* success 슬라이드 활성화 */
+.main .success-slide-control {
+    bottom: 132px;
+}
+
+.main .success-slide-control .item.on .circle {
+    width: 10px;
+    background-color: #03c75a;
+}
+
+.main .success .copy {
+    font-size: 40px;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 68px;
+}
+
+.main .success .point {
+    font-weight: 700;
+}
+
+.main .success .slide {
+    position: relative;
+    height: 496px;
+    overflow: hidden;
+}
+
+.main .success .slide .box {
+    width: 1080px;
+    height: 496px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .success .slide .box:nth-child(2) {
+    margin-left: -1200px;
+}
+
+.main .success .slide .box:nth-child(3) {
+    margin-left: 1200px;
+}
+
+.main .success .box-link {
+    display: block;
+}
+
+.main .success .box-link::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .success .box-img {
+    width: 540px;
+    vertical-align: top;
+    float: left;
+}
+
+.main .success .box-text-area {
+    position: relative;
+    display: table;
+    width: 540px;
+    height: 496px;
+    float: left;
+    padding: 0 45px;
+    box-sizing: border-box;
+    background-image: linear-gradient(133deg, #00c652, #00c5ae);
+    color: #fff;
+}
+
+.main .success .box-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main .success .box-text > div {
+    text-align: center;
+}
+
+.main .success .title {
+    font-size: 30px;
+    display: block;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+
+.main .success .text {
+    font-size: 16px;
+    display: block;
+    line-height: 100%;
+    margin-bottom: 52px;
+}
+
+.main .success .desc {
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    line-height: 32px;
+    margin-bottom: 52px;
+}
+
+.main .success .view {
+    position: relative;
+    line-height: 100%;
+}
+
+.main .success .view:hover::after {
+    width: 100%;
+}
+
+.main .success .view::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* 브랜드 */
+.main .brand {
+    position: relative;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.main .brand-inner {
+    width: 1296px;
+    padding: 0 52px;
+    margin: 0 auto;
+}
+
+.main .brand-content {
+    position: relative;
+    width: 920px;
+    height: 961px;
+    background-color: #fff;
+}
+
+.main .brand-content .mobile {
+    width: 375px;
+    vertical-align: top;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    border-radius: 40px;
+    box-shadow: -30px 30px 30px 0 rgb(0 0 0 / 30%);
+}
+
+.main .brand-content .brand-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -584px;
+    z-index: -1;
+}
+
+.main .brand-content .brand-name::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .brand-content .item {
+    float: right;
+    margin-right: 22px;
+}
+
+.main .brand-content .item img {
+    width: 202px;
+    vertical-align: top;
+}
+
+.main .brand-content .text-area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+}
+
+.main .brand-content .desc {
+    font-size: 38px;
+    margin-bottom: 40px;
+    letter-spacing: -0.6px;
+}
+
+.main .brand-content .point {
+    color: #01ac4b;
+    font-weight: 700;
+}
+
+.main .brand-content .btn {
+    width: 206px;
+    line-height: 56px;
+    font-size: 18px;
+}
+
+/* 광고 데이터 */
+.main .ad-data {
+    background-image: linear-gradient(107deg, #00c652, #00c5ae);
+    position: relative;
+    height: 551px;
+}
+
+.main .ad-data-content {
+    position: relative;
+    height: 551px;
+}
+
+/* ad-data 이전/다음 */
+.main .ad-data-content .prev {
+    display: block;
+    background: url('../image/main/main-contents-slide-prev.png') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.main .ad-data-content .next {
+    display: block;
+    background: url('../image/main/main-contents-slide-next.png') no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/* ad-data 슬라이드 활성화 */
+.main .ad-data-slide-control {
+    bottom: 58px;
+}
+
+.main .ad-data-slide-control .circle {
+    background-color: #82d1b7;
+}
+
+.main .ad-data-slide-control .item.on .circle {
+    width: 10px;
+    background-color: #fff;
+}
+
+/* ad-data 백그라운드 이미지 */
+.main .ad-data-content .bg-prev {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 601px;
+    height: 899px;
+    background: url('../image/main/main-elem-01.png') no-repeat;
+    background-size: 601px 899px;
+    z-index: 1;
+}
+
+.main .ad-data-content .bg-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 601px;
+    height: 899px;
+    background: url('../image/main/main-elem-02.png') no-repeat;
+    background-size: 601px 899px;
+    z-index: 1;
+}
+
+.main .ad-data-content .item-text {
+    color: #fff;
+    text-align: center;
+    display: table;
+    width: 100%;
+    padding: 91px 0 128px;
+}
+
+.main .ad-data-content .item-text > div {
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -0.6px;
+}
+
+.main .ad-data-content .text {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 56px;
+}
+
+.main .ad-data-content .count {
+    font-size: 128px;
+    font-family: 'Spoqa Han Sans', 'sans-serif';
+    line-height: 100%;
+    display: block;
+    margin-bottom: 52px;
+}
+
+.main .ad-data-content .desc {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+/* 마케팅 전략 */
+.main .strategy {
+    position: relative;
+    overflow: hidden;
+    height: 1196px;
+}
+
+.main .strategy-bg {
+    background: url('../image/main/main-strategy-content-bg-img.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1196px;
+}
+
+.main .strategy-inner {
+    width: 1296px;
+    padding: 130px 52px 120px;
+    margin: 0 auto;
+}
+
+.main .strategy-content {
+    color: #ffffff;
+    text-align: center;
+}
+
+.main .strategy-content .text {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 24px;
+    letter-spacing: -0.6px;
+}
+
+.main .strategy-content .desc {
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.main .strategy-content .point {
+    color: #00ab4a;
+}
+
+.main .strategy-list {
+    position: relative;
+    height: 195px;
+    margin-top: 72px;
+}
+
+.main .strategy-list .item {
+    position: absolute;
+    border: 1px solid #555;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 32px;
+}
+
+.main .strategy-list .one {top: 25px; left: 178px;}
+.main .strategy-list .two {top: 0; left: 537px;}
+.main .strategy-list .three {top: 20px; right: 82px;}
+.main .strategy-list .four {bottom: 0; left: 80px;}
+.main .strategy-list .five {bottom: 25px; left: 473px;}
+.main .strategy-list .six {bottom: 6px; right: 126px;}
+
+.main .strategy-mobile {
+    width: 1296px;
+    height: 595px;
+    position: relative;
+}
+
+.main .strategy-mobile .page {
+    position: absolute;
+    width: 340px;
+}
+
+.main .strategy-mobile .one {
+    bottom: 0px;
+    left: 180px;
+}
+
+.main .strategy-mobile .two {
+    top: 50px;
+    left: 468px;
+    z-index: 1;
+    box-shadow: 0 30px 60px 0 rgb(0 0 0 / 60%);
+}
+
+.main .strategy-mobile .three {
+    bottom: 0px;
+    right: 180px;
+}
+
+.main .strategy .diagonal {
+    position: absolute;
+    right: 0;
+    bottom: -288px;
+    width: 120%;
+    height: 300px;
+    background-color: #fff;
+    transform-origin: right bottom;
+    transform: rotate(5.2deg);
+    z-index: 1;
+}
+
+/* 네이버 광고 */
+.main .ad-area {
+    position: relative;
+    height: 1159px;
+}
+
+.main .ad-area-content .desc {
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 132px;
+    padding-bottom: 56px;
+}
+
+.main .ad-area-content .point {
+    color: #00ab4a;
+    font-weight: 700;
+}
+
+.main .ad-area-content .ad-area-slide-control {
+    bottom: 228px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .ad-area-slide-control .item.on .circle {
+    width: 10px;
+    background-color: #03c75a;
+}
+
+.main .ad-area-list-content {
+    position: relative;
+    height: 572px;
+}
+
+.main .ad-area-list-content .text {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.main .ad-area-list-content .item {
+    width: 930px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 120px;
+}
+
+.main .ad-area-list-content .one {margin-left: -992px;}
+.main .ad-area-list-content .three {margin-left: 992px;}
+
+.main .ad-area-list-content img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .ad-area-content .btn {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 266px;
+    line-height: 56px;
+    font-size: 18px;
+}
+
+/* 광고 사례 */
+
+/* 다른 사례 보기 */
+.different {
+    background-color: #f5f7f8;
+    position: relative;
+}
+
+.different .different-box {
+    width: 1296px;
+    margin: 0 auto;
+    padding: 120px 52px 248px;
+}
+
+.different .box-wrap {
+    position: relative;
+}
+
+.different .box-wrap .title {
+    font-size: 42px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.different .box-wrap .list-box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.different .box-wrap .list-box .item {
+    float: left;
+    width: 416px;
+    margin-right: 24px;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.different .box-wrap .list-box .item:last-child {
+    margin-right: 0;
+}
+
+.different .box-wrap .list-box .item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.07);
+}
+
+.different .box-wrap .list-box .link {
+    display: block;
+}
+
+.different .box-wrap .list-box img {
+    width: 100%;
+    height: 238px;
+    vertical-align: top;
+}
+
+.different .box-wrap .list-box .text-area {
+    height: 107px;
+    padding: 32px;
+}
+
+.different .box-wrap .list-box .text-area .copy {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.different .box-wrap .list-box .text-area .desc {
+    line-height: 28px;
+    letter-spacing: -0.6px;
+}
+
+.different .box-wrap .new-more {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    line-height: 100%;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.different .box-wrap .new-more::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+
+.different .box-wrap .new-more::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    transform: translateY(-50%);
+    background: #000;
+}
+
+.main .different .diagonal {
+    position: absolute;
+    right: 0;
+    bottom: -280px;
+    width: 120%;
+    height: 280px;
+    background-color: #1d1f22;
+    transform-origin: right bottom;
+    transform: rotate(5deg);
+    z-index: 0;
+}
+
+/* 질문 */
+.main .faq {
+    background-color: #1d1f22;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .faq-inner {
+    width: 1296px;
+    padding: 52px 52px 160px;
+    margin: 0 auto;
+}
+
+.main .faq-content {
+    position: relative;
+}
+
+.main .faq-content .text {
+    color: #ffffff;
+}
+
+.main .faq-content .new-more {
+    color: #ffffff;
+}
+
+.main .faq-content .new-more::before {
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #fff;
+}
+
+.main .faq-content .new-more::after {
+    background: #fff;
+}
+
+/* 
+----------
 주요 특징
 ----------
 */
