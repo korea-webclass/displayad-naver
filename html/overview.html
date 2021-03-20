@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1400">
-    <!-- 웹 폰트 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <!-- //웹 폰트 -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -19,17 +18,21 @@
             <section class="header-content">
                 <article class="header-wrap">
                     <h1 class="logo">
-                        <a href="#" class="logo-link">
+                        <a href="../html/main.html" class="logo-link">
                             <span class="hide">네이버 디스플레이 광고</span>
                         </a>
                     </h1>
                     <nav class="nav">
                         <span class="hide">전체 메뉴</span>
                         <ul class="gnb">
-                            <li class="item"><a href="#" class="link on">주요 특징</a></li>
-                            <li class="item"><a href="#" class="link">디스플레이 광고</a></li>
                             <li class="item">
-                                <a href="#" class="link">광고 상품 소개</a>
+                                <a href="../html/overview.html" class="link on">주요 특징</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/ad-platform.html" class="link">디스플레이 광고</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/advertisement-list.html" class="link">광고 상품 소개</a>
                                 <ul class="sub sub-three">
                                     <li class="sub-item"><a href="#">메인광고</a></li>
                                     <li class="sub-item"><a href="#">서브광고</a></li>
@@ -50,8 +53,12 @@
                                     <li class="sub-item"><a href="#">기타 문의사항</a></li>
                                 </ul>
                             </li>
-                            <li class="item"><a href="#" class="link">성공사례</a></li>
-                            <li class="item"><a href="#" class="link">애드시너지</a></li>
+                            <li class="item">
+                                <a href="../html/srories-list.html" class="link">성공사례</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/ad-synergies-list.html" class="link">애드시너지</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="detail-util">
@@ -59,9 +66,9 @@
                             <span class="hide">메뉴 더보기</span>
                         </a>
                         <ul class="menu">
-                            <li class="item"><a href="">네이버 비즈니스</a></li>
-                            <li class="item"><a href="">네이버 검색광고</a></li>
-                            <li class="item"><a href="">네이버 쇼핑광고</a></li>
+                            <li class="item"><a href="#">네이버 비즈니스</a></li>
+                            <li class="item"><a href="#">네이버 검색광고</a></li>
+                            <li class="item"><a href="#">네이버 쇼핑광고</a></li>
                         </ul>
                     </div>
                 </article>
@@ -70,7 +77,7 @@
 
         <!-- 주요특징 콘텐츠-->
         <main class="sub-container overview">
-            <section class="sub-content">
+            <div class="sub-content">
                 <!-- 비주얼 -->
                 <div class="visual">
                     <div class="text-area">
@@ -82,6 +89,7 @@
                 </div>
                 <!-- 사용자 데이터 -->
                 <div class="user-data">
+                    <span class="hide">네이버 데이터 현황</span>
                     <div class="text-wrap">
                         <p class="text">
                             <span>네이버 누적 회원수</span>
@@ -101,12 +109,13 @@
                         <span class="desc">네이버의 영향력을 활용해보세요.</span>
                     </div>
                     <div class="img-content">
-                        <img src="../image/overview-user-data-bg.jpg" alt="모바일 광고 사진">
+                        <img src="../image/overview-user-data-bg.jpg" alt="">
                     </div>
                     <div class="diagonal"></div>
                 </div>
                 <!-- 구매 결정 단계 -->
                 <div class="purchase">
+                    <span class="hide">구매 단계 방법</span>
                     <div class="purchase-inner">
                         <div class="purchase-content">
                             <div class="text-wrap">
@@ -126,7 +135,7 @@
                                             <li>주제판별 콘텐츠</li>
                                         </ul>
                                         <div class="img-wrap">
-                                            <img src="../image/overview-purchase-img-one.png" alt="모바일 둘러보기">
+                                            <img src="../image/overview-purchase-img-one.png" alt="">
                                         </div>
                                     </li>
                                     <li class="item">
@@ -139,7 +148,7 @@
                                             <li>특정 브랜드/상품 검색</li>
                                         </ul>
                                         <div class="img-wrap">
-                                            <img src="../image/overview-purchase-img-two.png" alt="모바일 탐색하기">
+                                            <img src="../image/overview-purchase-img-two.png" alt="">
                                         </div>
                                     </li>
                                     <li class="item">
@@ -152,7 +161,7 @@
                                             <li>상품 구매</li>
                                         </ul>
                                         <div class="img-wrap">
-                                            <img src="../image/overview-purchase-img-three.png" alt="모바일 구매하기">
+                                            <img src="../image/overview-purchase-img-three.png" alt="">
                                         </div>
                                     </li>
                                 </ul>
@@ -237,10 +246,7 @@
                     <div class="expand-inner">
                         <div class="expand-content">
                             <div class="text-wrap">
-                                <h2 class="title">
-                                    <span class="point">차원이 다른 연결과 확장,</span>
-                                    애드시너지를 통해<br>브랜드 경험을 끊김 없이 유기적으로 연결합니다
-                                </h2>
+                                <h2 class="title"><span class="point">차원이 다른 연결과 확장,</span> 애드시너지를 통해<br>브랜드 경험을 끊김 없이 유기적으로 연결합니다</h2>
                                 <span class="text">네이버라는 에코시스템 안에서 잠재 고객들은 새로운 브랜드를 발견하고, 상호작용하며, 전환을 일으키기까지<br>선순환 과정을 반복합니다. 이러한 구매 여정에서 노출되는 네이버 광고 상품은 강력한 시너지 효과를 일으킵니다.</span>
                             </div>
                             <div>
@@ -259,15 +265,16 @@
                     <div class="ratio-inner">
                         <div class="ratio-content">
                             <div class="text-wrap">
-                                <h2 class="title">
-                                    네이버 디스플레이 광고는
-                                    <span class="point">빠른 성장</span>을 이어가고 있습니다
-                                </h2>
+                                <h2 class="title">네이버 디스플레이 광고는<span class="point">빠른 성장</span>을 이어가고 있습니다</h2>
                                 <span class="text">네이버의 핵심 마케팅 솔루션인 디스플레이 광고는 매년 큰 폭의 매출 성장률을 기록하며,<br>비즈니스 성공을 위한 강력한 마케팅 도구로 활용되고 있습니다.</span>
                             </div>
                             <div class="graph-content">
                                 <div class="graph-img">
-                                    <img src="../image/overview-page-graph.jpg" alt="차트">
+                                    <img src="../image/overview-page-graph.jpg" alt="디스플레이 광고 매출 성장률 (일반DA기준)">
+                                    <span class="hide">2016년 0%</span>
+                                    <span class="hide">2017년 12% 상승</span>
+                                    <span class="hide">2018년 11% 상승</span>
+                                    <span class="hide">2019년 15% 상승</span>
                                 </div>
                                 <div class="result">
                                     <ul class="result-list">
@@ -291,6 +298,7 @@
                 </div>
                 <!-- 디바이스 영역 -->
                 <div class="reach reach-bg">
+                    <span class="hide">디바이스 영역 이미지들</span>
                     <div class="device-contnet">
                         <ul class="device-list">
                             <li class="item tablet">
@@ -380,15 +388,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
 
 
         <!-- 푸터 -->
         <footer class="footer">
-            <section class="footer-content">
-                <article class="footer-wrap">
+            <div class="footer-content">
+                <div class="footer-wrap">
                     <div class="info-wrap">
                         <ul class="menu">
                             <li class="item"><a href="#" class="link">이용약관</a></li>
@@ -420,8 +428,8 @@
                         <a href="" class="logo"></a>
                         <address class="copyright">&copy NAVER Corp. All Rights Reserved.</address>
                     </div>
-                </article>
-            </section>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

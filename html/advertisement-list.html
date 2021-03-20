@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1400">
-    <!-- 웹 폰트 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <!-- //웹 폰트 -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -16,20 +15,24 @@
     <div class="wrap">
         <!-- 헤더 -->
         <header class="header fixed">
-            <section class="header-content">
-                <article class="header-wrap">
+            <div class="header-content">
+                <div class="header-wrap">
                     <h1 class="logo">
-                        <a href="#" class="logo-link">
+                        <a href="../html/main.html" class="logo-link">
                             <span class="hide">네이버 디스플레이 광고</span>
                         </a>
                     </h1>
                     <nav class="nav">
                         <span class="hide">전체 메뉴</span>
                         <ul class="gnb">
-                            <li class="item"><a href="#" class="link">주요 특징</a></li>
-                            <li class="item"><a href="#" class="link">디스플레이 광고</a></li>
                             <li class="item">
-                                <a href="#" class="link on">광고 상품 소개</a>
+                                <a href="../html/overview.html" class="link">주요 특징</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/ad-platform.html" class="link">디스플레이 광고</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/advertisement-list.html" class="link on">광고 상품 소개</a>
                                 <ul class="sub sub-three">
                                     <li class="sub-item"><a href="#">메인광고</a></li>
                                     <li class="sub-item"><a href="#">서브광고</a></li>
@@ -50,8 +53,12 @@
                                     <li class="sub-item"><a href="#">기타 문의사항</a></li>
                                 </ul>
                             </li>
-                            <li class="item"><a href="#" class="link">성공사례</a></li>
-                            <li class="item"><a href="#" class="link">애드시너지</a></li>
+                            <li class="item">
+                                <a href="../html/srories-list.html" class="link">성공사례</a>
+                            </li>
+                            <li class="item">
+                                <a href="../html/ad-synergies-list.html" class="link">애드시너지</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="detail-util">
@@ -59,18 +66,18 @@
                             <span class="hide">메뉴 더보기</span>
                         </a>
                         <ul class="menu">
-                            <li class="item"><a href="">네이버 비즈니스</a></li>
-                            <li class="item"><a href="">네이버 검색광고</a></li>
-                            <li class="item"><a href="">네이버 쇼핑광고</a></li>
+                            <li class="item"><a href="#">네이버 비즈니스</a></li>
+                            <li class="item"><a href="#">네이버 검색광고</a></li>
+                            <li class="item"><a href="#">네이버 쇼핑광고</a></li>
                         </ul>
                     </div>
-                </article>
-            </section>
+                </div>
+            </div>
         </header>
 
         <!-- 광고 상품 소개 - 목록 -->
         <main class="sub-container advertisement-list">
-            <section class="sub-content">
+            <div class="sub-content">
                 <!-- 비주얼 -->
                 <div class="visual">
                     <div class="text-area">
@@ -84,7 +91,7 @@
                 <div class="product-list-content">
                     <ul class="list">
                         <li class="item">
-                            <a href="">
+                            <a href="../html/ad-vertisement-main.html">
                                 <div class="text-cont">
                                     <strong class="title">메인광고</strong>
                                     <span class="text">성과형 &#183; 보장형</span>
@@ -94,7 +101,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">서브광고</strong>
                                     <span class="text">성과형 &#183; 보장형</span>
@@ -104,7 +111,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">주제판광고</strong>
                                     <span class="text">보장형</span>
@@ -114,7 +121,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">동영상광고</strong>
                                     <span class="text">보장형</span>
@@ -124,7 +131,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">검색형광고</strong>
                                     <span class="text">보장형</span>
@@ -134,7 +141,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">밴드광고</strong>
                                     <span class="text">성과형 &#183; 보장형</span>
@@ -144,7 +151,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">웹툰광고</strong>
                                     <span class="text">보장형</span>
@@ -154,7 +161,7 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a href="">
+                            <a href="#">
                                 <div class="text-cont">
                                     <strong class="title">인플루언서광고</strong>
                                     <span class="text">보장형</span>
@@ -171,10 +178,10 @@
                         <div class="product-content">
                             <span class="title">상품 상세정보 보기</span>
                             <div class="link-content">
-                                <a href="" class="link">
+                                <a href="#" class="link">
                                     <span class="link-text">광고상품별 단가표 확인하기</span>
                                 </a>
-                                <a href="" class="link">
+                                <a href="#" class="link">
                                     <span class="link-text">통합상품소개서 확인하기</span>
                                 </a>
                             </div>
@@ -182,14 +189,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
         </main>
 
         <!-- 푸터 -->
         <footer class="footer">
-            <section class="footer-content">
-                <article class="footer-wrap">
+            <div class="footer-content">
+                <div class="footer-wrap">
                     <div class="info-wrap">
                         <ul class="menu">
                             <li class="item"><a href="#" class="link">이용약관</a></li>
@@ -221,8 +228,8 @@
                         <a href="" class="logo"></a>
                         <address class="copyright">&copy NAVER Corp. All Rights Reserved.</address>
                     </div>
-                </article>
-            </section>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
