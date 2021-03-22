@@ -9,13 +9,7 @@
 */
 
 /* 헤더 - 스크롤 on*/
-.header.on {
-    background-color: transparent;
-    border-bottom: 0;
-    transition: all 0.3s ease;
-}
-
-.header.on .logo-link {
+.header-wrap .logo-link {
     background: url('../image/main/main-header-logo.png') no-repeat;
     background-size: 222px, 22px;
     display: block;
@@ -23,11 +17,17 @@
     height: 22px;
 }
 
-.header.on .gnb .item .link {
+.header-wrap .gnb .item .link {
+    display: block;
+    height: 89px;
+    line-height: 89px;
+    font-size: 17px;
+    letter-spacing: -0.56px;
     color: #fff;
+    position: relative;
 }
 
-.header.on .util-btn {
+.header-wrap .detail-util .util-btn {
     background: url('../image/main/main-header-util.png') no-repeat;
     background-size: 20px, 20px;
     display: block;
@@ -35,7 +35,25 @@
     height: 20px;
 }
 
-.header.on:hover .logo-link {
+/* 스크롤 on */
+.header-scroll {
+    position: fixed;
+    min-width: 1400px;
+    width: 100%;
+    height: 89px;
+    z-index: 100;
+    background-color: #ffffff;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.header-scroll::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+.header-scroll .logo-link {
     background: url('../image/logo.png') no-repeat;
     background-size: 222px, 22px;
     display: block;
@@ -43,11 +61,17 @@
     height: 22px;
 }
 
-.header.on:hover .header-wrap .gnb .item .link {
-    color: #333;
+.header-scroll .gnb .item .link {
+    display: block;
+    height: 89px;
+    line-height: 89px;
+    font-size: 17px;
+    letter-spacing: -0.56px;
+    color: #000;
+    position: relative;
 }
 
-.header.on:hover .util-btn {
+.header-scroll .detail-util .util-btn {
     background: url('../image/all-menu.png') no-repeat;
     background-size: 20px, 20px;
     display: block;
@@ -55,9 +79,118 @@
     height: 20px;
 }
 
-.header.on:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header.fixed {
+    position: fixed;
+    min-width: 1400px;
+    width: 100%;
+    height: 89px;
+    z-index: 100;
     background-color: #ffffff;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
+.header.fixed::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+.header.fixed .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header.fixed .gnb .item .link {
+    display: block;
+    height: 89px;
+    line-height: 89px;
+    font-size: 17px;
+    letter-spacing: -0.56px;
+    color: #000;
+    position: relative;
+}
+
+.header.fixed .detail-util .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header:hover {background-color: #fff;}
+
+.header:hover .logo-link {
+    background: url('../image/logo.png') no-repeat;
+    background-size: 222px, 22px;
+    display: block;
+    width: 222px;
+    height: 22px;
+}
+
+.header:hover .gnb .item .link {
+    display: block;
+    height: 89px;
+    line-height: 89px;
+    font-size: 17px;
+    letter-spacing: -0.56px;
+    color: #000;
+    position: relative;
+}
+
+.header:hover .detail-util .util-btn {
+    background: url('../image/all-menu.png') no-repeat;
+    background-size: 20px, 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 
 /* 비주얼 */
 .main .visual {

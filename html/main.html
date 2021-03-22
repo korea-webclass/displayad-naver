@@ -19,7 +19,7 @@
 <body>
     <div class="wrap">
         <!-- 헤더 -->
-        <header class="header fixed on">
+        <header class="header">
             <div class="header-content">
                 <div class="header-wrap">
                     <h1 class="logo">
@@ -79,6 +79,19 @@
                 </div>
             </div>
         </header>
+        <script>
+            const htmlElem = document.querySelector('html');
+            const header = htmlElem.querySelector('.header');
+
+            window.addEventListener('scroll', scroll);
+            function scroll() {
+                if (htmlElem.scrollTop > 0) {
+                    header.classList.add('header-scroll');
+                } else {
+                    header.classList.remove('header-scroll');
+                }
+            };
+        </script>
 
         <!-- 메인 콘텐츠-->
         <main class="main-container main">

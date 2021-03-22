@@ -7,14 +7,16 @@ window.onload = function () {
     const utilMenu = document.querySelector('.detail-util .menu');
     
     // 헤더 스크롤 고정
-    window.addEventListener('scroll', scroll);
-    function scroll() {
-        if (htmlElem.scrollTop > 30) {
-            header.classList.remove('on');
-        } else {
-            header.classList.add('on');
-        }
-    };
+    // window.addEventListener('scroll', scroll);
+    // function scroll() {
+    //     if (htmlElem.scrollTop > 0) {
+    //         console.log(htmlElem.scrollTop)
+    //         header.classList.add('header-scroll');
+    //     } else {
+    //         header.classList.remove('header-scroll');
+    //     }
+    // };
+    // scroll();
 
     // 헤더 서브메뉴
     $(function(){
@@ -106,7 +108,7 @@ window.onload = function () {
     // 카운트 다운 애니메이션
     window.addEventListener('scroll', countScroll);
     function countScroll() {
-        console.log(htmlElem.scrollTop);
+        // console.log(htmlElem.scrollTop);
         if (htmlElem.scrollTop === 2916) {
             countConTxt();
         }
