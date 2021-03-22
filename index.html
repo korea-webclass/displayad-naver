@@ -96,7 +96,7 @@
             top: 25px;
             padding: 6px 12px;
             color: #444;
-            font-size: 12px;
+            font-size: 24px;
             text-decoration: underline;
         }
 
@@ -279,7 +279,7 @@
                 //'testCookie' 이름의 쿠키가 있는지 체크한다.
                 if ($.cookie('testCookie') == undefined) {
                     //쿠키가 없는 경우 testCookie 쿠키를 추가
-                    $.cookie('testCookie', 'Y', { expires: 1, path: '/' });
+                    $.cookie('testCookie', 'Y', { expires: 1, path: 'https://korea-webclass.github.io/displayad-naver/' });
                     /**
                         설명 :
                         임의로 testCookie라는 이름에 Y라는 값을 넣어주었고,
@@ -290,23 +290,8 @@
                 }
             }
         }
-
     </script>
-    <script>
-        //쿠키 쓰기
-        $.cookie('쿠키 키', '값', { expires: 7 /*유효 기간(일 단위 기준)*/, path: '/' /*도메인과 path가 일치해야 저장된다.*/ });
-        //쿠키 읽기
-        $.cookie('쿠키 키');
-        // 쿠키 삭제
-        $.removeCookie('name', { path: '/' /*path가 있을 경우, 일치해야 삭제된다.*/ });
-
-
-        $(function () {
-            $.removeCookie('TEST');
-            $.cookie('www', 'hello world');
-            console.log($.cookie('www'));
-        });
-    </script>
+    
 
 </body>
 </html>
