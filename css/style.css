@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* 테스트 공백 */
 .wrap {width: 100%; min-width: 1400px; overflow: hidden;}
 
 /* 
@@ -2234,7 +2233,6 @@
 .advertisement-list .product-list-content .search-ad-img {background-image: url('../image/advertisement-list-product-list-search.jpg');}
 .advertisement-list .product-list-content .band-ad-img {background-image: url('../image/advertisement-list-product-list-band.jpg');}
 .advertisement-list .product-list-content .webtoon-ad-img {background-image: url('../image/advertisement-list-product-list-webtoon.jpg');}
-/* .advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer.jpg');} */
 .advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer.jpg');}
 
 /* 상품 상세정보 보기 */

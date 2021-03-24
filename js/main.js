@@ -5,18 +5,6 @@ window.onload = function () {
     const count = document.querySelector('.main .ad-data-content .count');
     const detailUtil = document.querySelector('.detail-util');
     const utilMenu = document.querySelector('.detail-util .menu');
-    
-    // 헤더 스크롤 고정
-    // window.addEventListener('scroll', scroll);
-    // function scroll() {
-    //     if (htmlElem.scrollTop > 0) {
-    //         console.log(htmlElem.scrollTop)
-    //         header.classList.add('header-scroll');
-    //     } else {
-    //         header.classList.remove('header-scroll');
-    //     }
-    // };
-    // scroll();
 
     // 헤더 서브메뉴
     $(function(){
@@ -28,29 +16,6 @@ window.onload = function () {
             $("ul",this).slideUp("fast");
         });
     });
-    
-    // for (let i = 0; i < gnbLi.length; i++) {
-    //     gnbLi[i].addEventListener('mouseenter', enter);
-    //     gnbLi[i].addEventListener('mouseleave', leave);
-    // }
-
-    // function enter(e) {
-    //     let li = e.target;
-    //     let gnbSub = li.querySelector('.sub');
-    //     if (gnbSub) {
-    //         gnbSub.classList.add('on');
-    //         header.classList.add('sub');
-    //     }
-    // }
-
-    // function leave(e) {
-    //     let li = e.target;
-    //     let gnbSub = li.querySelector('.sub');
-    //     if (gnbSub) {
-    //         gnbSub.classList.remove('on');
-    //         header.classList.remove('sub');
-    //     }
-    // }
     
     // 헤더 우측 메뉴
     detailUtil.addEventListener('mouseenter', function () {
@@ -114,7 +79,6 @@ window.onload = function () {
         }
     };
 
-    
     function countConTxt() {
         var memberCountConTxt= 30000000;
     
@@ -134,28 +98,4 @@ window.onload = function () {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
     }
-
-
-
-
-
-
-
-    // var memberCountConTxt= 30000000;
-
-    // $({val: 0}).animate({val: memberCountConTxt}, {
-    //     duration: 2000,
-    //     step: function() {
-    //         var num = numberWithCommas(Math.floor(this.val));
-    //         $(".memberCountCon").text(num);
-    //     },
-    //     complete: function() {
-    //         var num = numberWithCommas(Math.floor(this.val));
-    //         $(".memberCountCon").text(num);
-    //     }
-    // });
-  
-    // function numberWithCommas(x) {
-    //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // }
 };

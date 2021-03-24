@@ -243,6 +243,9 @@
         var $btnLayerPopupTodayHide = document.querySelector('.layerPopup .btnTodayHide');
 
         //최초 레이어팝업 노출
+        // layerPopupShow();
+        //최초 레이어팝업 노출
+        // layerPopupShow();
         layerPopupShow();
 
         //레이어팝업 닫기 버튼 클릭
@@ -257,16 +260,10 @@
 
         //레이어팝업 노출
         function layerPopupShow() {
-            $layerPopup.style.display = 'block'
+            $layerPopup.style.display = 'block';
         }
 
         //레이어팝업 비노출
-        function layerPopupHide(state) {
-            $layerPopup.style.display = 'none'
-            if (state === 1) {
-                //cookie처리
-            }
-        }
 
         //Javascript
         //레이어팝업 비노출
