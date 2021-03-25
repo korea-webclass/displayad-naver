@@ -1,12 +1,6 @@
 @charset "UTF-8";
 .wrap {width: 100%; min-width: 1400px; overflow: hidden;}
 
-/* 
-----------
-메인
-----------
-*/
-
 /* 헤더 - 스크롤 on*/
 .header-wrap .logo-link {
     background: url('../image/main/main-header-logo.png') no-repeat;
@@ -78,24 +72,6 @@
     height: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header.fixed {
     position: fixed;
     min-width: 1400px;
@@ -108,11 +84,13 @@
     right: 0;
     width: 100%;
 }
+
 .header.fixed::after {
     content: '';
     display: block;
     border-bottom: 1px solid #eee;
 }
+
 .header.fixed .logo-link {
     background: url('../image/logo.png') no-repeat;
     background-size: 222px, 22px;
@@ -139,27 +117,9 @@
     height: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header:hover {background-color: #fff;}
+.header:hover {
+    background-color: #fff;
+}
 
 .header:hover .logo-link {
     background: url('../image/logo.png') no-repeat;
@@ -191,7 +151,7 @@
 
 
 
-/* 비주얼 */
+/* 메인 - 비주얼 */
 .main .visual {
     position: relative;
     height: 900px;
@@ -259,24 +219,15 @@
     position: relative;
 }
 
-.main .visual-slide .slide-text .text-area {
+.main .visual-slide .text-area {
     position: absolute;
-    top: 380px;
     left: 260px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-
-    /* position: absolute;
-    top: 52%;
-    left: 260px;
-    margin-top: -166px;
-    max-width: 552px;
-    text-align: left;
-    max-width: none; */
 }
 
-.main .visual-slide .slide-text .title {
+.main .visual-slide .title {
     font-size: 60px;
     line-height: 72px;
     letter-spacing: -2px;
@@ -288,12 +239,12 @@
     margin-bottom: 47px;
 }
 
-.main .visual-slide .slide-text .title > span {
+.main .visual-slide .title > span {
     display: table-cell;
     vertical-align: bottom;
 }
 
-.main .visual-slide .slide-text .desc {
+.main .visual-slide .desc {
     font-size: 19px;
     line-height: 32px;
     letter-spacing: -0.6px;
@@ -301,7 +252,7 @@
     margin-bottom: 23px;
 }
 
-.main .visual-slide .slide-text .text-area-btn {
+.main .visual-slide .text-area-btn {
     width: 137px;
     height: 46px;
 }
@@ -321,7 +272,7 @@
     }
 }
 
-/* 최신 업데이트 소식 */
+/* 메인 - 최신 업데이트 소식 */
 .main .latest-news {
     background-color: #f5f7f8;
 }
@@ -430,7 +381,7 @@
     background: #000;
 }
 
-/* 네이버를 활용한 다양한 마케팅 스토리 */
+/* 메인 - 네이버를 활용한 다양한 마케팅 스토리 */
 .main .success {
     height: 908px;
     padding: 130px 0 176px;
@@ -438,7 +389,7 @@
     position: relative;
 }
 
-/* success 슬라이드 활성화 */
+/* success 슬라이드 활성화 { */
 .main .success-slide-control {
     bottom: 132px;
 }
@@ -446,7 +397,7 @@
 .main .success-slide-control .item.on .circle {
     width: 10px;
     background-color: #03c75a;
-}
+} /* 끝 success 슬라이드 활성화 */
 
 .main .success .copy {
     font-size: 40px;
@@ -561,7 +512,7 @@
     transition: all 0.3s ease;
 }
 
-/* 브랜드 */
+/* 메인 - 브랜드 */
 .main .brand {
     position: relative;
     width: 920px;
@@ -639,7 +590,7 @@
     font-size: 18px;
 }
 
-/* 광고 데이터 */
+/* 메인 - 광고 데이터 */
 .main .ad-data {
     background-image: linear-gradient(107deg, #00c652, #00c5ae);
     position: relative;
@@ -651,7 +602,6 @@
     height: 551px;
 }
 
-/* ad-data 이전/다음 */
 .main .ad-data-content .prev {
     display: block;
     background: url('../image/main/main-contents-slide-prev.png') no-repeat;
@@ -680,7 +630,6 @@
     opacity: 0.3;
 }
 
-/* ad-data 슬라이드 활성화 */
 .main .ad-data-slide-control {
     bottom: 58px;
 }
@@ -694,7 +643,6 @@
     background-color: #fff;
 }
 
-/* ad-data 백그라운드 이미지 */
 .main .ad-data-content .bg-prev {
     position: absolute;
     left: 0;
@@ -752,7 +700,7 @@
     line-height: 38px;
 }
 
-/* 마케팅 전략 */
+/* 메인 - 마케팅 전략 */
 .main .strategy {
     position: relative;
     overflow: hidden;
@@ -857,7 +805,7 @@
     z-index: 1;
 }
 
-/* 네이버 광고 */
+/* 메인 - 네이버 광고 */
 .main .ad-area {
     position: relative;
     height: 1159px;
@@ -928,9 +876,7 @@
     font-size: 18px;
 }
 
-/* 광고 사례 */
-
-/* 다른 사례 보기 */
+/* 메인 - 광고 사례 */
 .different {
     background-color: #f5f7f8;
     position: relative;
