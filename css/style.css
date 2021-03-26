@@ -993,7 +993,7 @@
     z-index: 0;
 }
 
-/* 질문 */
+/* 메인 - 질문 */
 .main .faq {
     background-color: #1d1f22;
     position: relative;
@@ -1027,12 +1027,7 @@
     background: #fff;
 }
 
-/* 
-----------
-주요 특징
-----------
-*/
-
+/* 주요 특징 - 공통*/
 .sub-container .sub-content .text-wrap {
     text-align: center;
 }
@@ -1054,7 +1049,7 @@
     letter-spacing: -0.6px;
 }
 
-/* 비주얼 */
+/* 주요 특징 - 비주얼 */
 .overview .visual .bg-one {
     background: url('../image/overview-visual-bg-one.png') no-repeat;
     position: absolute;
@@ -1075,7 +1070,7 @@
     height: 180px;
 }
 
-/* 사용자 데이터 */
+/* 주요 특징 - 사용자 데이터 */
 .overview .user-data {
     background-color: #ffffff;
     min-width: 1400px;
@@ -1146,7 +1141,7 @@
     width: 100%;
 }
 
-/* 구매 결정 단계 */
+/* 주요 특징 - 구매 결정 단계 */
 .overview .purchase {
     min-width: 1400px;
     height: 1236px;
@@ -1169,9 +1164,6 @@
     border-bottom: 1px solid #eee;
     border-image-slice: 1;
 }
-
-
-
 
 .overview .purchase-content .order-content .purchase-content::after {
     content: '';
@@ -1258,7 +1250,7 @@
     vertical-align: top;
 }
 
-/* 구매 결정 단계 단어 */
+/* 주요 특징 - 구매 결정 단계 단어 */
 .overview .word {border-bottom: 1px solid #eee;}
 .overview .word::after {content: ''; display: block; clear: both;}
 .overview .word .word-item {float: left; padding: 22px 18px;}
@@ -1299,7 +1291,7 @@
 .overview .key .smart {width: 190px; margin-left: 206px;}
 .overview .key .smart .keyword {margin-bottom: 0;}
 
-/* 애드시너지 확장 */
+/* 주요 특징 - 애드시너지 확장 */
 .overview .expand-inner {
     width: 1296px;
     padding: 130px 52px 107px;
@@ -1310,7 +1302,7 @@
     display: block;
 }
 
-/* 성장 그래프 현황 */
+/* 주요 특징 - 성장 그래프 현황 */
 .overview .ratio {
     min-width: 1400px;
     height: 868px;
@@ -1390,7 +1382,7 @@
     float: right;
 }
 
-/* 디바이스 영역 */
+/* 주요 특징 - 디바이스 영역 */
 .overview .reach {
     min-width: 1400px;
     position: relative;
@@ -1552,7 +1544,7 @@
     margin: 0 20px;
 }
 
-/* 광고 환경 */
+/* 주요 특징 - 광고 환경 */
 .overview .envi {
     background-color: #f5f7f8;
 }
