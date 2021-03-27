@@ -1638,13 +1638,7 @@
     margin-top: 16px;
 }
 
-/* 
-----------
-디스플레이 광고
-----------
-*/
-
-/* 비주얼 */
+/* 디스플레이 광고 - 비주얼 */
 .ad-platform .visual .bg-one {
     background-image: url('../image/ad-platform-visual-bg-one.png');
     position: absolute;
@@ -1665,7 +1659,7 @@
     height: 180px;
 }
 
-/* 탭 */
+/* 디스플레이 광고 - 탭 */
 .ad-platform .tab {
     height: 136px;
 }
@@ -1711,7 +1705,7 @@
     color: #767676;
 }
 
-/* 탭 on click */
+/* 디스플레이 광고 - 탭 on click */
 .ad-platform .tab-content .item.on {
     border-bottom: 2px solid #00ac4a;
 }
@@ -1726,7 +1720,7 @@
     color: #00ac4a;
 }
 
-/* 콘텐츠 */
+/* 디스플레이 광고 - 콘텐츠 */
 .ad-platform .ad-formal {
     position: relative;
 }
@@ -1819,7 +1813,7 @@
     margin-top: 64px;
 }
 
-/* 콘텐츠 - 운영 안내 */
+/* 디스플레이 광고 - 콘텐츠 - 운영 안내 */
 .ad-platform .docu .text-cont {
     margin-top: 81px;
 }
@@ -1841,7 +1835,7 @@
     color: #00ac4a;
 }
 
-/* 콘텐츠 - 운영 안내 - 순서 */
+/* 디스플레이 광고 - 콘텐츠 - 운영 안내 - 순서 */
 .ad-platform .order-info-content {
     width: 1118px;
     margin: 0 auto;
@@ -1983,7 +1977,7 @@
     right: 0px;
 }
 
-/* 광고 대행 안내 */
+/* 디스플레이 광고 - 광고 대행 안내 */
 .ad-platform .product {
     position: relative;
     overflow: hidden;
