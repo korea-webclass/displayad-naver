@@ -2056,13 +2056,7 @@
     color: #fff;
 }
 
-/* 
-----------
-광고 상품 소개
-----------
-*/
-
-/* 비주얼 */
+/* 광고 상품 소개 - 비주얼 */
 .advertisement-list .visual .bg-one {
     background: url('../image/ad-vertisement-main-visual-bg-one.png') no-repeat;
     position: absolute;
@@ -2083,7 +2077,7 @@
     height: 180px;
 }
 
-/* 광고 상품 목록 */
+/* 광고 상품 소개 - 광고 상품 목록 */
 .advertisement-list .product-list-content {
     width: 1296px;
     margin: 0 auto;
@@ -2156,7 +2150,7 @@
     letter-spacing: -0.6px;
 }
 
-/* 광고 상품 목록 - 이미지 */
+/* 광고 상품 소개 - 광고 상품 목록 - 이미지 */
 .advertisement-list .product-list-content .bg-img {width: 636px; height: 404px; background-size: 636px, 404px;}
 .advertisement-list .product-list-content .main-ad-img {background-image: url('../image/advertisement-list-product-list-main.jpg');}
 .advertisement-list .product-list-content .sub-ad-img {background-image: url('../image/advertisement-list-product-list-sub.jpg');}
@@ -2167,7 +2161,7 @@
 .advertisement-list .product-list-content .webtoon-ad-img {background-image: url('../image/advertisement-list-product-list-webtoon.jpg');}
 .advertisement-list .product-list-content .influencer-ad-img {background-image: url('../image/advertisement-list-product-list-influencer.jpg');}
 
-/* 상품 상세정보 보기 */
+/* 광고 상품 소개 - 상품 상세정보 보기 */
 .advertisement-list .product-info {
     min-width: 1400px;
     background-color: #22222a;
@@ -2271,13 +2265,7 @@
     z-index: 1;
 }
 
-/* 
-----------
-광고 상품 소개 - 메인광고
-----------
-*/
-
-/* 비주얼 */
+/* 광고 상품 소개(메인광고) - 비주얼 */
 .ad-vertisement-main .visual {
     background-image: linear-gradient(45deg, #2a2c33, #2a2c33);
 }
@@ -2324,7 +2312,7 @@
     opacity: 0.3;
 }
 
-/* 탭 */
+/* 광고 상품 소개(메인광고) - 탭 */
 .ad-vertisement-main .tab-content {
     text-align: center;
     margin-top: 64px;
@@ -2366,7 +2354,7 @@
     border-radius: 32px;
 }
 
-/* 탭 - 활성화 */
+/* 광고 상품 소개(메인광고) - 탭 - 활성화 */
 .ad-vertisement-main .tab-content .link.on {
     border-color: #03c75a;
     background-color: #03c75a;
@@ -2480,7 +2468,7 @@
     border: 1px solid #fff;
 }
 
-/* PC 광고 */
+/* 광고 상품 소개(메인광고) - PC 광고 */
 .ad-vertisement-main .pc-ad {
     position: relative;
     overflow: hidden;
@@ -2574,7 +2562,7 @@
     z-index: 1;
 }
 
-/* 광고 목록 슬라이드 */
+/* 광고 상품 소개(메인광고) - 광고 목록 슬라이드 */
 .ad-vertisement-main .list-slide {
     position: relative;
     height: 440px;
@@ -2621,7 +2609,7 @@
     background-size: cover;
 }
 
-/* 광고 목록 슬라이드 - 활성화 */
+/* 광고 상품 소개(메인광고) - 광고 목록 슬라이드 - 활성화 */
 .ad-vertisement-main .list-slide-content .link.on {
     border: 8px solid #03c75a;
     box-sizing: border-box;
@@ -2693,7 +2681,7 @@
     right: 18px;
 }
 
-/* 상품 상세정보 보기 */
+/* 광고 상품 소개(메인광고) - 상품 상세정보 보기 */
 .ad-vertisement-main .product-detail {
     background-image: linear-gradient(282deg, #00c652, #00c5ae);
 }
@@ -2771,13 +2759,7 @@
     border-right: 1px solid #00ac4a;
 }
 
-/* 
-----------
-성공사례 - 목록
-----------
-*/
-
-/* 비주얼 */
+/* 성공사례(목록) - 비주얼 */
 .srories-list .visual .bg-one {
     background: url('../image/srories-list-visual-bg-one.png') no-repeat;
     position: absolute;
@@ -2798,7 +2780,7 @@
     height: 180px;
 }
 
-/* 콘텐츠 */
+/* 성공사례(목록) - 콘텐츠 */
 .thumbnail-content {
     background-color: #f5f7f8;
 }
@@ -2809,7 +2791,7 @@
     padding: 64px 52px 120px;
 }
 
-/* 해시 태그 */
+/* 성공사례(목록) - 해시 태그 */
 .thumbnail-content .hash-tag-content {
     margin-bottom: 68px;
 }
@@ -2835,7 +2817,7 @@
 
 }
 
-/* 목록 - 콘텐츠 */
+/* 성공사례(목록) - 목록 - 콘텐츠 */
 .thumbnail-content .list-content::after {
     content: '';
     display: block;
@@ -2892,7 +2874,7 @@
     letter-spacing: -0.6px;
 }
 
-/* 더 보기 */
+/* 성공사례(목록) - 더 보기 */
 .thumbnail-content .more-content {
     text-align: center;
     margin-top: 80px;
@@ -2955,13 +2937,7 @@
     background-color: #000;
 }
 
-/* 
-----------
-애드시너지 - 목록
-----------
-*/
-
-/* 비주얼 */
+/* 애드시너지(목록) - 비주얼 */
 .ad-synergies-list .visual .bg-one {
     background: url('../image/ad-synergies-list-visual-bg-one.png') no-repeat;
     position: absolute;
@@ -2981,4 +2957,3 @@
     width: 600px;
     height: 180px;
 }
-
