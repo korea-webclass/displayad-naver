@@ -4,6 +4,26 @@ body {
     font-family: 'NanumSquare', sans-serif;
 }
 
+/* 웹 접근성 스킵 */
+#skip{position: relative; z-index: 9999;}
+#skip a{position: absolute; top: -200px; left: 0; width: 160px; line-height: 30px; border: 1px solid #dedede; background-color: #333;}
+#skip a:focus, 
+#skip a:active{top: 0; color: #ffffff; text-align: center;}
+
+/* 포트폴리오 팝업 창 */
+.pop-up {
+    background-image: linear-gradient(
+        133deg
+        , #00c652, #00c5ae);
+}
+.pop-up p {
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
 /* 공통 헤더 */
 .header {
     position: absolute; 
@@ -14,8 +34,6 @@ body {
     /* overflow: hidden; */
     transition: all 0.3s ease;
 }
-
-
 
 .header.fixed {
     position: fixed;
